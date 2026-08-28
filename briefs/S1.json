@@ -1,0 +1,21 @@
+{
+  "id": "S1",
+  "category": "social-content",
+  "title": "Feature launch post",
+  "goal": "Announce a new feature and drive demo requests.",
+  "audience": "Operations managers at commercial maintenance companies, on LinkedIn.",
+  "provided_facts": [
+    "The feature is Auto-Rebalance.",
+    "When a technician calls out sick, it reassigns their jobs across the remaining team in under a minute, respecting skills, locations, and SLA deadlines.",
+    "It replaces the 45 minutes a dispatcher spends re-planning by phone.",
+    "Available to all customers today at no extra cost."
+  ],
+  "constraints": [
+    "One LinkedIn post.",
+    "220 words maximum.",
+    "No hashtag lists (2 hashtags maximum).",
+    "Ends with a clear next step."
+  ],
+  "deliverable": "one LinkedIn post",
+  "success": "An ops manager recognizes their Tuesday morning in the first two lines."
+}

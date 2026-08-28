@@ -1,0 +1,17 @@
+{
+  "run_id": "s2-hendry-post-exemplar-r3",
+  "brief_id": "S2",
+  "condition": "skill",
+  "model": "qwen2.5:7b-instruct-q4_K_M",
+  "temperature": 1,
+  "protocol_version": "0.1-L1",
+  "created_at": "2026-08-27T19:19:55.426Z",
+  "prompt_tokens": 3847,
+  "output_tokens": 245,
+  "output_md": "Every week, I face it again: a tech calls in sick at 4 PM, just as that big customer's SLA clock ticks to zero. Or an escalator breaks down midday and someone’s out for lunch. The techs are great, the dispatchers aren’t lazy—why do we lose customers? It’s simple: our scheduling doesn't account for travel time and skill sets in real-time. An assigned job might seem feasible on paper but becomes a crisis when everyone's away or overbooked.\n\nIn my field, visibility is king. Techs can't work 24/7; they need to be matched with the right jobs based on current conditions, not just availability. Missed SLAs are treated as personal failings, but they’re scheduling data failures: techs aren’t given the right information to make smart decisions, and dispatchers don’t know when their calls are urgent.\n\nHow do we solve this? By treating it like any other critical business process—monitoring in real-time, making informed decisions. Slatebridge helps with that, but the problem is systemic. It’s about giving everyone better data, not just better tools.\n\nWhat's your biggest scheduling headache today?",
+  "provenance": "confirmatory",
+  "skill_slug": "hendry-post-exemplar",
+  "skill_hash": "84758ae4406b216092f8277719bab8ce9693abf23f1ff74b5e76aac40dcd3ab7",
+  "generator": "skillsmash-local-cycle@0.1-L1",
+  "scope_fit": "on-category"
+}

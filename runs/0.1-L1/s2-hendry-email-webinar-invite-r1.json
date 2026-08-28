@@ -1,0 +1,17 @@
+{
+  "run_id": "s2-hendry-email-webinar-invite-r1",
+  "brief_id": "S2",
+  "condition": "skill",
+  "model": "qwen2.5:7b-instruct-q4_K_M",
+  "temperature": 1,
+  "protocol_version": "0.1-L1",
+  "created_at": "2026-08-27T19:13:31.821Z",
+  "prompt_tokens": 4606,
+  "output_tokens": 147,
+  "output_md": "The scheduling data problem that's costing your SLAs\n\nDispatching techs is never straightforward. A call-in sick tech, a customer complaint, an SLA about to expire—these are the ops manager's daily interruptions. But what if missed SLAs aren't just a people problem? What if they're often a scheduling-data issue?\n\nIn my experience running Slatebridge, I've seen countless instances where techs were assigned jobs without full visibility into travel times, skill overlaps, and deadline stacking. The result: preventable delays that could have been mitigated with better data.\n\nSo here's the question for you, ops managers: Are your missed SLAs due to scheduling inefficiencies? Share your story in the comments below!",
+  "provenance": "confirmatory",
+  "skill_slug": "hendry-email-webinar-invite",
+  "skill_hash": "dfe72976b6d7a648323912d010b20c49e86daff3fa41d61004a57816aa9dba9f",
+  "generator": "skillsmash-local-cycle@0.1-L1",
+  "scope_fit": "off-category"
+}

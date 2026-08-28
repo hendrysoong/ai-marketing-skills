@@ -1,0 +1,14 @@
+{
+  "run_id": "s2-b1-r1",
+  "brief_id": "S2",
+  "condition": "b1",
+  "model": "qwen2.5:7b-instruct-q4_K_M",
+  "temperature": 1,
+  "protocol_version": "0.1-L1",
+  "created_at": "2026-08-27T19:11:11.017Z",
+  "prompt_tokens": 528,
+  "output_tokens": 152,
+  "output_md": "In commercial maintenance, missed SLAs are often seen as a people issue—technicians making mistakes or dispatchers bungling jobs. But I've found it's more about poor scheduling and data visibility. Without real-time access to travel times, technician skills, and job stacking, assigning tasks becomes hit-or-miss.\n\nImagine knowing exactly where each tech is, how long their commute will take, and if they have the right tools before you assign a job. That’s what I’ve been working towards with Slatebridge. It’s not magic; it’s just making sure we have the best information to make the best decisions every time.\n\nSo, operations managers, do you see your missed SLAs as a data or people problem? Share your thoughts below.",
+  "provenance": "confirmatory",
+  "generator": "skillsmash-local-cycle@0.1-L1"
+}

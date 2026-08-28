@@ -1,0 +1,17 @@
+{
+  "run_id": "s3-hendry-email-webinar-reminder-r2",
+  "brief_id": "S3",
+  "condition": "skill",
+  "model": "qwen2.5:7b-instruct-q4_K_M",
+  "temperature": 1,
+  "protocol_version": "0.1-L1",
+  "created_at": "2026-08-27T19:28:42.069Z",
+  "prompt_tokens": 5362,
+  "output_tokens": 156,
+  "output_md": "---\n### How Meridian Facilities Group Cut Overtime and Boosted SLA Compliance with Slatebridge\n\nAt Meridian Facilities Group, we operate across three cities with 120 technicians. Transitioning to Slatebridge has streamlined our dispatch process significantly. Over six months, overtime hours dropped by 18%, and SLA compliance improved from 87% to a robust 96%. Best of all, our dispatchers no longer rely on whiteboards, thanks to the efficient job assignment and SLA countdown tracking features.\n\nIf your operations manager is looking for practical solutions to cut costs and boost customer satisfaction, **check out Slatebridge** today. Join us at [JOIN LINK] for a live walkthrough of how we helped Meridian Facilities Group achieve these results.\n---",
+  "provenance": "confirmatory",
+  "skill_slug": "hendry-email-webinar-reminder",
+  "skill_hash": "03cbec9b711736c89b53bedcd33989cfc8f5688aa0b350588105fcfcc8842ace",
+  "generator": "skillsmash-local-cycle@0.1-L1",
+  "scope_fit": "off-category"
+}

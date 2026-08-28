@@ -1,0 +1,14 @@
+{
+  "run_id": "s3-b1-r3",
+  "brief_id": "S3",
+  "condition": "b1",
+  "model": "qwen2.5:7b-instruct-q4_K_M",
+  "temperature": 1,
+  "protocol_version": "0.1-L1",
+  "created_at": "2026-08-27T19:25:15.783Z",
+  "prompt_tokens": 549,
+  "output_tokens": 138,
+  "output_md": "At Meridian Facilities Group, we run about 120 field technicians across three cities. When we began using Slatebridge six months ago, it wasn't easy—overtime hours dropped by 18%, and our SLA compliance jumped from 87% to a robust 96%. The biggest change? Our dispatchers ditched the whiteboard for good.\n\n\"Before Slatebridge,\" says Operations Director Sarah Lee, \"I spent my mornings untangling the schedule. Now, I focus on customers instead.\"\n\nIf you're managing a mid-size commercial maintenance team and find yourself tangled in paperwork, Slatebridge could be your solution. Let's simplify your dispatch process today.",
+  "provenance": "confirmatory",
+  "generator": "skillsmash-local-cycle@0.1-L1"
+}

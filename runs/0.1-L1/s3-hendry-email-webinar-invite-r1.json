@@ -1,0 +1,17 @@
+{
+  "run_id": "s3-hendry-email-webinar-invite-r1",
+  "brief_id": "S3",
+  "condition": "skill",
+  "model": "qwen2.5:7b-instruct-q4_K_M",
+  "temperature": 1,
+  "protocol_version": "0.1-L1",
+  "created_at": "2026-08-27T19:27:20.880Z",
+  "prompt_tokens": 4627,
+  "output_tokens": 206,
+  "output_md": "**Subject Line Options:**\n1. Meridian Saves 18% Overtime with Slatebridge - Share This!\n2. From Whiteboards to Perfect SLAs – Meridian’s Success Story\n3. See How Meridian Cut Their Overtime and Boosted Compliance\n\n---\n\n**Preview Text:** \n\nMeridian Facilities Group cut overtime by 18% in six months using Slatebridge. Discover how.\n\n---\n\n**Body:**\n\nAt Meridian Facilities Group, operations were a juggling act—until they started using Slatebridge. Today, they boast an SLA compliance rate of 96%, up from just 87%. Their dispatchers now rely solely on the digital dispatcher board, abandoning the clunky whiteboards.\n\n“I used to spend my mornings untangling the schedule,” says Meridian’s ops director. “Now I’m spending them on customers.”\n\nReady to streamline your operations? Visit [REGISTER LINK] and see Slatebridge in action today.\n\n---\n\n**Call-to-Action:**\n\n[REGISTER LINK]",
+  "provenance": "confirmatory",
+  "skill_slug": "hendry-email-webinar-invite",
+  "skill_hash": "dfe72976b6d7a648323912d010b20c49e86daff3fa41d61004a57816aa9dba9f",
+  "generator": "skillsmash-local-cycle@0.1-L1",
+  "scope_fit": "off-category"
+}

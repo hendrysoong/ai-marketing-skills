@@ -1,0 +1,17 @@
+{
+  "run_id": "s3-hendry-post-lean-r1",
+  "brief_id": "S3",
+  "condition": "skill",
+  "model": "qwen2.5:7b-instruct-q4_K_M",
+  "temperature": 1,
+  "protocol_version": "0.1-L1",
+  "created_at": "2026-08-27T19:32:05.606Z",
+  "prompt_tokens": 2285,
+  "output_tokens": 89,
+  "output_md": "Meridian Facilities Group, with 120 technicians across three cities, saw overtime hours drop 18% in just six months on Slatebridge. SLA compliance surged from 87% to 96%, and dispatchers ditched whiteboards for good. Their ops director notes, \"I used to spend mornings untangling the schedule. Now I focus on customers.\" Next step: Contact us to streamline your operations today.",
+  "provenance": "confirmatory",
+  "skill_slug": "hendry-post-lean",
+  "skill_hash": "b924ab55b185ecacf1813c77f38d3c910c21697d9bb0dd1792c3f778c73bd9fe",
+  "generator": "skillsmash-local-cycle@0.1-L1",
+  "scope_fit": "on-category"
+}

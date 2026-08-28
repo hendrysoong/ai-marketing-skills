@@ -1,0 +1,17 @@
+{
+  "run_id": "s3-hendry-linkedin-post-expert-r2",
+  "brief_id": "S3",
+  "condition": "skill",
+  "model": "qwen2.5:7b-instruct-q4_K_M",
+  "temperature": 1,
+  "protocol_version": "0.1-L1",
+  "created_at": "2026-08-27T19:29:38.275Z",
+  "prompt_tokens": 4845,
+  "output_tokens": 111,
+  "output_md": "More coverage does not predict revenue; how fast deals clear stage two does.\n\n1. Meridian Facilities Group saw a 18% reduction in overtime hours.\n2. Their SLA compliance jumped from 87% to 96% in six months.\n3. Dispatchers now use the Slatebridge board exclusively, abandoning whiteboards entirely.\n\nMeridian’s ops director notes, \"I used to spend my mornings untangling the schedule. Now I spend them on customers.\" For faster deal clearance, rethink coverage metrics and focus on pipeline velocity.",
+  "provenance": "confirmatory",
+  "skill_slug": "hendry-linkedin-post-expert",
+  "skill_hash": "d4d2e4db29388a0742f125fbbece9833f7ac296ab00268a29e1558fb798d5ee6",
+  "generator": "skillsmash-local-cycle@0.1-L1",
+  "scope_fit": "on-category"
+}

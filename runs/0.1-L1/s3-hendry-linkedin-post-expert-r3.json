@@ -1,0 +1,17 @@
+{
+  "run_id": "s3-hendry-linkedin-post-expert-r3",
+  "brief_id": "S3",
+  "condition": "skill",
+  "model": "qwen2.5:7b-instruct-q4_K_M",
+  "temperature": 1,
+  "protocol_version": "0.1-L1",
+  "created_at": "2026-08-27T19:30:05.298Z",
+  "prompt_tokens": 4845,
+  "output_tokens": 163,
+  "output_md": "Slatebridge’s Meridian Facilities Group saw overtime hours plummet 18% and SLA compliance soar from 87% to 96% in six months. Now their dispatchers have ditched whiteboards for the software. Unbundle those numbers: each technician saved over three hours of overtime, and nearly every SLA met without a hiccup.\n\nMeridian’s ops director says, \"I used to spend my mornings untangling the schedule. Now I spend them on customers.\"\n\nThe key? Automatic job assignment by skill and location, replacing manual whiteboard tracking with real-time compliance. Meridian isn't just using software; they're streamlining their operations so dispatching feels like a natural part of their day.\n\nNext time you face scheduling chaos, ditch the spreadsheets and try Slatebridge.",
+  "provenance": "confirmatory",
+  "skill_slug": "hendry-linkedin-post-expert",
+  "skill_hash": "d4d2e4db29388a0742f125fbbece9833f7ac296ab00268a29e1558fb798d5ee6",
+  "generator": "skillsmash-local-cycle@0.1-L1",
+  "scope_fit": "on-category"
+}

@@ -1,0 +1,17 @@
+{
+  "run_id": "s3-hendry-linkedin-post-narrative-r2",
+  "brief_id": "S3",
+  "condition": "skill",
+  "model": "qwen2.5:7b-instruct-q4_K_M",
+  "temperature": 1,
+  "protocol_version": "0.1-L1",
+  "created_at": "2026-08-27T19:30:44.842Z",
+  "prompt_tokens": 4761,
+  "output_tokens": 140,
+  "output_md": "A tech at Meridian Facilities Group texts in sick at 7:14. The plan is done before the dispatcher finishes their coffee.\n\nMeridian runs 120 technicians across three cities. After six months on Slatebridge, overtime hours dropped by 18%. SLA compliance jumped from 87% to 96%, and dispatchers stopped using the whiteboard entirely. \n\n\"I used to spend my mornings untangling the schedule,\" says Meridian's ops director. \"Now I spend them on customers.\"\n\nSlatebridge schedules jobs, routes technicians, tracks SLAs—all in one place. Let us show you how we can help your team work smarter, not harder.",
+  "provenance": "confirmatory",
+  "skill_slug": "hendry-linkedin-post-narrative",
+  "skill_hash": "88279cfd0e5e70e6994eeb56ba900a03b99bd5d38e2aa64e791381312d36f5c5",
+  "generator": "skillsmash-local-cycle@0.1-L1",
+  "scope_fit": "on-category"
+}

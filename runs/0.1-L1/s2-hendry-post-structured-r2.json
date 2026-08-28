@@ -1,0 +1,17 @@
+{
+  "run_id": "s2-hendry-post-structured-r2",
+  "brief_id": "S2",
+  "condition": "skill",
+  "model": "qwen2.5:7b-instruct-q4_K_M",
+  "temperature": 1,
+  "protocol_version": "0.1-L1",
+  "created_at": "2026-08-27T19:22:42.569Z",
+  "prompt_tokens": 3121,
+  "output_tokens": 289,
+  "output_md": "The count sheet says one number. The shelf says another. Someone signs off anyway. This is how SLAs get missed—people problems that could be scheduling-data problems instead. Dispatch leads blame techs for no-shows or oversights, but in our software, those errors stem from a lack of visibility into travel times, skill gaps, and deadline stacking.\n\nHow many times have you had to field a call because a job was pushed too late, causing a critical SLA to slip? How often do techs get stuck without the right tools or knowledge for the task at hand? Slatebridge addresses these issues head-on with automatic job assignment by skill and location, ensuring that every technician has the context they need before heading out. No more surprises on the job site; no more rushed decisions.\n\nBut this isn't just about us. It’s about you, the operations manager or dispatch lead, who already handle so much without the added stress of missed SLAs. Our core capability is a dispatcher board that replaces spreadsheets and whiteboards with real-time visibility and efficiency. We're not here to promise magic; we’re here to offer tools that help you manage your teams better.\n\nWhat’s your biggest challenge when it comes to job scheduling? Have you found ways to improve visibility for your field technicians, or do you think this is a people problem that might be better addressed with the right technology?\n\n#Slatebridge #WorkOrderScheduling",
+  "provenance": "confirmatory",
+  "skill_slug": "hendry-post-structured",
+  "skill_hash": "9accb7822de883cd274295f45e6c0b6149de3f3d281ab6a950f1f7635c3e5882",
+  "generator": "skillsmash-local-cycle@0.1-L1",
+  "scope_fit": "on-category"
+}

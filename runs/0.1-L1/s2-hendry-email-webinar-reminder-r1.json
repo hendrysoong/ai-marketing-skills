@@ -1,0 +1,17 @@
+{
+  "run_id": "s2-hendry-email-webinar-reminder-r1",
+  "brief_id": "S2",
+  "condition": "skill",
+  "model": "qwen2.5:7b-instruct-q4_K_M",
+  "temperature": 1,
+  "protocol_version": "0.1-L1",
+  "created_at": "2026-08-27T19:14:38.485Z",
+  "prompt_tokens": 5341,
+  "output_tokens": 153,
+  "output_md": "Managing maintenance SLAs often feels like playing phone tag, doesn't it? We chase down sick techs and reschedule backlogs without enough data. But what if missed deadlines are more about scheduling than people?\n\nToday, I share a simple insight: most SLA misses aren’t due to tech or dispatcher failures—they’re caused by scheduling data gaps. Without visibility into travel times, technician skills, and overlapping assignments, you end up chasing problems rather than solving them.\n\nAt Slatebridge, we removed the guesswork with automatic job assignment based on skill and location. Our dispatcher board replaces spreadsheets, making sure no job gets overlooked. Yet, I wonder: how can your team avoid SLA issues by embracing better data?\n\nShare your experience in the comments below!",
+  "provenance": "confirmatory",
+  "skill_slug": "hendry-email-webinar-reminder",
+  "skill_hash": "03cbec9b711736c89b53bedcd33989cfc8f5688aa0b350588105fcfcc8842ace",
+  "generator": "skillsmash-local-cycle@0.1-L1",
+  "scope_fit": "off-category"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "S3",
+  "category": "social-content",
+  "title": "Customer story post",
+  "goal": "Social proof that earns a save or share.",
+  "audience": "Operations managers at commercial maintenance companies, on LinkedIn.",
+  "provided_facts": [
+    "Fictional customer for the fixture: Meridian Facilities Group, 120 technicians across three cities.",
+    "After six months on Slatebridge: overtime hours down 18%, SLA compliance from 87% to 96%, dispatchers stopped using the whiteboard entirely.",
+    "Quote from their ops director (fictional): \"I used to spend my mornings untangling the schedule. Now I spend them on customers.\""
+  ],
+  "constraints": [
+    "One LinkedIn post.",
+    "240 words maximum.",
+    "Must use at least two of the provided numbers accurately.",
+    "No invented numbers.",
+    "Ends with a clear next step."
+  ],
+  "deliverable": "one LinkedIn post",
+  "success": "Specific, credible, zero hype."
+}

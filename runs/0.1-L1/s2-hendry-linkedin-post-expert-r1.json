@@ -1,0 +1,17 @@
+{
+  "run_id": "s2-hendry-linkedin-post-expert-r1",
+  "brief_id": "S2",
+  "condition": "skill",
+  "model": "qwen2.5:7b-instruct-q4_K_M",
+  "temperature": 1,
+  "protocol_version": "0.1-L1",
+  "created_at": "2026-08-27T19:16:16.292Z",
+  "prompt_tokens": 4824,
+  "output_tokens": 214,
+  "output_md": "Missed SLAs are treated as people problems, but most often they're a scheduling-data issue. Here's how Slatebridge sees it:\n\n1. **Assignments made without visibility into travel time and skills lead to overcommitment.** A tech's schedule fills up with jobs far from home, leaving them exhausted by the end of the day.\n2. **Skill mismatches and deadline stacking create bottlenecks.** An HVAC tech can't fix an electrical issue because they have a full slate of their own tasks.\n3. **Without real-time tracking, issues like traffic or last-minute changes go unnoticed until it's too late.**\n\nThese aren’t tech or dispatch failings; they're the limits of manual scheduling. So instead of blaming individuals, we need to rethink how assignments are made. \n\nWhen visibility into data is baked in, techs and dispatchers know exactly what’s possible, reducing SLA misses before they happen. That's why Slatebridge focuses on automatic job assignment by skill and location.\n\nHow do your current systems handle these issues?",
+  "provenance": "confirmatory",
+  "skill_slug": "hendry-linkedin-post-expert",
+  "skill_hash": "d4d2e4db29388a0742f125fbbece9833f7ac296ab00268a29e1558fb798d5ee6",
+  "generator": "skillsmash-local-cycle@0.1-L1",
+  "scope_fit": "on-category"
+}

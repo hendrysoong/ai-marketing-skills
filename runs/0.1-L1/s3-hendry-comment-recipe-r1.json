@@ -1,0 +1,17 @@
+{
+  "run_id": "s3-hendry-comment-recipe-r1",
+  "brief_id": "S3",
+  "condition": "skill",
+  "model": "qwen2.5:7b-instruct-q4_K_M",
+  "temperature": 1,
+  "protocol_version": "0.1-L1",
+  "created_at": "2026-08-27T19:26:24.797Z",
+  "prompt_tokens": 1990,
+  "output_tokens": 140,
+  "output_md": "After six months with Slatebridge, Meridian Facilities Group has seen remarkable improvements in efficiency and compliance. Overtime hours are down 18%, a significant reduction for our field technicians across three cities. SLA compliance has soared from 87% to an impressive 96%. What’s more, our dispatchers no longer rely on whiteboards; they manage everything through Slatebridge's intuitive dispatcher board.\n\nThis shift has freed up my mornings—instead of untangling the schedule, I can now focus entirely on enhancing customer satisfaction. For any operations manager wrestling with similar challenges, I highly recommend giving Slatebridge a try. Let’s make dispatching as simple and effective as it should be.",
+  "provenance": "confirmatory",
+  "skill_slug": "hendry-comment-recipe",
+  "skill_hash": "d5287ad81cab11857736d0befe821fdd85d28bb1288de30f645c3b74bff80920",
+  "generator": "skillsmash-local-cycle@0.1-L1",
+  "scope_fit": "off-category"
+}

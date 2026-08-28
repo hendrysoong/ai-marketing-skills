@@ -1,0 +1,17 @@
+{
+  "run_id": "s1-hendry-post-exemplar-r3",
+  "brief_id": "S1",
+  "condition": "skill",
+  "model": "qwen2.5:7b-instruct-q4_K_M",
+  "temperature": 1,
+  "protocol_version": "0.1-L1",
+  "created_at": "2026-08-27T19:06:57.793Z",
+  "prompt_tokens": 3848,
+  "output_tokens": 124,
+  "output_md": "Most teams start their day chasing phone calls: a tech can't make it, a customer is upset, or a SLA clock is ticking. At Slatebridge, we face this every Tuesday morning when a technician calls out sick.\n\nAuto-Rebalance moves their work across the remaining team in under a minute, respecting skills and locations to keep our Service Level Agreements (SLAs) on track—eliminating 45 minutes of re-planning by phone. Today, it's available to all customers at no extra cost.\n\nWant to see how it works? Reply here or visit us directly for a live demo.",
+  "provenance": "confirmatory",
+  "skill_slug": "hendry-post-exemplar",
+  "skill_hash": "84758ae4406b216092f8277719bab8ce9693abf23f1ff74b5e76aac40dcd3ab7",
+  "generator": "skillsmash-local-cycle@0.1-L1",
+  "scope_fit": "on-category"
+}

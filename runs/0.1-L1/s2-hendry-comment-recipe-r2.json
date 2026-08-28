@@ -1,0 +1,17 @@
+{
+  "run_id": "s2-hendry-comment-recipe-r2",
+  "brief_id": "S2",
+  "condition": "skill",
+  "model": "qwen2.5:7b-instruct-q4_K_M",
+  "temperature": 1,
+  "protocol_version": "0.1-L1",
+  "created_at": "2026-08-27T19:12:55.132Z",
+  "prompt_tokens": 1969,
+  "output_tokens": 71,
+  "output_md": "Missed SLAs are often seen as failures of human execution, but they're more frequently a symptom of poor scheduling and data visibility. In my experience, techs and dispatchers get blamed for what's actually a systemic issue: assignments made without full visibility into travel times, skill availability, and deadline overlaps. How do your operations handle these challenges?",
+  "provenance": "confirmatory",
+  "skill_slug": "hendry-comment-recipe",
+  "skill_hash": "d5287ad81cab11857736d0befe821fdd85d28bb1288de30f645c3b74bff80920",
+  "generator": "skillsmash-local-cycle@0.1-L1",
+  "scope_fit": "off-category"
+}

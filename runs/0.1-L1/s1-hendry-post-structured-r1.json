@@ -1,0 +1,17 @@
+{
+  "run_id": "s1-hendry-post-structured-r1",
+  "brief_id": "S1",
+  "condition": "skill",
+  "model": "qwen2.5:7b-instruct-q4_K_M",
+  "temperature": 1,
+  "protocol_version": "0.1-L1",
+  "created_at": "2026-08-27T19:08:52.351Z",
+  "prompt_tokens": 3122,
+  "output_tokens": 111,
+  "output_md": "The count sheet says one number. The shelf says another. Someone signs off anyway. Now, imagine that happening when a tech calls out sick, and you're in charge of 100 technicians spread across multiple locations.\n\nAuto-Rebalance automatically redistributes jobs within minutes, respecting skills and SLA deadlines. It saves hours of re-planning by phone—now available to all Slatebridge customers today at no extra cost.\n\nIf your day is full of interruptions and you need a dispatcher that doesn't just promise but performs, request a demo now.",
+  "provenance": "confirmatory",
+  "skill_slug": "hendry-post-structured",
+  "skill_hash": "9accb7822de883cd274295f45e6c0b6149de3f3d281ab6a950f1f7635c3e5882",
+  "generator": "skillsmash-local-cycle@0.1-L1",
+  "scope_fit": "on-category"
+}

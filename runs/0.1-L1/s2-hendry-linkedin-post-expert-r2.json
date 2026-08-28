@@ -1,0 +1,17 @@
+{
+  "run_id": "s2-hendry-linkedin-post-expert-r2",
+  "brief_id": "S2",
+  "condition": "skill",
+  "model": "qwen2.5:7b-instruct-q4_K_M",
+  "temperature": 1,
+  "protocol_version": "0.1-L1",
+  "created_at": "2026-08-27T19:16:36.525Z",
+  "prompt_tokens": 4824,
+  "output_tokens": 150,
+  "output_md": "More coverage does not predict revenue; how fast deals clear stage two does.\n\n1. SLAs are hit when techs have time, not just when they're assigned.\n2. A missed deadline means a stressed tech or dispatcher, not that the assignment was wrong.\n3. The real risk is hidden in unstacked assignments and travel times.\n\nTechs often get new calls after their current work starts—how long until they're late? And if one job travels far, the next might pile up while they’re still en route. Slatebridge’s dispatch board shows travel time and skills, so you don’t stack techs on overlong drives or assign tasks too close to their other deadlines.\n\nSo, what’s your biggest scheduling challenge today?",
+  "provenance": "confirmatory",
+  "skill_slug": "hendry-linkedin-post-expert",
+  "skill_hash": "d4d2e4db29388a0742f125fbbece9833f7ac296ab00268a29e1558fb798d5ee6",
+  "generator": "skillsmash-local-cycle@0.1-L1",
+  "scope_fit": "on-category"
+}

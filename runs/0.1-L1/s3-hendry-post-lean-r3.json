@@ -1,0 +1,17 @@
+{
+  "run_id": "s3-hendry-post-lean-r3",
+  "brief_id": "S3",
+  "condition": "skill",
+  "model": "qwen2.5:7b-instruct-q4_K_M",
+  "temperature": 1,
+  "protocol_version": "0.1-L1",
+  "created_at": "2026-08-27T19:32:51.238Z",
+  "prompt_tokens": 2285,
+  "output_tokens": 183,
+  "output_md": "As an operations manager at Meridian Facilities Group, managing 120 technicians across three cities used to be a constant game of catch-up. Our mornings were spent untangling schedules, dealing with sick techs and customer escalations. The whiteboard on the wall was never clear for more than five minutes.\n\nAfter six months with Slatebridge, the picture has changed dramatically. Overtime hours are down by 18%, thanks to better job assignments based on skills and location. SLA compliance has improved from 87% to 96%, ensuring we meet our deadlines. Our dispatchers have stopped using whiteboards entirely; they now rely on Slatebridge's dispatcher board for all tasks.\n\n\"I used to spend my mornings untangling the schedule,\" says John, Meridian’s operations director. \"Now I spend them with customers.\"\n\nNext step: Learn how Slatebridge can streamline your maintenance scheduling too.",
+  "provenance": "confirmatory",
+  "skill_slug": "hendry-post-lean",
+  "skill_hash": "b924ab55b185ecacf1813c77f38d3c910c21697d9bb0dd1792c3f778c73bd9fe",
+  "generator": "skillsmash-local-cycle@0.1-L1",
+  "scope_fit": "on-category"
+}

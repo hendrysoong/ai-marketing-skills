@@ -1,0 +1,17 @@
+{
+  "run_id": "s1-hendry-email-webinar-invite-r1",
+  "brief_id": "S1",
+  "condition": "skill",
+  "model": "qwen2.5:7b-instruct-q4_K_M",
+  "temperature": 1,
+  "protocol_version": "0.1-L1",
+  "created_at": "2026-08-27T18:59:51.600Z",
+  "prompt_tokens": 4607,
+  "output_tokens": 53,
+  "output_md": "Slatebridge Auto-Rebalance ensures seamless tech coverage when a crew member calls out. No more 45-minute phone sessions; it reassigns jobs instantly, respecting skills and SLAs. Try it now and reclaim your mornings.\n\n# [REGISTER HERE]",
+  "provenance": "confirmatory",
+  "skill_slug": "hendry-email-webinar-invite",
+  "skill_hash": "dfe72976b6d7a648323912d010b20c49e86daff3fa41d61004a57816aa9dba9f",
+  "generator": "skillsmash-local-cycle@0.1-L1",
+  "scope_fit": "off-category"
+}

@@ -1,0 +1,14 @@
+{
+  "run_id": "s3-b0-r2",
+  "brief_id": "S3",
+  "condition": "b0",
+  "model": "qwen2.5:7b-instruct-q4_K_M",
+  "temperature": 1,
+  "protocol_version": "0.1-L1",
+  "created_at": "2026-08-27T19:23:57.927Z",
+  "prompt_tokens": 532,
+  "output_tokens": 138,
+  "output_md": "At Meridian Facilities Group, we operate 120 technicians across three cities ensuring your commercial spaces are always running smoothly. Six months on Slatebridge has been transformative:\n\nOvertime hours have dropped by 18%, and SLA compliance soared from 87% to a steady 96%. Gone are the days of relying on whiteboards; our dispatchers now use Slatebridge's dispatcher board, freeing up valuable morning time for customer support instead.\n\n\"I used to spend my mornings untangling the schedule. Now I spend them on customers,\" says Operations Director, Jane Doe.\n\nJoin us in making your operations more efficient with Slatebridge. Try it today and see real results.",
+  "provenance": "confirmatory",
+  "generator": "skillsmash-local-cycle@0.1-L1"
+}

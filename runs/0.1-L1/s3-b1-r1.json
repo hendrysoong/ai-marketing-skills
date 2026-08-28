@@ -1,0 +1,14 @@
+{
+  "run_id": "s3-b1-r1",
+  "brief_id": "S3",
+  "condition": "b1",
+  "model": "qwen2.5:7b-instruct-q4_K_M",
+  "temperature": 1,
+  "protocol_version": "0.1-L1",
+  "created_at": "2026-08-27T19:24:43.488Z",
+  "prompt_tokens": 549,
+  "output_tokens": 145,
+  "output_md": "At Meridian Facilities Group, we manage 120 field technicians across three cities. Switching to Slatebridge six months ago has been transformational. \n\nOvertime hours have dropped by 18%, thanks to automatic job assignment and precise skill matching. Our SLA compliance rate is up from 87% to a solid 96%. We’ve even bid farewell to the whiteboard entirely, replacing it with Slatebridge’s dispatcher board.\n\n\"Before Slatebridge,\" says our operations director, \"I used to spend my mornings untangling the schedule. Now I’m focused on customer service.\"\n\nReady to streamline your operations? Contact us today to see how Slatebridge can help you reduce costs and boost efficiency.",
+  "provenance": "confirmatory",
+  "generator": "skillsmash-local-cycle@0.1-L1"
+}

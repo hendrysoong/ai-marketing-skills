@@ -1,0 +1,34 @@
+{
+  "slug": "hendry-post-structured",
+  "name": "post-structured",
+  "author": "Hendry Soong",
+  "author_handle": "hendrysoong",
+  "source_url": "https://hendry.ai",
+  "license": "proprietary",
+  "provenance": "author-released",
+  "species": "type-1",
+  "category": "social-content",
+  "version_hash": "9accb7822de883cd274295f45e6c0b6149de3f3d281ab6a950f1f7635c3e5882",
+  "ingested_at": "2026-08-27T16:11:23.427Z",
+  "tokens": 2488,
+  "lint": {
+    "score": 0,
+    "notes": []
+  },
+  "status": "ingested",
+  "tokens_estimated": true,
+  "load_set": [
+    {
+      "file": "SKILL.md",
+      "included": true,
+      "rationale": "Always-on instruction file."
+    },
+    {
+      "file": "agents/openai.yaml",
+      "included": false,
+      "rationale": "Platform packaging configuration for a Copilot-style deployment, not instruction payload."
+    }
+  ],
+  "jtbd_claim": "li-full-post",
+  "source_ref": "0a1a656d06e903ec0b5d1839359c4769b5106ca0"
+}

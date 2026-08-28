@@ -1,0 +1,17 @@
+{
+  "run_id": "s2-hendry-email-webinar-invite-r3",
+  "brief_id": "S2",
+  "condition": "skill",
+  "model": "qwen2.5:7b-instruct-q4_K_M",
+  "temperature": 1,
+  "protocol_version": "0.1-L1",
+  "created_at": "2026-08-27T19:14:11.301Z",
+  "prompt_tokens": 4606,
+  "output_tokens": 187,
+  "output_md": "As an operations manager, I’ve seen missed SLAs too many times. The tech called in sick? We’ll handle it. Customer escalated an issue? Let’s move that up. But what if these incidents could be predicted and prevented with better scheduling data?\n\nHere's the truth: most missed deadlines are not about people failing. They’re about hidden delays—travel time, skill mismatches, or overlapping assignments—that no one can see until it’s too late.\n\nSlatebridge’s software shows you these delays in real-time, so you can address them before they become critical. Want to know if your tech is already on the road, or if another job has delayed their current assignment? Slatebridge keeps all that visibility for you, ensuring every task gets done on time and everyone stays focused.\n\nDo you see missed SLAs as a people problem? Or do you suspect it might be about better data management?\n\nLet’s chat.",
+  "provenance": "confirmatory",
+  "skill_slug": "hendry-email-webinar-invite",
+  "skill_hash": "dfe72976b6d7a648323912d010b20c49e86daff3fa41d61004a57816aa9dba9f",
+  "generator": "skillsmash-local-cycle@0.1-L1",
+  "scope_fit": "off-category"
+}

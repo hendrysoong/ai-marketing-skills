@@ -1,0 +1,17 @@
+{
+  "run_id": "s2-hendry-linkedin-post-narrative-r2",
+  "brief_id": "S2",
+  "condition": "skill",
+  "model": "qwen2.5:7b-instruct-q4_K_M",
+  "temperature": 1,
+  "protocol_version": "0.1-L1",
+  "created_at": "2026-08-27T19:17:58.369Z",
+  "prompt_tokens": 4740,
+  "output_tokens": 207,
+  "output_md": "Yesterday, a tech texts in sick at 7:14 and eight jobs now belong to nobody. The dispatcher picks up the slack, but it’s already 9:00 AM and SLAs are ticking down.\n\nEvery field worker has unique skills, travel times vary wildly, and deadlines overlap. Without real-time visibility into these factors, assigning techs to jobs feels like playing a guessing game. It's easy to overlook the subtle ways that data shadows your day—until it causes an SLA breach and blame games start flying.\n\nBut what if dispatching wasn't just about moving jobs around? What if you could see travel time, skill compatibility, and deadline conflicts instantly, before assigning techs? With Slatebridge, our team can assign work in under a minute, reducing the chance of a missed SLA from minutes to mere seconds.\n\nSo, the next time you face an interruption or an urgent customer issue, ask yourself: Could a better tool have prevented this cascade of events? Comment below with your own story.",
+  "provenance": "confirmatory",
+  "skill_slug": "hendry-linkedin-post-narrative",
+  "skill_hash": "88279cfd0e5e70e6994eeb56ba900a03b99bd5d38e2aa64e791381312d36f5c5",
+  "generator": "skillsmash-local-cycle@0.1-L1",
+  "scope_fit": "on-category"
+}

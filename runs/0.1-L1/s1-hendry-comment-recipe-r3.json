@@ -1,0 +1,17 @@
+{
+  "run_id": "s1-hendry-comment-recipe-r3",
+  "brief_id": "S1",
+  "condition": "skill",
+  "model": "qwen2.5:7b-instruct-q4_K_M",
+  "temperature": 1,
+  "protocol_version": "0.1-L1",
+  "created_at": "2026-08-27T18:58:56.317Z",
+  "prompt_tokens": 1970,
+  "output_tokens": 76,
+  "output_md": "Slatebridge's Auto-Rebalance automates reassigning jobs when a tech calls out, saving 45 minutes of phone-planning time. As an ops manager who's made those calls, you know how crucial every minute is. Try it today and see firsthand how smoother operations can start with just a few clicks.\n\n#DispatcherMagic #SlatebridgeSavesTime",
+  "provenance": "confirmatory",
+  "skill_slug": "hendry-comment-recipe",
+  "skill_hash": "d5287ad81cab11857736d0befe821fdd85d28bb1288de30f645c3b74bff80920",
+  "generator": "skillsmash-local-cycle@0.1-L1",
+  "scope_fit": "off-category"
+}

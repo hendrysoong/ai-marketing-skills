@@ -1,0 +1,17 @@
+{
+  "run_id": "s3-hendry-comment-lean-r1",
+  "brief_id": "S3",
+  "condition": "skill",
+  "model": "qwen2.5:7b-instruct-q4_K_M",
+  "temperature": 1,
+  "protocol_version": "0.1-L1",
+  "created_at": "2026-08-27T19:25:31.755Z",
+  "prompt_tokens": 1617,
+  "output_tokens": 96,
+  "output_md": "Slatebridge has transformed Meridian Facilities Group's operations significantly. Over six months, we saw a reduction in overtime hours by 18%, and SLA compliance jumped from 87% to an impressive 96%. Dispatchers no longer rely on whiteboards, ensuring smoother day-to-day operations.\n\nFor any operations manager looking to streamline dispatching and improve customer satisfaction, Slatebridge is the solution. Request a demo today to see how we can benefit your business.",
+  "provenance": "confirmatory",
+  "skill_slug": "hendry-comment-lean",
+  "skill_hash": "ab1bec7f7dbe2b420fd19957b1ba54cb85ef2d22babf5b4ce55a416e65c4a868",
+  "generator": "skillsmash-local-cycle@0.1-L1",
+  "scope_fit": "off-category"
+}

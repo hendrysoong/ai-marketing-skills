@@ -1,0 +1,17 @@
+{
+  "run_id": "s1-hendry-comment-lean-r3",
+  "brief_id": "S1",
+  "condition": "skill",
+  "model": "qwen2.5:7b-instruct-q4_K_M",
+  "temperature": 1,
+  "protocol_version": "0.1-L1",
+  "created_at": "2026-08-27T18:58:16.209Z",
+  "prompt_tokens": 1597,
+  "output_tokens": 88,
+  "output_md": "Slatebridge, \n\nAnnouncing our latest game-changer: Auto-Rebalance. When a technician calls out sick, it reassigns jobs across your team within seconds—no more 45-minute phone calls to reschedule. Available now at no extra cost for all customers. Try it today and reclaim those precious morning moments.\n\nTo request a demo or learn more, [click here](#).\n\nBest,  \nHendry",
+  "provenance": "confirmatory",
+  "skill_slug": "hendry-comment-lean",
+  "skill_hash": "ab1bec7f7dbe2b420fd19957b1ba54cb85ef2d22babf5b4ce55a416e65c4a868",
+  "generator": "skillsmash-local-cycle@0.1-L1",
+  "scope_fit": "off-category"
+}

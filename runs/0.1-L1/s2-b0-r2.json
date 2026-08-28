@@ -1,0 +1,14 @@
+{
+  "run_id": "s2-b0-r2",
+  "brief_id": "S2",
+  "condition": "b0",
+  "model": "qwen2.5:7b-instruct-q4_K_M",
+  "temperature": 1,
+  "protocol_version": "0.1-L1",
+  "created_at": "2026-08-27T19:10:30.667Z",
+  "prompt_tokens": 511,
+  "output_tokens": 151,
+  "output_md": "As an operations manager, I’ve learned that missed service level agreements (SLAs) often feel like a people problem—techs call in sick, dispatchers drop the ball. But what if it’s really about scheduling and data? Jobs are assigned without full visibility into travel time, technician skills, or looming deadlines. That’s why we decided to create Slatebridge: software that automatically assigns jobs by skill and location, tracks SLA countdowns, and replaces frustrating spreadsheets and whiteboards.\n\nThese tools help us manage the chaos, but don’t forget—the key is in the data. When you can see all the pieces coming together, you can plan better, react faster. Have you faced this challenge? What did you do to solve it?",
+  "provenance": "confirmatory",
+  "generator": "skillsmash-local-cycle@0.1-L1"
+}

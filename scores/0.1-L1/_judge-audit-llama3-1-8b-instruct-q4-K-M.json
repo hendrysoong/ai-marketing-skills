@@ -1,0 +1,178 @@
+{
+  "protocol_version": "0.1-L1",
+  "seat": "llama3.1:8b-instruct-q4_K_M",
+  "variants": [
+    "v1-original",
+    "v2-rubric-reversed",
+    "v3-labels-swapped"
+  ],
+  "material": "frozen v0.1 pilot pairings, corey-social vs b0/b1, S1-S3, r1-r3, order 1 (audit-only)",
+  "stability": 0.7222222222222222,
+  "threshold": 0.9,
+  "passed": false,
+  "results": [
+    {
+      "pairing": "s1-corey-social-vs-b0-p1",
+      "verdicts": {
+        "v1-original": "B",
+        "v2-rubric-reversed": "B",
+        "v3-labels-swapped": "B"
+      },
+      "stable": true
+    },
+    {
+      "pairing": "s1-corey-social-vs-b0-p2",
+      "verdicts": {
+        "v1-original": "A",
+        "v2-rubric-reversed": "A",
+        "v3-labels-swapped": "A"
+      },
+      "stable": true
+    },
+    {
+      "pairing": "s1-corey-social-vs-b0-p3",
+      "verdicts": {
+        "v1-original": "A",
+        "v2-rubric-reversed": "A",
+        "v3-labels-swapped": "A"
+      },
+      "stable": true
+    },
+    {
+      "pairing": "s1-corey-social-vs-b1-p1",
+      "verdicts": {
+        "v1-original": "A",
+        "v2-rubric-reversed": "A",
+        "v3-labels-swapped": "A"
+      },
+      "stable": true
+    },
+    {
+      "pairing": "s1-corey-social-vs-b1-p2",
+      "verdicts": {
+        "v1-original": "A",
+        "v2-rubric-reversed": "A",
+        "v3-labels-swapped": "A"
+      },
+      "stable": true
+    },
+    {
+      "pairing": "s1-corey-social-vs-b1-p3",
+      "verdicts": {
+        "v1-original": "A",
+        "v2-rubric-reversed": "A",
+        "v3-labels-swapped": "A"
+      },
+      "stable": true
+    },
+    {
+      "pairing": "s2-corey-social-vs-b0-p1",
+      "verdicts": {
+        "v1-original": "B",
+        "v2-rubric-reversed": "B",
+        "v3-labels-swapped": "A"
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s2-corey-social-vs-b0-p2",
+      "verdicts": {
+        "v1-original": "B",
+        "v2-rubric-reversed": "B",
+        "v3-labels-swapped": "A"
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s2-corey-social-vs-b0-p3",
+      "verdicts": {
+        "v1-original": "A",
+        "v2-rubric-reversed": "A",
+        "v3-labels-swapped": "A"
+      },
+      "stable": true
+    },
+    {
+      "pairing": "s2-corey-social-vs-b1-p1",
+      "verdicts": {
+        "v1-original": "A",
+        "v2-rubric-reversed": "A",
+        "v3-labels-swapped": "A"
+      },
+      "stable": true
+    },
+    {
+      "pairing": "s2-corey-social-vs-b1-p2",
+      "verdicts": {
+        "v1-original": "B",
+        "v2-rubric-reversed": "B",
+        "v3-labels-swapped": "A"
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s2-corey-social-vs-b1-p3",
+      "verdicts": {
+        "v1-original": "A",
+        "v2-rubric-reversed": "A",
+        "v3-labels-swapped": "A"
+      },
+      "stable": true
+    },
+    {
+      "pairing": "s3-corey-social-vs-b0-p1",
+      "verdicts": {
+        "v1-original": "B",
+        "v2-rubric-reversed": "unparseable",
+        "v3-labels-swapped": "A"
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s3-corey-social-vs-b0-p2",
+      "verdicts": {
+        "v1-original": "B",
+        "v2-rubric-reversed": "B",
+        "v3-labels-swapped": "A"
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s3-corey-social-vs-b0-p3",
+      "verdicts": {
+        "v1-original": "A",
+        "v2-rubric-reversed": "A",
+        "v3-labels-swapped": "A"
+      },
+      "stable": true
+    },
+    {
+      "pairing": "s3-corey-social-vs-b1-p1",
+      "verdicts": {
+        "v1-original": "A",
+        "v2-rubric-reversed": "A",
+        "v3-labels-swapped": "A"
+      },
+      "stable": true
+    },
+    {
+      "pairing": "s3-corey-social-vs-b1-p2",
+      "verdicts": {
+        "v1-original": "A",
+        "v2-rubric-reversed": "A",
+        "v3-labels-swapped": "A"
+      },
+      "stable": true
+    },
+    {
+      "pairing": "s3-corey-social-vs-b1-p3",
+      "verdicts": {
+        "v1-original": "A",
+        "v2-rubric-reversed": "A",
+        "v3-labels-swapped": "A"
+      },
+      "stable": true
+    }
+  ],
+  "audited_at": "2026-08-27T20:04:27.888Z"
+}

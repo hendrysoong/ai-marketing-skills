@@ -1,0 +1,17 @@
+{
+  "run_id": "s2-hendry-post-lean-r1",
+  "brief_id": "S2",
+  "condition": "skill",
+  "model": "qwen2.5:7b-instruct-q4_K_M",
+  "temperature": 1,
+  "protocol_version": "0.1-L1",
+  "created_at": "2026-08-27T19:20:18.485Z",
+  "prompt_tokens": 2264,
+  "output_tokens": 134,
+  "output_md": "Missed SLAs can feel like a people problem—blame the tech, blame the dispatcher—but they're often about scheduling data missing the mark. In my experience, the real issue lies in assignments made without visibility into travel time, skills, and deadline stacking. That's where Slatebridge steps in, but the core is always ensuring we have the right data to make the best decisions.\n\nThink of it this way: if you know exactly how long a job will take based on tech skills and current load, you can avoid last-minute rushes. Each task then gets the attention it needs, keeping everyone on schedule. How do you handle scheduling challenges in your operations?",
+  "provenance": "confirmatory",
+  "skill_slug": "hendry-post-lean",
+  "skill_hash": "b924ab55b185ecacf1813c77f38d3c910c21697d9bb0dd1792c3f778c73bd9fe",
+  "generator": "skillsmash-local-cycle@0.1-L1",
+  "scope_fit": "on-category"
+}

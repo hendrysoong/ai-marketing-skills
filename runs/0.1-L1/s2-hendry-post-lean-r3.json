@@ -1,0 +1,17 @@
+{
+  "run_id": "s2-hendry-post-lean-r3",
+  "brief_id": "S2",
+  "condition": "skill",
+  "model": "qwen2.5:7b-instruct-q4_K_M",
+  "temperature": 1,
+  "protocol_version": "0.1-L1",
+  "created_at": "2026-08-27T19:21:19.750Z",
+  "prompt_tokens": 2264,
+  "output_tokens": 238,
+  "output_md": "Every day, I face the same dilemma that so many operations managers and dispatch leads deal with—why do we still rely on spreadsheets and whiteboards when there’s a tool designed to handle this chaos? Missed SLAs aren't usually about underperforming technicians or ineffective dispatchers; they're often due to flawed scheduling data. Without visibility into travel times, skill sets, and the inevitable stack of deadlines, our best intentions fall short.\n\nTake today for example: A critical HVAC job came in, but the nearest technician couldn’t take it because his route was already maxed out with travel-heavy tasks. I had to scramble to find another tech, costing me precious time and potentially an SLA breach. It’s these hidden roadblocks that keep us from doing our best work.\n\nThe real solution isn’t a silver bullet; it's about visibility. What if we could see the whole picture—from dispatch to completion—before making crucial decisions? That’s where Slatebridge can help, but for now, let’s focus on what we know: better data means fewer missed SLAs and happier customers. How do you keep track of your techs' schedules and SLA deadlines efficiently?",
+  "provenance": "confirmatory",
+  "skill_slug": "hendry-post-lean",
+  "skill_hash": "b924ab55b185ecacf1813c77f38d3c910c21697d9bb0dd1792c3f778c73bd9fe",
+  "generator": "skillsmash-local-cycle@0.1-L1",
+  "scope_fit": "on-category"
+}

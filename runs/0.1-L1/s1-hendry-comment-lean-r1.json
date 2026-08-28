@@ -1,0 +1,17 @@
+{
+  "run_id": "s1-hendry-comment-lean-r1",
+  "brief_id": "S1",
+  "condition": "skill",
+  "model": "qwen2.5:7b-instruct-q4_K_M",
+  "temperature": 1,
+  "protocol_version": "0.1-L1",
+  "created_at": "2026-08-27T18:58:07.067Z",
+  "prompt_tokens": 1597,
+  "output_tokens": 113,
+  "output_md": "At Slatebridge, we're thrilled to announce Auto-Rebalance—a game-changer for dispatchers managing field technicians. Imagine a tech calls out sick, and within 60 seconds, all remaining team members are reassigned seamlessly. This feature replaces the 45 minutes of manual re-planning you'd typically spend over the phone. It ensures every job is covered, respecting skills and SLA deadlines—all at no extra cost to our customers.\n\nReady for a smoother operation? Request a demo today and see how Auto-Rebalance can streamline your team's workflow.",
+  "provenance": "confirmatory",
+  "skill_slug": "hendry-comment-lean",
+  "skill_hash": "ab1bec7f7dbe2b420fd19957b1ba54cb85ef2d22babf5b4ce55a416e65c4a868",
+  "generator": "skillsmash-local-cycle@0.1-L1",
+  "scope_fit": "off-category"
+}

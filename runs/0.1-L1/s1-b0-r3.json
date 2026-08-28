@@ -1,0 +1,14 @@
+{
+  "run_id": "s1-b0-r3",
+  "brief_id": "S1",
+  "condition": "b0",
+  "model": "qwen2.5:7b-instruct-q4_K_M",
+  "temperature": 1,
+  "protocol_version": "0.1-L1",
+  "created_at": "2026-08-27T18:57:20.070Z",
+  "prompt_tokens": 512,
+  "output_tokens": 146,
+  "output_md": "Auto-Rebalance, at Slatebridge, changes how we think about dispatching. Imagine a dispatcher who’s just hit pause on re-planning—a tech calls out sick, and within 60 seconds, Auto-Rebalance seamlessly reallocates their jobs to the team, all while respecting skills, locations, and SLA deadlines.\n\nFor operations managers, like you, this means reclaiming those frantic moments where phone calls and last-minute changes are inevitable. No more 45 minutes of headache; just a minute saved. Try it out today, and see your day instantly less stressful. All customers can activate Auto-Rebalance now with no extra cost.\n\nLet’s make your operations flow smoother. Request a demo to experience the difference.",
+  "provenance": "confirmatory",
+  "generator": "skillsmash-local-cycle@0.1-L1"
+}

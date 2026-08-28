@@ -1,0 +1,39 @@
+{
+  "slug": "hendry-linkedin-post-expert",
+  "name": "linkedin-post-expert",
+  "author": "Hendry Soong",
+  "author_handle": "hendrysoong",
+  "source_url": "https://hendry.ai",
+  "license": "proprietary",
+  "provenance": "author-released",
+  "species": "type-1",
+  "category": "social-content",
+  "version_hash": "d4d2e4db29388a0742f125fbbece9833f7ac296ab00268a29e1558fb798d5ee6",
+  "ingested_at": "2026-08-27T16:11:23.384Z",
+  "tokens": 3897,
+  "lint": {
+    "score": 0,
+    "notes": []
+  },
+  "status": "ingested",
+  "tokens_estimated": true,
+  "load_set": [
+    {
+      "file": "SKILL.md",
+      "included": true,
+      "rationale": "Always-on instruction file."
+    },
+    {
+      "file": "anti-slop.md",
+      "included": true,
+      "rationale": "The instruction file binds the bundled anti-slop baseline as a hard floor over every line (\"a floor, not a suggestion\") — an unconditional mandate, so it is part of what the skill loads."
+    },
+    {
+      "file": "agents/openai.yaml",
+      "included": false,
+      "rationale": "Platform packaging configuration for a Copilot-style deployment, not instruction payload."
+    }
+  ],
+  "jtbd_claim": "li-full-post",
+  "source_ref": "0a1a656d06e903ec0b5d1839359c4769b5106ca0"
+}

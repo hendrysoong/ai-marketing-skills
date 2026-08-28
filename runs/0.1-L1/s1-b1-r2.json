@@ -1,0 +1,14 @@
+{
+  "run_id": "s1-b1-r2",
+  "brief_id": "S1",
+  "condition": "b1",
+  "model": "qwen2.5:7b-instruct-q4_K_M",
+  "temperature": 1,
+  "protocol_version": "0.1-L1",
+  "created_at": "2026-08-27T18:57:39.480Z",
+  "prompt_tokens": 529,
+  "output_tokens": 153,
+  "output_md": "At Slatebridge, we’ve made it easier to handle unexpected challenges. Introducing Auto-Rebalance, our new feature that automates job reassignment when a tech calls out sick. In under a minute, Auto-Rebalance redistributes their work among your team, respecting skill sets and locations while maintaining SLA deadlines—no more 45 minutes of stressful phone planning.\n\nFor operations managers like you, this means more time focusing on what matters: keeping your customers satisfied. Our dispatcher board already handles the heavy lifting for routine tasks, and now Auto-Rebalance ensures seamless continuity when the unexpected happens.\n\nIf you’re ready to reduce your reliance on phone calls and streamline disruptions in your maintenance workflow, schedule a demo today.\n\n#EffortlessMaintenance #SimplifiedDispatch",
+  "provenance": "confirmatory",
+  "generator": "skillsmash-local-cycle@0.1-L1"
+}

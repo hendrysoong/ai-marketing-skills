@@ -1,0 +1,17 @@
+{
+  "run_id": "s1-hendry-linkedin-post-expert-r2",
+  "brief_id": "S1",
+  "condition": "skill",
+  "model": "qwen2.5:7b-instruct-q4_K_M",
+  "temperature": 1,
+  "protocol_version": "0.1-L1",
+  "created_at": "2026-08-27T19:03:27.923Z",
+  "prompt_tokens": 4825,
+  "output_tokens": 92,
+  "output_md": "Auto-Rebalance does not promise magic; it replaces Monday mornings. Here’s why:\n\n1. **45 minutes saved:** Re-plan time drops to under a minute.\n2. **Skill and SLA respecting:** Jobs go to techs who can do them, keeping SLAs in tact.\n3. **Phone calls replaced:** Dispatchers keep calm when a tech calls out.\n\nSee your Tuesday mornings differently: visit our site today to request a demo.",
+  "provenance": "confirmatory",
+  "skill_slug": "hendry-linkedin-post-expert",
+  "skill_hash": "d4d2e4db29388a0742f125fbbece9833f7ac296ab00268a29e1558fb798d5ee6",
+  "generator": "skillsmash-local-cycle@0.1-L1",
+  "scope_fit": "on-category"
+}

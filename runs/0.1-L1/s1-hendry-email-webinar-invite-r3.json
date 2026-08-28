@@ -1,0 +1,17 @@
+{
+  "run_id": "s1-hendry-email-webinar-invite-r3",
+  "brief_id": "S1",
+  "condition": "skill",
+  "model": "qwen2.5:7b-instruct-q4_K_M",
+  "temperature": 1,
+  "protocol_version": "0.1-L1",
+  "created_at": "2026-08-27T19:00:14.979Z",
+  "prompt_tokens": 4607,
+  "output_tokens": 99,
+  "output_md": "Slatebridge Operations Mgmt, Auto-Rebalance cuts 45 mins re-planning time to <1 min. No extra cost for you. Join our webinar today to see how it works and ask questions.\n\n---\n\n**Subject Options:**\n\n- \"Auto-Rebalance: Cut 45 minutes of re-planning in under a minute\"\n- \"Experience Auto-Rebalance: Demo Live + Q&A\"\n- \"Sick Tech? Auto-Rebalance Keeps Your SLAs On Track\"",
+  "provenance": "confirmatory",
+  "skill_slug": "hendry-email-webinar-invite",
+  "skill_hash": "dfe72976b6d7a648323912d010b20c49e86daff3fa41d61004a57816aa9dba9f",
+  "generator": "skillsmash-local-cycle@0.1-L1",
+  "scope_fit": "off-category"
+}

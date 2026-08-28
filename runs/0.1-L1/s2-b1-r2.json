@@ -1,0 +1,14 @@
+{
+  "run_id": "s2-b1-r2",
+  "brief_id": "S2",
+  "condition": "b1",
+  "model": "qwen2.5:7b-instruct-q4_K_M",
+  "temperature": 1,
+  "protocol_version": "0.1-L1",
+  "created_at": "2026-08-27T19:11:31.139Z",
+  "prompt_tokens": 528,
+  "output_tokens": 154,
+  "output_md": "When SLAs slip, the knee-jerk reaction is often to blame the tech or dispatcher. But here’s a harsh truth: it’s usually the scheduling and data that fail us first. Without visibility into travel time, skills, and deadline stacking, assigning jobs haphazardly sets up those on-the-ground heroes for failure.\n\nAt Slatebridge, we’re tackling this root cause by giving dispatchers the tools they need to see all angles—from skillsets to traffic patterns—in real-time. This isn’t a silver-bullet promise; it’s about empowering your team with clear information so they can make better decisions faster.\n\nHow do you handle scheduling data in your operations? Do you think visibility could change things for your techs and SLAs? Share your thoughts!",
+  "provenance": "confirmatory",
+  "generator": "skillsmash-local-cycle@0.1-L1"
+}

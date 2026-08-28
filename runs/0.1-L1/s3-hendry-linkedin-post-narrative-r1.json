@@ -1,0 +1,17 @@
+{
+  "run_id": "s3-hendry-linkedin-post-narrative-r1",
+  "brief_id": "S3",
+  "condition": "skill",
+  "model": "qwen2.5:7b-instruct-q4_K_M",
+  "temperature": 1,
+  "protocol_version": "0.1-L1",
+  "created_at": "2026-08-27T19:30:21.984Z",
+  "prompt_tokens": 4761,
+  "output_tokens": 94,
+  "output_md": "Meridian Facilities Group, an HVAC company with 120 technicians across three cities, cut overtime hours by 18% in six months using Slatebridge. SLA compliance climbed from 87% to 96%, and dispatchers now rely solely on the company’s board for scheduling. \"I used to spend mornings untangling the schedule,\" says Meridian's ops director. \"Now I focus on customers.\" Ready to streamline your field operations?",
+  "provenance": "confirmatory",
+  "skill_slug": "hendry-linkedin-post-narrative",
+  "skill_hash": "88279cfd0e5e70e6994eeb56ba900a03b99bd5d38e2aa64e791381312d36f5c5",
+  "generator": "skillsmash-local-cycle@0.1-L1",
+  "scope_fit": "on-category"
+}

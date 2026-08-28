@@ -1,0 +1,17 @@
+{
+  "run_id": "s2-hendry-post-lean-r2",
+  "brief_id": "S2",
+  "condition": "skill",
+  "model": "qwen2.5:7b-instruct-q4_K_M",
+  "temperature": 1,
+  "protocol_version": "0.1-L1",
+  "created_at": "2026-08-27T19:20:47.250Z",
+  "prompt_tokens": 2264,
+  "output_tokens": 221,
+  "output_md": "When I think back on my journey at Slatebridge, it's clear that managing SLAs is more than just a people problem—it's a scheduling-data challenge. The typical narrative focuses on blaming technicians for running late or dispatchers for misrouting jobs, but often, missed SLAs are the result of incomplete visibility into travel times, skillsets, and deadline overlaps.\n\nTake, for instance, a day in my shoes as the founder. A tech calls out sick just before an urgent job comes through, and another technician is assigned based on proximity rather than availability. That's when the real crunch happens: we're already short-staffed due to overlapping SLAs that haven't been properly managed.\n\nSlatebridge’s core capabilities help in these situations by automating job assignments based on skill and location, ensuring no tech gets stretched thin. But even with technology, the human element is key; dispatch leads still face constant interruptions and need tools that support their judgment.\n\nSo, to all of you operations managers or dispatch leads out there: how do you navigate these challenges? Share your stories and insights below.",
+  "provenance": "confirmatory",
+  "skill_slug": "hendry-post-lean",
+  "skill_hash": "b924ab55b185ecacf1813c77f38d3c910c21697d9bb0dd1792c3f778c73bd9fe",
+  "generator": "skillsmash-local-cycle@0.1-L1",
+  "scope_fit": "on-category"
+}

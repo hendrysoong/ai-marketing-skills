@@ -1,0 +1,17 @@
+{
+  "run_id": "s1-hendry-post-lean-r1",
+  "brief_id": "S1",
+  "condition": "skill",
+  "model": "qwen2.5:7b-instruct-q4_K_M",
+  "temperature": 1,
+  "protocol_version": "0.1-L1",
+  "created_at": "2026-08-27T19:07:28.606Z",
+  "prompt_tokens": 2265,
+  "output_tokens": 80,
+  "output_md": "When a tech calls out sick, Auto-Rebalance steps in to reassign their jobs across your remaining team in under a minute. You save 45 minutes of phone calls and re-planning, respecting skills, locations, and SLA deadlines.\n\nRecognize that Tuesday morning scramble? Us too. Try it now at no extra cost for all customers.\n\n#TechSupport #SchedulingEfficiency",
+  "provenance": "confirmatory",
+  "skill_slug": "hendry-post-lean",
+  "skill_hash": "b924ab55b185ecacf1813c77f38d3c910c21697d9bb0dd1792c3f778c73bd9fe",
+  "generator": "skillsmash-local-cycle@0.1-L1",
+  "scope_fit": "on-category"
+}

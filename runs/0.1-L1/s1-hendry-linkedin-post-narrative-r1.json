@@ -1,0 +1,17 @@
+{
+  "run_id": "s1-hendry-linkedin-post-narrative-r1",
+  "brief_id": "S1",
+  "condition": "skill",
+  "model": "qwen2.5:7b-instruct-q4_K_M",
+  "temperature": 1,
+  "protocol_version": "0.1-L1",
+  "created_at": "2026-08-27T19:05:09.080Z",
+  "prompt_tokens": 4741,
+  "output_tokens": 115,
+  "output_md": "A tech calls in sick at 7:14 and eight jobs now belong to nobody. The plan is done before the dispatcher finishes their coffee.\n\nAuto-Rebalance takes the 45 minutes a dispatcher spends re-planning by phone, replaces them with a moment’s work. It respects skills, locations, and SLA deadlines, all while respecting the chaos that starts your day.\n\nAvailable today at no extra cost for all customers, Auto-Rebalance means one less call you need to take. Let's get it set up in your dispatch board—reach out today.",
+  "provenance": "confirmatory",
+  "skill_slug": "hendry-linkedin-post-narrative",
+  "skill_hash": "88279cfd0e5e70e6994eeb56ba900a03b99bd5d38e2aa64e791381312d36f5c5",
+  "generator": "skillsmash-local-cycle@0.1-L1",
+  "scope_fit": "on-category"
+}

@@ -1,0 +1,17 @@
+{
+  "run_id": "s3-hendry-post-structured-r2",
+  "brief_id": "S3",
+  "condition": "skill",
+  "model": "qwen2.5:7b-instruct-q4_K_M",
+  "temperature": 1,
+  "protocol_version": "0.1-L1",
+  "created_at": "2026-08-27T19:33:37.597Z",
+  "prompt_tokens": 3142,
+  "output_tokens": 150,
+  "output_md": "The count sheet says one number. The shelf says another. Someone signs off anyway. That's how Meridian Facilities Group used to manage their schedules before switching to Slatebridge. With 120 technicians across three cities, they needed a better way.\n\nNow, after six months on Slatebridge, the impact is clear: overtime hours are down by 18%, and SLA compliance has improved from 87% to 96%. Dispatchers have even stopped using the whiteboard entirely. As their ops director says, \"I used to spend my mornings untangling the schedule. Now I spend them on customers.\"\n\nFor operations managers like you at commercial maintenance companies, Slatebridge means more time with customers and less morning tangle.",
+  "provenance": "confirmatory",
+  "skill_slug": "hendry-post-structured",
+  "skill_hash": "9accb7822de883cd274295f45e6c0b6149de3f3d281ab6a950f1f7635c3e5882",
+  "generator": "skillsmash-local-cycle@0.1-L1",
+  "scope_fit": "on-category"
+}

@@ -1,0 +1,14 @@
+{
+  "run_id": "s2-b1-r3",
+  "brief_id": "S2",
+  "condition": "b1",
+  "model": "qwen2.5:7b-instruct-q4_K_M",
+  "temperature": 1,
+  "protocol_version": "0.1-L1",
+  "created_at": "2026-08-27T19:12:09.864Z",
+  "prompt_tokens": 528,
+  "output_tokens": 280,
+  "output_md": "In operations management, the struggle is real—constant interruptions and last-minute changes can derail even the best-laid plans. I've been on both sides of the desk, as an ops manager and now as a founder of Slatebridge. One thing I’ve learned? Missed SLAs aren't always a people problem.\n\nLet’s break it down: when techs call in sick or customers escalate issues, we feel the heat. But often, these setbacks stem from poor scheduling data rather than bad execution. Think about it—how many times have you assigned a job without considering travel time, skills, or overlapping deadlines? It's easy to blame someone for oversights, but what if visibility into all these factors could prevent them in the first place?\n\nSlatebridge aims to solve this by offering automatic job assignment based on skill and location, SLA countdown tracking, and a dispatcher board that replaces clunky spreadsheets and whiteboards. But here’s where I’ve really shifted my thinking: **the key isn't just automating tasks but ensuring real-time visibility into all scheduling data**.\n\nAs an ops manager, wouldn’t you prefer software that empowers you to make informed decisions rather than micromanaging every detail? Isn’t it time we move past blaming and towards better collaboration and tools?\n\nWhat stories can you share about missed SLAs in your operations? Comment below with your own experiences.",
+  "provenance": "confirmatory",
+  "generator": "skillsmash-local-cycle@0.1-L1"
+}

@@ -1,0 +1,17 @@
+{
+  "run_id": "s3-hendry-linkedin-post-narrative-r3",
+  "brief_id": "S3",
+  "condition": "skill",
+  "model": "qwen2.5:7b-instruct-q4_K_M",
+  "temperature": 1,
+  "protocol_version": "0.1-L1",
+  "created_at": "2026-08-27T19:31:04.271Z",
+  "prompt_tokens": 4761,
+  "output_tokens": 111,
+  "output_md": "On a morning in September, dispatchers at Meridian Facilities Group were no longer huddled around their whiteboards. After six months with Slatebridge's scheduling software, they had ditched the boards entirely. Overtime hours are down 18%, and SLA compliance has jumped from 87% to 96%. \"I used to spend my mornings untangling the schedule,\" said Meridian’s ops director. \"Now I spend them on customers.\" This is what happens when you trust software that removes phone calls, not magic promises.",
+  "provenance": "confirmatory",
+  "skill_slug": "hendry-linkedin-post-narrative",
+  "skill_hash": "88279cfd0e5e70e6994eeb56ba900a03b99bd5d38e2aa64e791381312d36f5c5",
+  "generator": "skillsmash-local-cycle@0.1-L1",
+  "scope_fit": "on-category"
+}

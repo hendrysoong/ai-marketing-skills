@@ -1,0 +1,17 @@
+{
+  "run_id": "s1-hendry-linkedin-post-expert-r1",
+  "brief_id": "S1",
+  "condition": "skill",
+  "model": "qwen2.5:7b-instruct-q4_K_M",
+  "temperature": 1,
+  "protocol_version": "0.1-L1",
+  "created_at": "2026-08-27T19:03:13.425Z",
+  "prompt_tokens": 4825,
+  "output_tokens": 150,
+  "output_md": "The usual advice is to overplan before you call out sick, but that’s not practical when you’re already running late. The common wisdom is wrong: Auto-Rebalance takes the guesswork out of your morning.\n\n1. **It reassigns jobs in under a minute**.\n2. **It respects skills and locations**.\n3. **It replaces 45 minutes of dispatching by phone**.\n\nAuto-Rebalance turns dispatcher prep time into free time, respecting SLA deadlines as it balances the team. Your ops manager's day is filled with interruptions; Auto-Rebalance ensures your team stays on schedule without constant re-planning. \n\nReady to see how this works? Request a demo today and watch how dispatching becomes easier.",
+  "provenance": "confirmatory",
+  "skill_slug": "hendry-linkedin-post-expert",
+  "skill_hash": "d4d2e4db29388a0742f125fbbece9833f7ac296ab00268a29e1558fb798d5ee6",
+  "generator": "skillsmash-local-cycle@0.1-L1",
+  "scope_fit": "on-category"
+}

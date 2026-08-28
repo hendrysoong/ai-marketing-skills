@@ -1,0 +1,17 @@
+{
+  "run_id": "s1-hendry-post-lean-r2",
+  "brief_id": "S1",
+  "condition": "skill",
+  "model": "qwen2.5:7b-instruct-q4_K_M",
+  "temperature": 1,
+  "protocol_version": "0.1-L1",
+  "created_at": "2026-08-27T19:07:40.692Z",
+  "prompt_tokens": 2265,
+  "output_tokens": 82,
+  "output_md": "When a tech calls out sick, we Auto-Rebalance their jobs across our remaining team, respecting skills and SLAs in under a minute. It saves 45 minutes of re-planning by phone that an ops manager like you hates.\n\nDispatching just got smarter. Dive into Auto-Rebalance today at no extra cost for your mid-size commercial maintenance crew. Ready to try? Request a demo now.",
+  "provenance": "confirmatory",
+  "skill_slug": "hendry-post-lean",
+  "skill_hash": "b924ab55b185ecacf1813c77f38d3c910c21697d9bb0dd1792c3f778c73bd9fe",
+  "generator": "skillsmash-local-cycle@0.1-L1",
+  "scope_fit": "on-category"
+}

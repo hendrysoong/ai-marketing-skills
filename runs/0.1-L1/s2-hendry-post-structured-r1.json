@@ -1,0 +1,17 @@
+{
+  "run_id": "s2-hendry-post-structured-r1",
+  "brief_id": "S2",
+  "condition": "skill",
+  "model": "qwen2.5:7b-instruct-q4_K_M",
+  "temperature": 1,
+  "protocol_version": "0.1-L1",
+  "created_at": "2026-08-27T19:22:04.991Z",
+  "prompt_tokens": 3121,
+  "output_tokens": 219,
+  "output_md": "The count sheet says one number. The shelf says another. Someone signs off anyway. This cycle repeats daily, driven by missed SLAs that blame techs or dispatchers—human fallibility at work. But often, it's a scheduling-data problem: assignments made without visibility into travel time, skills, and deadline stacking.\n\nSlatebridge’s dispatcher board solves this by integrating real-time data on each job’s specifics before assignment. It removes the guesswork from SLA tracking, ensuring every tech is routed with maximum efficiency and minimal risk of delays. Yet, even with such powerful tools, dispatch leads still grapple with constant interruptions—a phone call here, a last-minute change there.\n\nSo why do we keep treating missed SLAs as a people problem? Because it’s easier to blame the human error than to admit data visibility failures. Let's shift our focus: what if we empowered dispatchers and techs by giving them the clearest, most actionable information right from the start?\n\nWhat are your experiences with missed SLAs? Share in the comments—how do you navigate these challenges?",
+  "provenance": "confirmatory",
+  "skill_slug": "hendry-post-structured",
+  "skill_hash": "9accb7822de883cd274295f45e6c0b6149de3f3d281ab6a950f1f7635c3e5882",
+  "generator": "skillsmash-local-cycle@0.1-L1",
+  "scope_fit": "on-category"
+}

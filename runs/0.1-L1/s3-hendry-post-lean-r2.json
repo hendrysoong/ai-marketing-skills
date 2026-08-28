@@ -1,0 +1,17 @@
+{
+  "run_id": "s3-hendry-post-lean-r2",
+  "brief_id": "S3",
+  "condition": "skill",
+  "model": "qwen2.5:7b-instruct-q4_K_M",
+  "temperature": 1,
+  "protocol_version": "0.1-L1",
+  "created_at": "2026-08-27T19:32:24.811Z",
+  "prompt_tokens": 2285,
+  "output_tokens": 121,
+  "output_md": "As an operations manager at Meridian Facilities Group, I used to spend my mornings untangling a schedule that was a constant jumble of last-minute changes. Now, with Slatebridge, those hours are spent on customers instead. Since we’ve been using their software, overtime has dropped by 18%, and our SLA compliance has improved from 87% to 96%. Dispatchers no longer rely on the whiteboard at all; it’s all done within the system now.\n\nIf your day is filled with last-minute changes and you wish for a smoother operation, consider Slatebridge.",
+  "provenance": "confirmatory",
+  "skill_slug": "hendry-post-lean",
+  "skill_hash": "b924ab55b185ecacf1813c77f38d3c910c21697d9bb0dd1792c3f778c73bd9fe",
+  "generator": "skillsmash-local-cycle@0.1-L1",
+  "scope_fit": "on-category"
+}

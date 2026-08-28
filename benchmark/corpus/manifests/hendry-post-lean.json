@@ -1,0 +1,34 @@
+{
+  "slug": "hendry-post-lean",
+  "name": "post-lean",
+  "author": "Hendry Soong",
+  "author_handle": "hendrysoong",
+  "source_url": "https://hendry.ai",
+  "license": "proprietary",
+  "provenance": "author-released",
+  "species": "type-1",
+  "category": "social-content",
+  "version_hash": "b924ab55b185ecacf1813c77f38d3c910c21697d9bb0dd1792c3f778c73bd9fe",
+  "ingested_at": "2026-08-27T16:11:23.416Z",
+  "tokens": 1754,
+  "lint": {
+    "score": 0,
+    "notes": []
+  },
+  "status": "ingested",
+  "tokens_estimated": true,
+  "load_set": [
+    {
+      "file": "SKILL.md",
+      "included": true,
+      "rationale": "Always-on instruction file."
+    },
+    {
+      "file": "agents/openai.yaml",
+      "included": false,
+      "rationale": "Platform packaging configuration for a Copilot-style deployment, not instruction payload."
+    }
+  ],
+  "jtbd_claim": "li-full-post",
+  "source_ref": "0a1a656d06e903ec0b5d1839359c4769b5106ca0"
+}

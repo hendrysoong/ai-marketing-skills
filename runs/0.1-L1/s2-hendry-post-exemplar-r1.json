@@ -1,0 +1,17 @@
+{
+  "run_id": "s2-hendry-post-exemplar-r1",
+  "brief_id": "S2",
+  "condition": "skill",
+  "model": "qwen2.5:7b-instruct-q4_K_M",
+  "temperature": 1,
+  "protocol_version": "0.1-L1",
+  "created_at": "2026-08-27T19:19:04.504Z",
+  "prompt_tokens": 3847,
+  "output_tokens": 195,
+  "output_md": "Missed SLAs are usually treated as a people problem, blame the tech, blame the dispatcher. But more often, they're a scheduling-data issue. Techs get assigned jobs without seeing travel times, skill matches, or deadline stacks. Their day turns into a crisis of \"where did my work order go?\" and \"why am I late?\"\n\nDispatchers are stuck firefighting all day, never seeing what’s coming next because the tools don't show them. A tech is out? The backup has another job closer in skills and time. An SLA clock's about to run out? No visibility means no chance to swap or delay.\n\nSlatebridge builds a dispatcher board that replaces spreadsheets and whiteboards, giving dispatchers real-time visibility into tech availability and work order impacts. Instead of reacting to the unknown, they can proactively manage schedules, keeping techs on track and SLAs met.\n\nSo how do your teams handle late jobs? Sound familiar?",
+  "provenance": "confirmatory",
+  "skill_slug": "hendry-post-exemplar",
+  "skill_hash": "84758ae4406b216092f8277719bab8ce9693abf23f1ff74b5e76aac40dcd3ab7",
+  "generator": "skillsmash-local-cycle@0.1-L1",
+  "scope_fit": "on-category"
+}

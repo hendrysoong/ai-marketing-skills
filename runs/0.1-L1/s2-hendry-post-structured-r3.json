@@ -1,0 +1,17 @@
+{
+  "run_id": "s2-hendry-post-structured-r3",
+  "brief_id": "S2",
+  "condition": "skill",
+  "model": "qwen2.5:7b-instruct-q4_K_M",
+  "temperature": 1,
+  "protocol_version": "0.1-L1",
+  "created_at": "2026-08-27T19:23:21.396Z",
+  "prompt_tokens": 3121,
+  "output_tokens": 253,
+  "output_md": "The count sheet says one number. The shelf says another. Someone signs off anyway. Missed service level agreements (SLAs) are often treated as a people problem—blame the tech, blame the dispatcher—but they're more often scheduling-data problems.\n\nLet me explain. A work order comes in, and you assign it based on what looks right at the moment. But that decision overlooks travel time, skill availability, and deadline stacking. Suddenly, what seemed doable is impossible, and now we’re late.\n\nConsider this: a tech could be booked an hour or two later due to an unexpected change in their schedule. A simple change—adjusting when they start—that keeps everyone on track and hitting SLAs every time. But most dispatch systems still rely on manual assignment with no real-time visibility into all those factors.\n\nAt Slatebridge, our core is ensuring automatic job assignments by skill and location, tracking SLA countdowns per work order, and replacing the old spreadsheet chaos with a digital dispatcher board that’s always up to date. This isn’t just about reducing late fees; it's about empowering dispatch leads to focus on what matters most: keeping customers happy.\n\nHow are you managing these challenges in your operations? Have stories or insights to share?",
+  "provenance": "confirmatory",
+  "skill_slug": "hendry-post-structured",
+  "skill_hash": "9accb7822de883cd274295f45e6c0b6149de3f3d281ab6a950f1f7635c3e5882",
+  "generator": "skillsmash-local-cycle@0.1-L1",
+  "scope_fit": "on-category"
+}

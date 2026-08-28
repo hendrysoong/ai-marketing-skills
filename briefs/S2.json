@@ -1,0 +1,21 @@
+{
+  "id": "S2",
+  "category": "social-content",
+  "title": "Founder point-of-view post",
+  "goal": "Authority and discussion, not promotion.",
+  "audience": "Operations managers at commercial maintenance companies plus industry peers, on LinkedIn.",
+  "provided_facts": [
+    "Written as the founder.",
+    "The argument to make: missed SLAs are usually treated as a people problem (blame the tech, blame the dispatcher) but are more often a scheduling-data problem: assignments made without visibility into travel time, skills, and deadline stacking.",
+    "Slatebridge may be mentioned once, softly, or not at all."
+  ],
+  "constraints": [
+    "One LinkedIn post.",
+    "250 words maximum.",
+    "First person.",
+    "No feature pitch.",
+    "Ends with a question to the reader."
+  ],
+  "deliverable": "one LinkedIn post",
+  "success": "Dispatch leads comment with their own stories."
+}

@@ -1,0 +1,17 @@
+{
+  "run_id": "s1-hendry-post-lean-r3",
+  "brief_id": "S1",
+  "condition": "skill",
+  "model": "qwen2.5:7b-instruct-q4_K_M",
+  "temperature": 1,
+  "protocol_version": "0.1-L1",
+  "created_at": "2026-08-27T19:08:06.106Z",
+  "prompt_tokens": 2265,
+  "output_tokens": 178,
+  "output_md": "As an operations manager, you know what it's like to start your day with a phone ringing off the hook. Techs calling out sick, customers demanding immediate attention—your inbox is a constant stream of crises. But imagine if that chaos could be managed in under a minute.\n\nWith Slatebridge’s new Auto-Rebalance feature, any time a tech can’t make it, we instantly reassign their jobs to the right team members based on skill and location—without you lifting a finger. No more 45-minute phone calls or frantic spreadsheet recalculations. It all happens in seconds, keeping your SLAs intact.\n\nAvailable now for all our customers, Auto-Rebalance is here to make your morning—and every day—the calm before the storm. Ready to see how it works? Schedule a demo today and experience smoother operations without the stress.\n\n#AutoRebalance #Slatebridge",
+  "provenance": "confirmatory",
+  "skill_slug": "hendry-post-lean",
+  "skill_hash": "b924ab55b185ecacf1813c77f38d3c910c21697d9bb0dd1792c3f778c73bd9fe",
+  "generator": "skillsmash-local-cycle@0.1-L1",
+  "scope_fit": "on-category"
+}

@@ -1,0 +1,9 @@
+{
+  "protocol_version": "0.1-L1",
+  "digests": {
+    "qwen2.5:7b-instruct-q4_K_M": "7.6B Q4_K_M",
+    "llama3.1:8b-instruct-q4_K_M": "8.0B Q4_K_M",
+    "gemma2:9b-instruct-q4_K_M": "9.2B Q4_K_M"
+  },
+  "pinned_at": "2026-08-27T18:54:02.154Z"
+}

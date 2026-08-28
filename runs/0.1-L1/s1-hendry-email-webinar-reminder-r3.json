@@ -1,0 +1,17 @@
+{
+  "run_id": "s1-hendry-email-webinar-reminder-r3",
+  "brief_id": "S1",
+  "condition": "skill",
+  "model": "qwen2.5:7b-instruct-q4_K_M",
+  "temperature": 1,
+  "protocol_version": "0.1-L1",
+  "created_at": "2026-08-27T19:01:48.043Z",
+  "prompt_tokens": 5342,
+  "output_tokens": 107,
+  "output_md": "Slatebridge, the software that makes your day easier, has just elevated your operations management toolkit with our new Auto-Rebalance feature. When a tech calls out sick, this feature reassigns their jobs in under a minute, ensuring SLAs are met and downtime is minimized—saving you 45 minutes of valuable dispatch time.\n\nReady to streamline your dispatch process? Visit [JOIN LINK] today to schedule a demo. Let’s take the guesswork out of your daily operations together. #Slatebridge #DispatchEfficiency",
+  "provenance": "confirmatory",
+  "skill_slug": "hendry-email-webinar-reminder",
+  "skill_hash": "03cbec9b711736c89b53bedcd33989cfc8f5688aa0b350588105fcfcc8842ace",
+  "generator": "skillsmash-local-cycle@0.1-L1",
+  "scope_fit": "off-category"
+}
