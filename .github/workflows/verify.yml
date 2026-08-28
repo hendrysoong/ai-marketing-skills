@@ -1,0 +1,39 @@
+name: verify
+
+# The public gate: every push and pull request re-derives the benchmark's
+# numbers from the records and enforces the append-only discipline. Green
+# means the evidence in this tree checks itself.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  verify-records:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Re-derive and check every record
+        run: node tools/verify.mjs
+      - name: Append-only (pull requests) — records and pinned specs are never modified or deleted
+        if: github.event_name == 'pull_request'
+        run: |
+          set -euo pipefail
+          BASE="origin/${{ github.base_ref }}"
+          git fetch -q origin "${{ github.base_ref }}"
+          VIOLATIONS=$(git diff --name-status "$BASE"...HEAD -- runs/ scores/ specs/protocol-v0.1.md benchmark/corpus/manifests/ | grep -E '^[MDR]' || true)
+          if [ -n "$VIOLATIONS" ]; then
+            echo "append-only violation: existing records, manifests, or the pinned protocol were modified or deleted:"
+            echo "$VIOLATIONS"
+            exit 1
+          fi
+          echo "append-only: clean (records only ever get added)"

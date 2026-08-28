@@ -1,5 +1,7 @@
 # marketing-skills
 
+[![verify](https://github.com/hendrysoong/marketing-skills/actions/workflows/verify.yml/badge.svg)](https://github.com/hendrysoong/marketing-skills/actions/workflows/verify.yml)
+
 **SKILLSMASH, the hendry.ai marketing-skills benchmark. Protocols, run records, and audit
 artifacts, published so anyone can check the numbers.**
 
@@ -62,6 +64,27 @@ id. Run records carry the exact runtime-returned model string; the audit artifac
 per-pairing verdicts under each prompt variant; skill manifests carry a sha256 over the exact
 text the skill arm loaded. If a report says a number this tree cannot reproduce, the report is
 wrong; say so.
+
+CI enforces this on every push and pull request (`tools/verify.mjs`, no dependencies, no
+network):
+
+1. The pre-registered protocol, the ratified amendment, and the fixture are byte-pinned by
+   sha256. Any edit fails the build; changes only ever arrive as new amendment files.
+2. The 99-run matrix must be complete, every record well-formed, and every skill run bound by
+   hash to its pinned manifest.
+3. The judge-audit stabilities are recomputed from their own per-pairing verdicts. If 72.2 and
+   83.3 percent stop re-deriving, the build fails.
+4. A grade file without judgments behind it fails the build. Zero judgments exist today, so
+   zero grades exist today.
+5. Pull requests may only add records. Modifying or deleting an existing record, manifest, or
+   the protocol fails the build.
+
+You can run the same check locally: `node tools/verify.mjs`.
+
+The private factory that produces these records runs its own harness: a 141-check verification
+suite, a network tripwire that kills the process on any socket outside the pinned local
+runtime, append-only atomic writers, and pre-registered thresholds that never move after data.
+This repository is that harness's public face.
 
 ## Names
 

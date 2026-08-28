@@ -14,6 +14,7 @@ divergence between this tree and the factory's committed records is a defect, no
 | `runs/0.1-L1/*.json` (99) | same paths | `7a2cb87` |
 | `scores/0.1-L1/*.json` (3) | same paths | `7a2cb87` |
 | `LICENSE` | CC BY 4.0, identical to the `ai-marketing-operator-logs` mirror | — |
+| `README.md` `PROVENANCE.md` `tools/verify.mjs` `.github/workflows/verify.yml` | native to this repository (not factory copies) | — |
 
 First assembly 2026-08-28 was a manual allowlist copy, recorded here; subsequent updates are to
 come from a deterministic publisher step in the factory's toolchain, which will refuse any path
