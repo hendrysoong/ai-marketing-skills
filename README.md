@@ -1,8 +1,8 @@
-# marketing-skills
+# ai-marketing-skills
 
-[![verify](https://github.com/hendrysoong/marketing-skills/actions/workflows/verify.yml/badge.svg)](https://github.com/hendrysoong/marketing-skills/actions/workflows/verify.yml)
+[![verify](https://github.com/hendrysoong/ai-marketing-skills/actions/workflows/verify.yml/badge.svg)](https://github.com/hendrysoong/ai-marketing-skills/actions/workflows/verify.yml)
 
-**SKILLSMASH, the hendry.ai marketing-skills benchmark. Protocols, run records, and audit
+**The hendry.ai AI Marketing Skills Benchmark. Protocols, run records, and audit
 artifacts, published so anyone can check the numbers.**
 
 Built and run by [Hendry Soong](https://hendry.ai). Reports are published on the
@@ -13,7 +13,7 @@ evidence behind them.
 
 AI marketing skills, packaged instruction files that a model loads before writing, mostly get
 adopted on faith: a skill ships, a thread praises it, nobody measures whether it makes output
-better. SKILLSMASH measures that. Every skill is tested against the same fictional company on the
+better. This benchmark measures that. Every skill is tested against the same fictional company on the
 same briefs, in arms that differ only in one variable:
 
 | Arm | What it gets |
@@ -88,8 +88,11 @@ This repository is that harness's public face.
 
 ## Names
 
-SKILLSMASH is the benchmark. This repository uses the descriptive name so both humans and
-agents can tell at a glance what it holds.
+The public name is the hendry.ai AI Marketing Skills Benchmark, and this repository uses the
+descriptive name so both humans and agents can tell at a glance what it holds. SKILLSMASH is
+the benchmark's internal codename; it appears inside the synced protocol and record files,
+which are append-only history and are never rewritten. The winning hendry.ai skills ship as
+products under [jtbd.ai](https://jtbd.ai); this repository is the evidence, never the store.
 
 ## License
 

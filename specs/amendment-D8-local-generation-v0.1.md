@@ -1,6 +1,8 @@
 # Amendment D8 — Local Generation as a New Protocol Version (0.1-L1)
 
 **Date:** 2026-08-27 (revision b, same day — incorporating the 47-agent cross-agent review; see §11)
+· 2026-08-28 (revision c — judge seats 3–4, audit reason persistence, exhibit rules; see §12,
+pre-registered before any seat-3/4 datum exists)
 · **Status:** direction ratified by the owner 2026-08-27 (decision panel, prompt-0029 session:
 "Local generation — D8 amendment"); the parameter set below is **pre-registered before any 0.1-L1
 datum exists** and binds at the commit gate when the owner approves this file's staged diff.
@@ -62,6 +64,7 @@ protocol version with its own baseline**, per the recorded rule (lab note
   `top_p 0.9, top_k 40, repeat_penalty 1.1, num_ctx 16384`, set explicitly on every call. `num_ctx`
   is pinned above the largest assembled prompt — the runtime default (4096) would silently truncate
   the ~4.4k-token skills, which the cross-agent review caught before it could corrupt a single run.
+- **Digest timing for seats that have not yet audited: refined by revision c (§12.3).**
 
 ## 4. Judge seat lock: the perturbation audit (pre-registered)
 
@@ -81,6 +84,8 @@ So **no judging happens until a seat passes this audit**:
   `gemma2:9b-instruct-q4_K_M`. The first passing seat judges the cycle and the lock is recorded
   append-only (`_judge-seat.json`, with the full per-pairing audit in `_judge-audit-*.json`).
   **Both failing halts the cycle for the owner — no third seat is improvised.**
+  **That halt happened on 2026-08-27 and the owner answered it: the seat list is extended by
+  revision c (§12.1) with seats 3–4, in order; an audited seat is never re-audited.**
 - **Disclosed limitation, carried wherever 0.1-L1 results appear:** the judge is a single small
   local model. The audit and order-swapping mitigate prompt fragility; they do not equal v0.1's
   frontier judge, nor the v0.2 three-family panel. The swap fixes the same-family defect and
@@ -233,3 +238,94 @@ hashes, version-scoped grade letters, `WR_B1` redefinition, the crowning-ban res
 reporting, head-to-head exclusion, CIs, the transcript audit, the held-out disclosure, and the
 uniform-naming publication rule are all pinned above. The refuted findings and full verdicts live
 in the lab session record (workflow `wf_3b7a48dd-41d`).
+
+## 12. Revision c — seats 3–4, audit reason persistence, exhibit rules (2026-08-28)
+
+**Status:** direction ratified by the owner 2026-08-28 (prompt-0030 part-two handover: "ratify
+judge seats 3–4 and fix the audit to persist judge reasons"; host decision same session: the cycle
+resumes on the Mac mini, not the Air). The parameters below are **pre-registered before any
+seat-3/4 datum exists** — neither candidate model is downloaded at ratification time — and bind at
+the commit gate when the owner approves this file's staged diff. Everything not named here carries
+verbatim from revisions a/b.
+
+### 12.1 Judge seat list extension (§4 delta)
+
+§4's halt rule operated as designed on 2026-08-27: both seats refused, zero judgments, the cycle
+stopped at the owner gate. The owner's answer extends the pre-registered seat order with exactly
+two further candidates, audited in order:
+
+3. `phi4:14b-q4_K_M` (Microsoft Phi-4, 14B — a class above the failed 8–9B seats)
+4. `mistral-nemo:12b-instruct-2407-q4_K_M` (Mistral AI, 12B)
+
+Family disjointness is preserved and now spans five houses: generator Alibaba; seats Meta, Google,
+Microsoft, Mistral — no family repeats, and neither candidate shares a family with the generator.
+The audit material, the three registered variants, the stability definition, and the **90% bar
+carry verbatim** from §4. **An audited seat is never re-audited:** the audit stage skips any seat
+whose `_judge-audit-*.json` artifact already exists — the 2026-08-27 artifacts for seats 1–2 stand
+as recorded, append-only. **All four failing halts the cycle for the owner again — no fifth seat
+is improvised**; that outcome is itself the report (three consecutive refusals), and the lane
+decision it forces (bigger local model vs paid Phase 1B) is the owner's alone.
+
+### 12.2 The audit persists the judge's stated reasons (§4 harness gap)
+
+The gap was exposed by Report 001's flip exhibit: the 2026-08-27 audit artifacts record winners
+only, so the exhibit could show THAT the verdict flipped on a label rename but not what the judge
+said it was judging. From seats 3 onward, every audit call persists its full registered verdict
+object per variant:
+
+- `verdicts` keeps its existing shape (canonical winner per variant, or `unparseable`) — the
+  stability computation is unchanged (winner identity across the three variants).
+- A new `details` map records, per variant, the parsed `{winner, margin, reasons}` exactly as
+  extracted under the §8 schema rule (reasons capped at 3 as registered), or `null` for an
+  unparseable call. No salvage, no paraphrase: the reasons array is the judge's verbatim strings.
+
+Existing audit artifacts are never rewritten. A future flip exhibit shows the reasons beside the
+flip, from the record, by pairing id.
+
+### 12.3 Digest pinning for not-yet-audited seats (§3 timing refinement)
+
+§3 pins every model digest before the first call of the cycle — written when all pinned models
+preceded the cycle on disk. Under the §12.1 extension, a later seat that never audits (because an
+earlier seat locked) need never be downloaded at all. Refined timing, same guarantee:
+
+- The digests of the models the cycle actively uses — the generator, and the locked judge seat
+  once one exists — re-resolve and compare at every stage entry; **any change still aborts the
+  stage.**
+- A not-yet-recorded seat's digest is recorded append-only into `_models.json` immediately before
+  that seat's own first audit call. A seat that never audits records nothing and constrains
+  nothing.
+- A **refused** seat's recorded digest is a historical record: it stays in `_models.json` forever
+  but is not re-resolved at later stages, so a migrated host (the Mac mini) need not carry the
+  refused models at all.
+
+### 12.4 Exhibit rules (§6 extension: the human reading layer)
+
+The 2026-08-28 owner panel ratified the Report 001 exhibit selection rule before any output text
+was read, and the evening session executed it ad hoc. This section indexes that rule properly and
+pre-registers Report 002's, and the deterministic generator that makes both reproducible.
+
+- **Report 001 rule (ratified and executed 2026-08-28, recorded here for the index):** specimens =
+  brief S1, draw r1, every on-category arm (B0, B1, and the five `li-full-post` skills), presented
+  B0, B1, then alphabetical by slug; plus the flip exhibit — the first unstable pairing, in audit
+  order, from the first refused seat's audit artifact. Competitor-derived material ships with the
+  pilot-skill arm anonymized pending author consent (protocol §11.2 shape).
+- **Report 002 per-claim rule (pre-registered before any 0.1-L1 judgment exists):** every headline
+  number carries at least one pairing a reader can check. Default selection: for the
+  **best-scoring and the worst-scoring on-category skill** by the headline metric (pooled `WR_B0`
+  point estimate; ties broken alphabetically by slug), the first pairing in the pre-registered
+  order (S1 r1, S1 r2, S1 r3, S2 r1, … S3 r3) of that skill vs the headline baseline B0 whose
+  order-1 judgment was a **real judge call** — a synthetic gate verdict does not qualify; if every
+  pairing for that skill is gate-decided, the first pairing in that order is shown with its gate
+  verdict and said to be one. The exhibit shows both posts verbatim by run id — the skill entry
+  leads, the baseline follows — with the canonical verdict, the margin, and the judge's stated
+  reasons from the judgment record. **Selection never moves after scores are seen.**
+- **The deterministic generator is the only sanctioned emitter.** `src/exhibit.ts`
+  (`node scripts/run-local.mjs exhibits --local <rule>`; the npm script surface stays the exact
+  M0 allow-list) reads committed records only — runs, judgments, scores, audit artifacts —
+  makes no model call, and writes derived exhibit JSON under `scores/0.1-L1/` (derived data, §7
+  posture: delete and recompute). Reports embed the generator's `entries` verbatim — paragraph
+  structure included — and never hand-build or paraphrase a specimen. The registered text
+  conversion: paragraphs split on newlines (blank lines collapse), each line trimmed, empty lines
+  dropped, `**bold**` pairs become bold runs, every other byte carried verbatim (an unpaired `**`
+  stays literal). The evaluator writes the numbers; the generator writes the specimens; articles
+  only quote them.

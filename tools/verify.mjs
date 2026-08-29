@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// SKILLSMASH public verifier. No dependencies, no network. Re-derives everything
+// Public verifier for the hendry.ai AI Marketing Skills Benchmark (internal codename SKILLSMASH). No dependencies, no network. Re-derives everything
 // checkable from the records in this repository and fails on any inconsistency.
 // Green here means: the matrix is complete, every record is well-formed, the
 // audit numbers recompute from their own per-pairing verdicts, the skill hashes
@@ -26,7 +26,13 @@ const sha256 = (p) => createHash('sha256').update(readFileSync(join(ROOT, p))).d
 // new files, never edits.
 const PINS = {
   'specs/protocol-v0.1.md': '61cf0421fa29feb1f6f1bd56490776c379e18b24697845c1192f0f41d0f49b4b',
-  'specs/amendment-D8-local-generation-v0.1.md': '99a71796f98170e86d89fcdcb917cc1a2e33ebe17af94d6fc86d9140541ae3ec',
+  // Pinned as of revision c (2026-08-28, owner-ratified; §12 was pre-registered
+  // before any seat-3/4 datum). A pin moves ONLY when a ratified revision lands,
+  // never silently — the diff that changes this line must cite the revision.
+  'specs/amendment-D8-local-generation-v0.1.md': '1545d13a28392a76bc3b9ac550f8cafd71bd0764c9f0b3e3363bfeb9805d7e5b',
+  // Amendment D9 (the tournament lane, ratified 2026-08-29), pre-registered
+  // before any 0.1-T1 datum exists.
+  'specs/amendment-D9-tournament-lane-v0.1.md': 'e7d878fc35ec58318ebee4c8931b235517e04311c67cda7485e0fb01b6cfc1e4',
   'fixture/slatebridge.md': 'e4ffed5981f76d46a3a3a68791ac8b08712f34f1b7f3fdf3b33b068461e155a5',
 }
 for (const [path, want] of Object.entries(PINS)) {
