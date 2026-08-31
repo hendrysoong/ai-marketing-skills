@@ -1,0 +1,883 @@
+{
+  "protocol_version": "0.1-L1",
+  "audit_revision": "d",
+  "seat": "phi4:14b-q4_K_M",
+  "variants": [
+    "v1-original",
+    "v2-rubric-reversed",
+    "v3-labels-swapped",
+    "v4-order-swapped"
+  ],
+  "material": "frozen v0.1 pilot pairings, corey-social vs b0/b1, S1-S3, r1-r3, presentation orders 1 and 2 (audit-only)",
+  "verdict_semantics": "canonical: A = the skill-side run, B = the baseline-side run, whichever slot each occupied",
+  "stability": 0.05555555555555555,
+  "threshold": 0.9,
+  "passed": false,
+  "results": [
+    {
+      "pairing": "s1-corey-social-vs-b0-p1",
+      "verdicts": {
+        "v1-original": "B",
+        "v2-rubric-reversed": "B",
+        "v3-labels-swapped": "A",
+        "v4-order-swapped": "B"
+      },
+      "details": {
+        "v1-original": {
+          "winner": "B",
+          "margin": 2,
+          "reasons": [
+            "Post B has a stronger hook with 'Your tech calls out at 7:14 a.m.', which immediately places the reader in a relatable scenario, aligning well with the brief's goal of recognizing their Tuesday morning.",
+            "The specificity in Post B is higher; it mentions 'eleven jobs on their board' and 'three with SLA deadlines before noon', providing concrete details that resonate with operations managers. This contrasts with Post A’s more generic description.",
+            "Post B better fits the audience's real working context by describing a scenario where the phone is already ringing, emphasizing the urgency and chaos of an operations manager's day. It also highlights how Auto-Rebalance integrates seamlessly into their workflow without requiring setup."
+          ]
+        },
+        "v2-rubric-reversed": {
+          "winner": "B",
+          "margin": 2,
+          "reasons": [
+            "Post B better adheres to the brief's constraints by immediately engaging with an operations manager's real working context, starting with a relatable scenario of a tech calling out sick at 7:14 a.m., which is more specific and closer to the audience's daily experience.",
+            "The structural craft in Post B is superior due to its clear rhythm and scannability. It effectively uses short sentences and concrete details that make it easy for an operations manager to quickly grasp how Auto-Rebalance addresses their pain points, leading smoothly into a clear next step with a specific call-to-action.",
+            "Post B excels in specificity by providing concrete examples of the feature's benefits, such as handling SLA deadlines and skill constraints without guessing. It avoids invented claims and aligns well with the company facts, making it more trustworthy for the audience."
+          ]
+        },
+        "v3-labels-swapped": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post X has a stronger hook with 'A tech calls out sick at 7 a.m.' immediately resonating with the audience's real working context, capturing their attention effectively.",
+            "Both posts fit well into the operations manager’s daily challenges, but Post X more succinctly captures the urgency and frustration of the situation, aligning closely with the brief's goal to reflect a typical Tuesday morning scenario.",
+            "Post X uses concrete facts from the company materials without inventing claims. It clearly explains how Auto-Rebalance replaces manual re-planning by phone, adhering well to the provided constraints."
+          ]
+        },
+        "v4-order-swapped": {
+          "winner": "B",
+          "margin": 2,
+          "reasons": [
+            "Post A has a stronger hook in the first two lines by directly addressing the audience's morning scenario with specific timing and challenges, making it more relatable to operations managers.",
+            "Post A fits better into the real working context of an ops manager by detailing the exact moment (7:14 a.m.) when issues arise, aligning closely with their daily interruptions and decision-making process.",
+            "Post A uses concrete facts effectively, such as the specific time it takes for Auto-Rebalance to reassign jobs and how it respects skills and SLA deadlines. It avoids invented claims by sticking strictly to provided company facts."
+          ]
+        }
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s1-corey-social-vs-b0-p2",
+      "verdicts": {
+        "v1-original": "A",
+        "v2-rubric-reversed": "A",
+        "v3-labels-swapped": "A",
+        "v4-order-swapped": "B"
+      },
+      "details": {
+        "v1-original": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A has a stronger hook with 'A tech calls in sick at 7 a.m.', directly addressing the ops manager's typical Tuesday morning scenario, aligning well with the brief.",
+            "Both posts fit the audience's real working context, but Post A more effectively captures the frustration of manual re-planning and interruptions, which is central to an operations manager’s day.",
+            "Post A uses concrete facts from the company materials without inventing claims. It clearly states how Auto-Rebalance works in under a minute, matching skills, locations, and SLA deadlines, directly addressing the brief's requirements."
+          ]
+        },
+        "v2-rubric-reversed": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A better adheres to the brief's constraints by effectively setting up a scenario that an operations manager can immediately relate to, capturing their real working context in the first two lines.",
+            "The structure of Post A is more scannable with clear rhythm and flow. It presents the problem succinctly before introducing Auto-Rebalance as the solution, leading smoothly into the call-to-action for a demo.",
+            "Post A uses concrete facts from the company materials effectively without inventing claims, maintaining credibility by focusing on how Auto-Rebalance directly addresses common operational challenges."
+          ]
+        },
+        "v3-labels-swapped": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post X has a stronger hook with 'A tech calls in sick at 7 a.m.', immediately resonating with the audience's real working context of unexpected callouts.",
+            "Both posts fit well into the operations manager's day, but Post X more effectively captures the urgency and frustration of handling unplanned absences by detailing specific disruptions (missed emails, customer callbacks).",
+            "Post X uses concrete facts from the company materials without inventing claims. It clearly explains how Auto-Rebalance saves time and reduces phone calls, aligning with the audience's preference for practical solutions."
+          ]
+        },
+        "v4-order-swapped": {
+          "winner": "B",
+          "margin": 2,
+          "reasons": [
+            "Post A has a stronger hook in the first two lines by vividly describing a relatable scenario that immediately captures an operations manager's attention, aligning well with the brief's goal.",
+            "Both posts fit the audience's real working context, but Post A more effectively conveys the frustration of manual re-planning and how Auto-Rebalance alleviates it, making it more relevant to the target audience.",
+            "Post A uses concrete facts from the company materials without inventing claims, such as the specific time savings (45 minutes) and the immediate availability at no extra cost, which aligns with the brief's constraints."
+          ]
+        }
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s1-corey-social-vs-b0-p3",
+      "verdicts": {
+        "v1-original": "A",
+        "v2-rubric-reversed": "A",
+        "v3-labels-swapped": "A",
+        "v4-order-swapped": "B"
+      },
+      "details": {
+        "v1-original": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A has a stronger hook with the first two lines, immediately placing the reader into a relatable scenario of a tech calling out sick and the ensuing chaos.",
+            "Post A better fits the audience's real working context by vividly describing the typical morning challenges faced by operations managers, making it more engaging for them.",
+            "Both posts use concrete facts well, but Post A emphasizes the time saved (45 minutes to under a minute) in a way that directly addresses the pain point of manual replanning."
+          ]
+        },
+        "v2-rubric-reversed": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A better adheres to the brief's constraints by immediately recognizing an operations manager's morning scenario, effectively hooking the audience in the first two lines.",
+            "The structure of Post A is more scannable with clear rhythm and a logical flow from problem identification to solution presentation, ending with a strong call-to-action.",
+            "Post A uses concrete facts well without inventing claims, aligning closely with the provided company facts and brief. It emphasizes the time saved (45 minutes vs. under a minute) effectively."
+          ]
+        },
+        "v3-labels-swapped": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post X has a stronger hook with the first two lines, immediately placing the reader into a relatable scenario of a tech calling out sick and the ensuing chaos.",
+            "Both posts fit well to the audience's real working context, but Post X more effectively captures the urgency and frustration of the operations manager's morning routine.",
+            "Post X uses concrete facts from the company materials without inventing claims, maintaining adherence to the brief. It clearly outlines how Auto-Rebalance saves time by replacing manual replanning with an automated process."
+          ]
+        },
+        "v4-order-swapped": {
+          "winner": "B",
+          "margin": 2,
+          "reasons": [
+            "Post A has a stronger hook in the first two lines, immediately placing the reader into a relatable scenario with specific details ('Your tech just called out sick. It's 6:47 AM.') that align closely with an operations manager's real working context.",
+            "Both posts fit well within the audience's context, but Post A more effectively captures the urgency and frustration of the morning disruption by specifying '11 jobs on their board' and 'three SLA clocks already running,' which adds to the specificity and relatability.",
+            "Post A adheres closely to the brief's constraints with a clear next step ('Request a demo at slatebridge.com') and maintains structural craft through rhythm and scannability, making it easy for readers to grasp the value proposition quickly."
+          ]
+        }
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s1-corey-social-vs-b1-p1",
+      "verdicts": {
+        "v1-original": "A",
+        "v2-rubric-reversed": "B",
+        "v3-labels-swapped": "B",
+        "v4-order-swapped": "B"
+      },
+      "details": {
+        "v1-original": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A has a stronger hook with the first two lines, immediately placing the reader in a familiar Tuesday morning scenario that resonates well with operations managers.",
+            "Both posts fit the audience's real working context, but Post A more effectively captures the urgency and frustration of the situation by detailing the specific actions taken during a tech callout.",
+            "Post A uses concrete facts from the company materials without inventing claims. It clearly explains how Auto-Rebalance functions in terms of skills, locations, SLA deadlines, and its impact on reducing dispatcher workload."
+          ]
+        },
+        "v2-rubric-reversed": {
+          "winner": "B",
+          "margin": 2,
+          "reasons": [
+            "Post B starts with a stronger hook by immediately placing the reader in a specific, relatable Tuesday morning scenario, which aligns well with the brief's goal of resonating with operations managers.",
+            "Post B adheres closely to the provided facts and constraints, using concrete details like '14 jobs' and 'three SLA clocks,' enhancing specificity without inventing claims. It effectively communicates how Auto-Rebalance fits into the real working context of an operations manager.",
+            "The structure of Post B is clear and scannable, with a logical flow from problem to solution, culminating in a strong call-to-action that invites demo requests. This clarity supports the brief's requirement for a clear next step."
+          ]
+        },
+        "v3-labels-swapped": {
+          "winner": "B",
+          "margin": 2,
+          "reasons": [
+            "Post Y has a stronger hook with 'A tech calls out at 7 a.m. You have 14 jobs to redistribute, three SLA clocks already running,' which immediately places the reader in a relatable scenario for operations managers.",
+            "The specificity of Post Y is higher as it mentions '14 jobs' and 'three SLA clocks,' providing concrete details that resonate with the audience's real working context.",
+            "Post Y adheres closely to the brief by maintaining a plain, competent tone without hype words or exclamation points, aligning well with Slatebridge’s tone guardrails."
+          ]
+        },
+        "v4-order-swapped": {
+          "winner": "B",
+          "margin": 2,
+          "reasons": [
+            "Post A has a stronger hook in the first two lines by directly addressing the audience's familiar Tuesday morning scenario, making it more relatable and engaging.",
+            "Post A better fits the real working context of operations managers by vividly describing the dispatcher's shift from phone calls to watching the board, aligning with their preference for reducing interruptions.",
+            "Both posts use concrete facts well, but Post A provides a clearer picture of how Auto-Rebalance integrates seamlessly into existing workflows without additional costs or learning curves."
+          ]
+        }
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s1-corey-social-vs-b1-p2",
+      "verdicts": {
+        "v1-original": "A",
+        "v2-rubric-reversed": "A",
+        "v3-labels-swapped": "A",
+        "v4-order-swapped": "B"
+      },
+      "details": {
+        "v1-original": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A has a stronger hook in the first two lines, immediately placing the reader into a familiar scenario of a tech calling out sick and the ensuing chaos. This directly aligns with the brief's goal to resonate with operations managers' real working context.",
+            "Both posts fit well within the audience's real working context, but Post A more effectively captures the urgency and frustration of the situation by detailing specific interruptions (missed emails, customer callback) that an ops manager would recognize. This specificity enhances relatability and engagement.",
+            "Post A uses concrete facts from the company materials effectively, such as the time it takes to reassign jobs ('under a minute') and the elimination of phone calls, without inventing claims. It adheres closely to the brief's constraints by focusing on these factual benefits in a concise manner."
+          ]
+        },
+        "v2-rubric-reversed": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A better adheres to the brief's constraints by effectively setting up a scenario that an operations manager can immediately relate to, capturing their real working context in the first two lines.",
+            "The structure of Post A is more scannable with clear rhythm and pacing. It quickly moves from problem identification to solution presentation, ending with a strong call-to-action for demo requests.",
+            "Post A uses concrete facts well, such as specific timeframes (e.g., 'under a minute') and the impact on dispatcher workload ('missed two emails and a customer callback'), aligning closely with the provided company facts without inventing new claims."
+          ]
+        },
+        "v3-labels-swapped": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post X has a stronger hook in the first two lines, immediately placing the reader into a familiar scenario of a tech calling out sick and the ensuing chaos. This directly aligns with the brief's goal to resonate with operations managers' real working context.",
+            "Both posts fit well within the audience's real working context, but Post X more effectively captures the urgency and frustration of the situation by detailing specific interruptions (missed emails, customer callback) that an ops manager would recognize. This specificity enhances relatability and engagement.",
+            "Post X uses concrete facts from the company materials effectively, such as the time it takes to reassign jobs ('under a minute') and the elimination of phone calls, without inventing claims. It adheres closely to the brief's constraints by focusing on these factual benefits in a concise manner."
+          ]
+        },
+        "v4-order-swapped": {
+          "winner": "B",
+          "margin": 2,
+          "reasons": [
+            "Post A has a stronger hook in the first two lines by vividly describing a relatable scenario for operations managers, immediately engaging them with a familiar Tuesday morning challenge.",
+            "Both posts fit well into the audience's real working context, but Post A more effectively captures the stress and inefficiency of manual job reassignment, aligning closely with the dispatcher's daily interruptions.",
+            "Post A uses concrete facts from the company materials without inventing claims, clearly explaining how Auto-Rebalance addresses specific pain points like time spent on calls and SLA management. It maintains adherence to the brief by focusing on real benefits rather than hypothetical scenarios."
+          ]
+        }
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s1-corey-social-vs-b1-p3",
+      "verdicts": {
+        "v1-original": "A",
+        "v2-rubric-reversed": "A",
+        "v3-labels-swapped": "A",
+        "v4-order-swapped": "B"
+      },
+      "details": {
+        "v1-original": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A has a stronger hook with 'A tech calls out sick at 7 a.m.' which immediately resonates with an operations manager's typical morning scenario, aligning well with the brief's goal to recognize their Tuesday morning.",
+            "Post A better fits the audience's real working context by vividly describing the chaos of a morning when a technician calls in sick and how Auto-Rebalance simplifies this process. It directly addresses the pain points of manual replanning and phone calls, which are critical for operations managers.",
+            "Both posts use concrete facts well, but Post A emphasizes the time-saving aspect ('Forty-five minutes of replanning. Under a minute.') more effectively, reinforcing the feature's value without inventing claims."
+          ]
+        },
+        "v2-rubric-reversed": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A better adheres to the brief's constraints by immediately recognizing an operations manager's Tuesday morning scenario, effectively hooking the audience in the first two lines.",
+            "The structure of Post A is more scannable with clear sections that lead logically from problem identification to solution presentation and a call-to-action. It ends with a direct next step: 'Book a demo at slatebridge.com.'",
+            "Post A uses concrete facts well, such as the time saved (45 minutes vs. under a minute) and the specific benefits of Auto-Rebalance, aligning closely with the provided company facts without inventing claims."
+          ]
+        },
+        "v3-labels-swapped": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post X has a stronger hook with 'A tech calls out sick at 7 a.m.' which immediately resonates with an operations manager's typical morning scenario, aligning well with the brief's goal to recognize their Tuesday morning.",
+            "Both posts fit the audience's real working context by addressing common operational challenges. However, Post X more effectively captures the urgency and frustration of manual replanning, making it relatable for the target audience.",
+            "Post X uses concrete facts from the company materials well, such as 'reassigns their jobs across the remaining team in under a minute' and 'forty-five minutes of replanning. Under a minute.' It adheres strictly to provided facts without inventing claims, maintaining credibility."
+          ]
+        },
+        "v4-order-swapped": {
+          "winner": "B",
+          "margin": 2,
+          "reasons": [
+            "Post A has a stronger hook in the first two lines, immediately placing the reader into a familiar scenario of a tech calling out sick on a Tuesday morning. This directly aligns with the brief's goal to resonate with operations managers' real working context.",
+            "Post A fits better to the audience's real working context by describing specific challenges (e.g., 11 open jobs, three SLA clocks running) that an operations manager would recognize and relate to, enhancing its relevance and specificity.",
+            "Both posts adhere well to structural craft with clear rhythm and scannability. However, Post A ends with a more direct next step ('Book a demo through the link in the comments'), which is clearer and more actionable than Post B's call to action."
+          ]
+        }
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s2-corey-social-vs-b0-p1",
+      "verdicts": {
+        "v1-original": "A",
+        "v2-rubric-reversed": "A",
+        "v3-labels-swapped": "A",
+        "v4-order-swapped": "B"
+      },
+      "details": {
+        "v1-original": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A has a stronger hook in its first two lines by immediately challenging a common assumption about missed SLAs, which is likely to engage operations managers and industry peers.",
+            "Post A fits better into the audience's real working context by focusing on the systemic issue of data visibility rather than individual blame, aligning with the brief’s goal of authority and discussion.",
+            "Post A uses concrete facts effectively without inventing claims. It discusses common operational scenarios like incomplete information during job assignments, which resonates well with the target audience."
+          ]
+        },
+        "v2-rubric-reversed": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A adheres more closely to the brief by focusing on the scheduling-data problem without mentioning Slatebridge, aligning with the constraint of soft or no mention.",
+            "The structure of Post A is clear and scannable, leading logically from identifying a common issue to posing an engaging question that invites discussion. It ends effectively with a question aimed at prompting reader engagement.",
+            "Post A uses concrete facts about dispatch operations and scheduling challenges without inventing claims, maintaining credibility and relevance for the audience."
+          ]
+        },
+        "v3-labels-swapped": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post X has a stronger hook in its first two lines by immediately challenging a common assumption about missed SLAs, which is likely to engage operations managers and industry peers.",
+            "Post X fits better into the audience's real working context by focusing on the systemic issue of data visibility during scheduling, aligning closely with the brief’s argument that missed SLAs are often due to scheduling-data problems rather than people issues.",
+            "Post X uses concrete facts effectively without inventing claims. It discusses common scenarios in dispatch operations and emphasizes the limitations of current tools, which resonates well with the audience's experiences."
+          ]
+        },
+        "v4-order-swapped": {
+          "winner": "B",
+          "margin": 2,
+          "reasons": [
+            "Post A has a stronger hook in its first two lines by directly addressing a common misconception about missed SLAs, which immediately engages operations managers who are familiar with this issue.",
+            "Post A fits better to the audience's real working context by vividly describing a dispatcher's morning scenario and the challenges of managing multiple work orders without adequate data visibility. This resonates well with dispatch leads' daily experiences.",
+            "Post A uses concrete facts effectively, such as the number of open work orders and specific issues like travel time visibility, aligning closely with the company facts provided. It avoids inventing claims and stays within the brief's constraints."
+          ]
+        }
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s2-corey-social-vs-b0-p2",
+      "verdicts": {
+        "v1-original": "A",
+        "v2-rubric-reversed": "A",
+        "v3-labels-swapped": "A",
+        "v4-order-swapped": "B"
+      },
+      "details": {
+        "v1-original": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A has a stronger hook in its first two lines by directly addressing a common misconception about missed SLAs, which immediately engages operations managers and industry peers.",
+            "Post A fits better to the audience's real working context by focusing on the dispatcher's challenges with incomplete data, aligning closely with their daily experiences of managing multiple tasks under pressure.",
+            "Post A uses concrete facts effectively without inventing claims. It discusses specific scenarios like skill mismatches and deadline stacking that are directly relevant to the audience's work environment."
+          ]
+        },
+        "v2-rubric-reversed": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A adheres more closely to the brief's constraints by focusing on the scheduling-data problem without mentioning Slatebridge, aligning with the instruction that it may be mentioned softly or not at all.",
+            "The structure of Post A is clear and scannable, with a logical flow from identifying the common misattribution of missed SLAs to highlighting the underlying data issue. It ends effectively with an engaging question that invites discussion.",
+            "Post A uses concrete facts well by illustrating specific scenarios where incomplete information leads to missed SLAs, without inventing claims or customer stories, thus maintaining credibility and relevance."
+          ]
+        },
+        "v3-labels-swapped": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post X has a stronger hook in its first two lines by directly addressing a common misconception about missed SLAs, which immediately engages operations managers and industry peers.",
+            "Post X fits better to the audience's real working context by focusing on the dispatcher's challenges with incomplete data, aligning closely with their daily experiences of managing multiple tasks under pressure.",
+            "Both posts use concrete facts well, but Post X more effectively ties these specifics back to the core argument about scheduling-data problems without inventing claims, maintaining adherence to the brief and company facts."
+          ]
+        },
+        "v4-order-swapped": {
+          "winner": "B",
+          "margin": 2,
+          "reasons": [
+            "Post A has a stronger hook in its first two lines by immediately challenging common assumptions about missed SLAs, which is likely to engage operations managers and industry peers effectively.",
+            "Post A fits better into the audience's real working context by focusing on the core issue of incomplete information during job assignments without veering off into personal anecdotes or company promotion, adhering closely to the brief’s constraints.",
+            "Post A uses concrete facts well, such as discussing specific scheduling-data problems like travel time and skill gaps, which aligns with the audience's experience. It avoids inventing claims and stays within the provided company facts."
+          ]
+        }
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s2-corey-social-vs-b0-p3",
+      "verdicts": {
+        "v1-original": "A",
+        "v2-rubric-reversed": "A",
+        "v3-labels-swapped": "A",
+        "v4-order-swapped": "B"
+      },
+      "details": {
+        "v1-original": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A has a stronger hook in its first two lines by immediately addressing common misconceptions about missed SLAs, which is more engaging for operations managers.",
+            "Post A fits better to the audience's real working context by focusing on the structural issues of scheduling-data problems rather than individual performance, aligning closely with the brief’s argument.",
+            "Post A uses concrete facts effectively without inventing claims. It discusses specific scenarios like travel time and deadline stacking that are relevant to operations managers' experiences."
+          ]
+        },
+        "v2-rubric-reversed": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A adheres more closely to the brief's constraints by focusing on the scheduling-data problem without mentioning Slatebridge, aligning with the requirement of soft or no mention.",
+            "The structure and rhythm in Post A are clearer, with a logical flow from identifying the root cause (data visibility issues) to questioning the reader about their experiences. It ends effectively with an open-ended question that invites discussion.",
+            "Post A uses concrete facts well by illustrating specific scenarios where data gaps lead to SLA misses, without inventing claims or details not provided in the company materials."
+          ]
+        },
+        "v3-labels-swapped": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post X has a stronger hook in its first two lines by immediately addressing common misconceptions about missed SLAs, which is more engaging for operations managers.",
+            "Post X fits better to the audience's real working context by focusing on the structural issues of scheduling-data problems rather than individual performance, aligning with the brief’s emphasis on data visibility and decision-making challenges.",
+            "Both posts use concrete facts well, but Post X does so in a more concise manner that emphasizes the systemic nature of the problem without unnecessary detail, adhering closely to the brief's constraints."
+          ]
+        },
+        "v4-order-swapped": {
+          "winner": "B",
+          "margin": 2,
+          "reasons": [
+            "Post A has a stronger hook in its first two lines by framing missed SLAs as not starting with people issues but rather at the moment of assignment, which directly aligns with the brief's argument.",
+            "Post A fits better to the audience's real working context by using terms like 'tech', 'dispatcher', and 'SLA' that resonate more closely with operations managers in maintenance companies. It avoids any negative connotations associated with words like 'lazy'.",
+            "Post A uses concrete facts well, such as specific travel times and deadline stacking scenarios, without inventing claims or data not provided in the company materials."
+          ]
+        }
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s2-corey-social-vs-b1-p1",
+      "verdicts": {
+        "v1-original": "A",
+        "v2-rubric-reversed": "A",
+        "v3-labels-swapped": "A",
+        "v4-order-swapped": "A"
+      },
+      "details": {
+        "v1-original": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A has a stronger hook in its first two lines by immediately challenging a common assumption about missed SLAs, which is likely to engage operations managers and industry peers.",
+            "Post A fits better into the audience's real working context by directly addressing the issue of incomplete information during job assignments, a scenario familiar to dispatch leads.",
+            "Post A uses concrete facts effectively without inventing claims, focusing on visibility issues in scheduling data that align with the company's core capabilities."
+          ]
+        },
+        "v2-rubric-reversed": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A adheres more closely to the brief's constraints by focusing on the scheduling-data problem without explicitly mentioning Slatebridge until later in the narrative, aligning with the instruction that it may be mentioned softly or not at all.",
+            "The structure of Post A is crafted for better scannability and rhythm. It starts with a strong hook about missed SLAs being a data issue rather than a people problem, maintains a clear flow, and ends with an engaging question to prompt discussion among the audience.",
+            "Post A uses concrete facts effectively by discussing common operational scenarios without inventing claims or customer stories, staying true to the company's factual constraints. It also fits well into the real working context of operations managers by addressing familiar challenges in dispatch operations."
+          ]
+        },
+        "v3-labels-swapped": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post X has a stronger hook in its first two lines by immediately challenging a common assumption about missed SLAs, which is likely to engage operations managers and industry peers.",
+            "Post X fits better into the audience's real working context by focusing on the dispatcher's challenges with incomplete information, aligning closely with their daily experiences of managing interruptions and pressures.",
+            "Both posts use concrete facts well, but Post X more effectively ties these specifics back to the core argument about scheduling-data problems without veering off-topic or introducing unsupported claims."
+          ]
+        },
+        "v4-order-swapped": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post B has a stronger hook in its first two lines by immediately addressing a common misconception, which is likely to engage operations managers who are familiar with this issue.",
+            "The post fits well into the real working context of dispatch leads and ops managers by focusing on the pressures they face and the limitations of their tools, making it relatable and relevant.",
+            "Post B uses concrete facts effectively, such as discussing travel time visibility and deadline-critical job stacking, without inventing claims. It stays true to the company's core capabilities and audience challenges."
+          ]
+        }
+      },
+      "stable": true
+    },
+    {
+      "pairing": "s2-corey-social-vs-b1-p2",
+      "verdicts": {
+        "v1-original": "A",
+        "v2-rubric-reversed": "A",
+        "v3-labels-swapped": "A",
+        "v4-order-swapped": "B"
+      },
+      "details": {
+        "v1-original": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A has a stronger hook with its opening line 'Most missed SLAs aren't a people problem,' immediately challenging common assumptions and engaging the audience.",
+            "Post A better fits the audience's real working context by focusing on the systemic issues in scheduling-data, which aligns closely with the brief’s emphasis on data visibility problems rather than blaming individuals.",
+            "Both posts adhere well to the constraints of not promoting Slatebridge directly and ending with a question. However, Post A integrates the company mention more subtly and focuses more on the problem itself, making it less promotional."
+          ]
+        },
+        "v2-rubric-reversed": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A adheres more closely to the brief's constraints by focusing on the scheduling-data problem without mentioning Slatebridge directly, whereas Post B mentions it indirectly.",
+            "Post A has a stronger hook in the first two lines with 'Most missed SLAs aren't a people problem,' immediately addressing the core argument of the brief. Post B starts with a more general observation that lacks immediate impact.",
+            "Post A is structured for better scannability and rhythm, presenting a clear narrative flow from identifying the issue to questioning the audience, while Post B's structure is less direct in leading to the question."
+          ]
+        },
+        "v3-labels-swapped": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post X has a stronger hook with its opening line 'Most missed SLAs aren't a people problem,' immediately challenging common assumptions and engaging the audience.",
+            "Post X better fits the audience's real working context by focusing on the systemic issues in scheduling-data that operations managers face, rather than individual blame.",
+            "Post X uses concrete facts from the company materials effectively, such as the lack of visibility into deadline stacking and skill matching, without inventing claims."
+          ]
+        },
+        "v4-order-swapped": {
+          "winner": "B",
+          "margin": 2,
+          "reasons": [
+            "Post A has a stronger hook in its first two lines by directly addressing a common misconception about missed SLAs, which immediately engages operations managers who are familiar with this issue.",
+            "Post A fits better to the audience's real working context by providing a detailed scenario that reflects their daily challenges and frustrations, making it more relatable and specific without inventing facts.",
+            "Structurally, Post A is crafted with clear rhythm and scannability. It presents a logical sequence of events leading to an SLA failure, followed by a reflective question that invites discussion, adhering well to the brief's constraints."
+          ]
+        }
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s2-corey-social-vs-b1-p3",
+      "verdicts": {
+        "v1-original": "A",
+        "v2-rubric-reversed": "A",
+        "v3-labels-swapped": "A",
+        "v4-order-swapped": "B"
+      },
+      "details": {
+        "v1-original": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A has a stronger hook in its first two lines by immediately addressing common misconceptions about missed SLAs, which is more engaging for operations managers.",
+            "Post A fits better to the audience's real working context by focusing on the structural issues of scheduling-data problems rather than individual performance, aligning with the brief’s emphasis on data visibility and decision-making constraints.",
+            "Post A uses concrete facts effectively without inventing claims, maintaining adherence to the provided company facts. It discusses specific scenarios like travel time invisibility and deadline stacking that resonate well with the audience's experiences."
+          ]
+        },
+        "v2-rubric-reversed": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A adheres more closely to the brief's constraints by focusing on the scheduling-data problem without mentioning Slatebridge directly or indirectly. Post B, while subtle, mentions 'building toward this problem,' which could be interpreted as a feature pitch.",
+            "Structurally, Post A has better rhythm and scannability with clear sections that build upon each other logically. It ends with a question that invites discussion, aligning well with the brief's goal of authority and discussion.",
+            "Post A uses concrete facts effectively to illustrate the scheduling-data problem without inventing claims or scenarios not supported by the company materials. Post B is also specific but slightly less focused on the core argument due to its broader narrative."
+          ]
+        },
+        "v3-labels-swapped": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post X has a stronger hook in its first two lines by immediately addressing common misconceptions about missed SLAs, which is more engaging for operations managers.",
+            "Post X fits better to the audience's real working context by focusing on the structural issues of scheduling-data problems rather than individual performance, aligning with the brief’s emphasis on authority and discussion.",
+            "Both posts use concrete facts well, but Post X provides a clearer narrative about how data invisibility leads to missed SLAs, which is more specific and aligned with the provided company facts."
+          ]
+        },
+        "v4-order-swapped": {
+          "winner": "B",
+          "margin": 2,
+          "reasons": [
+            "Post A has a stronger hook in its first two lines by immediately addressing common misconceptions about missed SLAs, which is more engaging for operations managers.",
+            "Post A fits better to the audience's real working context by directly referencing scenarios that dispatch leads frequently encounter and discussing them as data errors rather than human errors.",
+            "Post A uses concrete facts effectively without inventing claims. It discusses specific issues like lack of visibility into travel time, skills, and deadline stacking, aligning well with the provided company facts."
+          ]
+        }
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s3-corey-social-vs-b0-p1",
+      "verdicts": {
+        "v1-original": "A",
+        "v2-rubric-reversed": "A",
+        "v3-labels-swapped": "A",
+        "v4-order-swapped": "B"
+      },
+      "details": {
+        "v1-original": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A has a stronger hook with the immediate mention of Meridian Facilities Group's tangible improvements, which directly addresses operations managers' interest in efficiency gains.",
+            "Post A better fits the audience's real working context by focusing on how Slatebridge resolves specific operational pain points like SLA compliance and overtime reduction, aligning closely with what an operations manager would prioritize.",
+            "Post A uses concrete facts effectively without inventing claims. It accurately presents the improvements (SLA compliance increase, reduced overtime) and provides a clear narrative of transformation that is credible and relatable to the audience."
+          ]
+        },
+        "v2-rubric-reversed": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A adheres more closely to the brief's constraints by effectively using two of the provided numbers (SLA compliance from 87% to 96%, overtime hours down 18%) and incorporating a direct quote from the ops director, enhancing credibility.",
+            "The structure of Post A is clearer with a logical flow that builds up to a compelling call-to-action. It emphasizes the problem ('the whiteboard came down') and solution (Slatebridge's capabilities) succinctly, making it more scannable and actionable for operations managers.",
+            "Post A better fits the audience's real working context by directly addressing common pain points (e.g., untangling schedules, reliance on manual systems like whiteboards) and presenting Slatebridge as a practical solution. It avoids generic statements and focuses on concrete improvements experienced by Meridian Facilities Group."
+          ]
+        },
+        "v3-labels-swapped": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post X has a stronger hook with its opening lines, immediately presenting the problem of relying on whiteboards and phone calls, which directly resonates with operations managers' pain points.",
+            "Post X better fits the audience's real working context by clearly illustrating how Slatebridge addresses specific operational challenges like SLA compliance and overtime reduction, using concrete examples from Meridian Facilities Group.",
+            "Both posts use provided numbers accurately, but Post X integrates them more effectively into a narrative that highlights tangible improvements, enhancing credibility without resorting to hype."
+          ]
+        },
+        "v4-order-swapped": {
+          "winner": "B",
+          "margin": 2,
+          "reasons": [
+            "Post A has a stronger hook in the first two lines by vividly describing the pre-Slatebridge scenario, which immediately engages operations managers who can relate to such challenges.",
+            "Post A better fits the audience's real working context by emphasizing common operational pain points like manual work and reliance on spreadsheets, aligning closely with the target audience’s experiences.",
+            "Both posts use concrete facts well, but Post A provides a more detailed narrative that contextualizes these facts within the broader operational challenges faced by dispatch teams."
+          ]
+        }
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s3-corey-social-vs-b0-p2",
+      "verdicts": {
+        "v1-original": "A",
+        "v2-rubric-reversed": "A",
+        "v3-labels-swapped": "A",
+        "v4-order-swapped": "B"
+      },
+      "details": {
+        "v1-original": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A has a stronger hook with the vivid description of the ops director's morning routine, immediately engaging operations managers by illustrating a relatable problem.",
+            "Post A fits better to the audience's real working context by emphasizing how Slatebridge resolves specific operational challenges like untangling schedules and managing SLA compliance without extra effort.",
+            "Both posts use concrete facts well, but Post A integrates them more seamlessly into a narrative that highlights the transformation experienced by Meridian Facilities Group, making it more compelling."
+          ]
+        },
+        "v2-rubric-reversed": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A adheres closely to the brief by using two of the provided numbers accurately (SLA compliance from 87% to 96%, overtime hours down 18%) and ends with a clear next step, inviting engagement through DM or comment.",
+            "The structure of Post A is more scannable due to its use of bullet points for key results, making it easier for operations managers to quickly grasp the impact Slatebridge had on Meridian Facilities Group. This structural craft enhances readability and effectiveness in conveying social proof.",
+            "Post A effectively uses a quote from the ops director early on, serving as a strong hook that directly addresses the audience's pain point of untangling schedules, thereby increasing its relevance and appeal to operations managers."
+          ]
+        },
+        "v3-labels-swapped": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post X has a stronger hook with the vivid description of the ops director's morning routine, immediately engaging operations managers by illustrating a relatable problem.",
+            "Post X fits better to the audience's real working context by emphasizing how Slatebridge reduces interruptions and phone calls, which are common pain points for dispatch leads.",
+            "Both posts use specific facts accurately, but Post X integrates them more seamlessly into a narrative that highlights the transformation experienced by Meridian Facilities Group."
+          ]
+        },
+        "v4-order-swapped": {
+          "winner": "B",
+          "margin": 2,
+          "reasons": [
+            "Post A has a stronger hook in the first two lines by immediately presenting a relatable problem (dispatchers working off a whiteboard) that resonates with operations managers.",
+            "Post A better fits the audience's real working context by clearly illustrating how Slatebridge addresses common pain points like SLA compliance and overtime, which are critical for operations managers.",
+            "Both posts use concrete facts well, but Post A integrates them more seamlessly into a narrative that highlights the transformation experienced by Meridian Facilities Group, making it more compelling."
+          ]
+        }
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s3-corey-social-vs-b0-p3",
+      "verdicts": {
+        "v1-original": "A",
+        "v2-rubric-reversed": "A",
+        "v3-labels-swapped": "A",
+        "v4-order-swapped": "B"
+      },
+      "details": {
+        "v1-original": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A has a stronger hook in the first two lines by immediately presenting Meridian Facilities Group's challenge with managing technicians on a whiteboard, which directly engages operations managers facing similar issues.",
+            "Post A fits better to the audience's real working context by vividly describing the operational challenges and improvements experienced by Meridian, using specific numbers and quotes that resonate with the target audience of operations managers.",
+            "Post A uses specificity effectively by incorporating concrete facts from the brief (e.g., SLA compliance increase, reduction in overtime hours) without inventing claims. It also includes a direct quote from the ops director, adding credibility and relatability."
+          ]
+        },
+        "v2-rubric-reversed": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A adheres more closely to the brief's constraints by effectively using two of the provided numbers (SLA compliance from 87% to 96%, overtime hours down 18%) and incorporating a direct quote from the ops director, enhancing credibility.",
+            "The structure of Post A is crafted with better rhythm and scannability. It uses bullet points for key results, making it easier for readers to quickly grasp the improvements experienced by Meridian Facilities Group.",
+            "Post A provides more specificity in its explanation of how Slatebridge addresses real-world challenges faced by operations managers, such as SLA breaches and unplanned overtime, without resorting to generic statements or invented claims."
+          ]
+        },
+        "v3-labels-swapped": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post X has a stronger hook in the first two lines by immediately presenting Meridian Facilities Group's challenge with managing 120 technicians on a whiteboard, which directly engages operations managers facing similar issues.",
+            "Post X fits better to the audience's real working context by detailing specific operational improvements (SLA compliance and overtime reduction) that are relevant to their daily challenges, while also emphasizing the elimination of the whiteboard, a common pain point.",
+            "Post X uses concrete facts effectively without inventing claims. It accurately presents the provided numbers and includes a direct quote from the ops director, enhancing credibility and specificity."
+          ]
+        },
+        "v4-order-swapped": {
+          "winner": "B",
+          "margin": 2,
+          "reasons": [
+            "Post A has a stronger hook with its opening line, immediately presenting a relatable problem for operations managers: managing technicians on a whiteboard.",
+            "Post A fits better to the audience's real working context by focusing on reducing interruptions and improving efficiency through data-driven scheduling, which aligns well with the needs of operations managers.",
+            "Both posts use concrete facts accurately, but Post A integrates them more seamlessly into its narrative, enhancing credibility without overloading the reader."
+          ]
+        }
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s3-corey-social-vs-b1-p1",
+      "verdicts": {
+        "v1-original": "A",
+        "v2-rubric-reversed": "A",
+        "v3-labels-swapped": "A",
+        "v4-order-swapped": "B"
+      },
+      "details": {
+        "v1-original": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A has a stronger hook in its first two lines by directly addressing the problem of dispatchers working off a whiteboard and phone calls, which immediately resonates with operations managers facing similar challenges.",
+            "Post A better fits the audience's real working context by emphasizing the transition from manual processes to an integrated system, highlighting the specific pain points that Slatebridge addresses.",
+            "Both posts use concrete facts well, but Post A provides a more compelling narrative by explaining how the shift in workflow leads to improved outcomes without increasing workload, which aligns closely with the audience's priorities."
+          ]
+        },
+        "v2-rubric-reversed": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A adheres more closely to the brief by using two of the provided numbers accurately and effectively, enhancing credibility.",
+            "The structural craft in Post A is superior with a clear rhythm and scannability. It presents information logically and ends with a strong call-to-action ('Comment \"demo\" or send a message').",
+            "Post A uses specificity well by directly addressing how Slatebridge resolves the operational issues faced by Meridian Facilities Group, making it more relevant to the audience's real working context."
+          ]
+        },
+        "v3-labels-swapped": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post X has a stronger hook in the first two lines by immediately addressing the problem of dispatchers working off a whiteboard and phone calls, which directly resonates with operations managers' pain points.",
+            "Post X better fits the audience's real working context by emphasizing the transition from manual processes to an integrated system, highlighting how Slatebridge addresses common operational challenges without resorting to hype.",
+            "Both posts use concrete facts well, but Post X provides a more compelling narrative by explaining the problem (the whiteboard as a symptom) and how Slatebridge resolves it, making the benefits clearer and more relatable."
+          ]
+        },
+        "v4-order-swapped": {
+          "winner": "B",
+          "margin": 2,
+          "reasons": [
+            "Post A has a stronger hook in the first two lines by directly addressing the audience's pain point with 'managed that on a whiteboard and a lot of phone calls,' which is more relatable to operations managers.",
+            "Post A better fits the real working context by emphasizing the shift from manual processes (whiteboards, phone calls) to streamlined software solutions, aligning closely with the audience’s daily challenges.",
+            "Both posts use concrete facts well, but Post A's structure and rhythm are clearer, making it more scannable. It presents changes in a straightforward list format that is easy to digest quickly."
+          ]
+        }
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s3-corey-social-vs-b1-p2",
+      "verdicts": {
+        "v1-original": "A",
+        "v2-rubric-reversed": "A",
+        "v3-labels-swapped": "A",
+        "v4-order-swapped": "B"
+      },
+      "details": {
+        "v1-original": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A has a stronger hook with the direct quote from the ops director about untangling schedules, which immediately resonates with operations managers facing similar challenges.",
+            "Post A fits better to the audience's real working context by focusing on specific operational improvements (SLA compliance and overtime reduction) that are directly relevant to their daily tasks.",
+            "Post A uses concrete facts well, accurately reflecting the provided numbers without adding any invented claims. It effectively communicates the benefits of Slatebridge in a relatable manner."
+          ]
+        },
+        "v2-rubric-reversed": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A adheres more closely to the brief's constraints by using two of the provided numbers accurately and effectively within a concise narrative, while Post B introduces an additional time frame ('a year ago') not supported by the company facts.",
+            "The structural craft in Post A is superior with its clear rhythm and scannability. It presents information logically and ends with a direct call to action, inviting engagement through DM or comment. In contrast, Post B's structure lacks a strong closing next step, ending with a link that may not prompt immediate interaction.",
+            "Post A uses specificity effectively by incorporating concrete facts from the brief without adding unsupported details. The narrative is focused on Meridian Facilities Group and their experience, which aligns well with the audience's context. Post B, while specific in some areas, introduces an unsupported timeline and lacks the same level of detail about the customer's journey."
+          ]
+        },
+        "v3-labels-swapped": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post X has a stronger hook with the direct quote from the ops director about untangling schedules, immediately engaging operations managers by addressing their pain points.",
+            "Post X fits better to the audience's real working context by focusing on specific operational improvements (SLA compliance and overtime reduction) that are directly relevant to dispatch leads and operations managers.",
+            "Both posts use concrete facts well, but Post X integrates them more seamlessly into a narrative about operational efficiency, enhancing specificity without inventing claims."
+          ]
+        },
+        "v4-order-swapped": {
+          "winner": "B",
+          "margin": 2,
+          "reasons": [
+            "Post A has a stronger hook in the first two lines by immediately presenting a relatable problem (managing schedules on whiteboards) that operations managers can connect with, whereas Post B starts more generally.",
+            "Post A better fits the audience's real working context by clearly outlining the specific improvements and changes experienced by Meridian Facilities Group, which directly addresses common pain points for operations managers in commercial maintenance companies.",
+            "Both posts use concrete facts well, but Post A integrates them into a narrative that emphasizes the transformation from chaos to efficiency, making it more compelling. It also ends with a clear next step, inviting readers to explore Slatebridge further."
+          ]
+        }
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s3-corey-social-vs-b1-p3",
+      "verdicts": {
+        "v1-original": "A",
+        "v2-rubric-reversed": "A",
+        "v3-labels-swapped": "A",
+        "v4-order-swapped": "B"
+      },
+      "details": {
+        "v1-original": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A has a stronger hook with the vivid description of dispatchers managing on a whiteboard, immediately engaging operations managers by highlighting a common pain point.",
+            "Post A better fits the audience's real working context by detailing specific operational challenges (e.g., SLA breaches and overtime) that Slatebridge addresses, making it more relatable to operations managers.",
+            "Both posts use concrete facts well, but Post A provides additional context on why the improvements matter (SLA compliance and overtime), enhancing specificity without inventing claims."
+          ]
+        },
+        "v2-rubric-reversed": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A adheres more closely to the brief by using two of the provided numbers accurately and effectively, enhancing credibility.",
+            "The structure in Post A is clearer with a strong rhythm and scannability. It presents facts logically and ends with a clear next step: a walkthrough link.",
+            "Post A provides specificity through concrete examples of improvements (SLA compliance, overtime reduction) and includes a compelling quote that fits the audience's context."
+          ]
+        },
+        "v3-labels-swapped": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post X has a stronger hook with the vivid description of dispatchers managing on a whiteboard, immediately engaging operations managers who can relate to this scenario.",
+            "Post X better fits the audience's real working context by detailing specific operational challenges (e.g., SLA breaches and overtime) that Slatebridge addresses, making it more relevant for operations managers.",
+            "Both posts use concrete facts well, but Post X provides a clearer narrative of transformation with specific before-and-after scenarios, enhancing credibility without inventing claims."
+          ]
+        },
+        "v4-order-swapped": {
+          "winner": "B",
+          "margin": 2,
+          "reasons": [
+            "Post A has a stronger hook with its opening lines, immediately presenting the problem and solution succinctly: 'Meridian Facilities Group runs 120 technicians across three cities... The whiteboard: gone.' This effectively captures attention by highlighting tangible improvements.",
+            "Post A fits better to the audience's real working context. It directly addresses dispatchers' needs for fewer interruptions and focuses on practical outcomes, aligning with the operations manager’s desire for software that reduces manual tasks without overpromising.",
+            "Both posts use specific facts well, but Post A integrates them more seamlessly into a narrative of improvement, making it easier to scan and understand. The clear next step ('Link in comments to book a 30-minute walkthrough') is straightforward and actionable."
+          ]
+        }
+      },
+      "stable": false
+    }
+  ],
+  "audited_at": "2026-08-29T22:13:41.911Z"
+}

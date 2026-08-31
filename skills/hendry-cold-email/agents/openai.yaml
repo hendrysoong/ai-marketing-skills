@@ -1,0 +1,4 @@
+interface:
+  display_name: "hendry-cold-email"
+  short_description: "Writes one cold B2B outreach email from a brief, facts only"
+  default_prompt: "Use $hendry-cold-email to write one cold email from my brief."

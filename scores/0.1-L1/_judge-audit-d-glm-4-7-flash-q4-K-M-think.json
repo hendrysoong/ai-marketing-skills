@@ -1,0 +1,871 @@
+{
+  "protocol_version": "0.1-L1",
+  "audit_revision": "d",
+  "seat": "glm-4.7-flash:q4_K_M",
+  "think": true,
+  "seat_label": "glm-4.7-flash:q4_K_M @ think=true",
+  "runtime_config": {
+    "temperature": 0,
+    "num_predict": 512,
+    "top_p": 0.9,
+    "top_k": 40,
+    "repeat_penalty": 1.1,
+    "num_ctx": 16384,
+    "format": "json",
+    "think": true
+  },
+  "output_channels": {
+    "response": 1,
+    "thinking": 72,
+    "empty": 0
+  },
+  "variants": [
+    "v1-original",
+    "v2-rubric-reversed",
+    "v3-labels-swapped",
+    "v4-order-swapped"
+  ],
+  "material": "frozen v0.1 pilot pairings, corey-social vs b0/b1, S1-S3, r1-r3, presentation orders 1 and 2 (audit-only)",
+  "verdict_semantics": "canonical: A = the skill-side run, B = the baseline-side run, whichever slot each occupied",
+  "stability": 0.16666666666666666,
+  "threshold": 0.9,
+  "passed": false,
+  "results": [
+    {
+      "pairing": "s1-corey-social-vs-b0-p1",
+      "verdicts": {
+        "v1-original": "B",
+        "v2-rubric-reversed": "B",
+        "v3-labels-swapped": "A",
+        "v4-order-swapped": "B"
+      },
+      "details": {
+        "v1-original": {
+          "winner": "B",
+          "margin": 2,
+          "reasons": [
+            "Post B creates an immediate visual of the ops manager's specific Tuesday morning context (7:14 AM start with eleven jobs and SLA deadlines), which is more resonant than Post A’s generic 'at 6 a.m.' scenario.",
+            "Both posts accurately reflect facts from materials; however. However, unlike post b",
+            "**Specificity**: While both use the core fact of replacing phone calls/whiteboards (which are in company context as alternatives to spreadsheets), B adds concrete operational constraints like plumbers not being certified for commercial refrigeration and a specific '15 minutes' demo promise that feels more tailored than A's generic walkthrough. However, I need to check if this constraint is explicitly allowed by the brief or just inferred from general knowledge of maintenance companies (which might be an invention). The prompt says: "
+          ]
+        },
+        "v2-rubric-reversed": {
+          "winner": "B",
+          "margin": 2,
+          "reasons": [
+            "Post B adheres more strictly to the brief's constraint of 'An ops manager recognizes their Tuesday morning' by using specific details (7:14 AM start) that feel like a real disruption rather than just any callout. It also uses concrete facts from company materials better—specifically mentioning plumbers not certified for commercial refrigeration—which demonstrates deep understanding without inventing claims, whereas Post A is slightly more generic in its description of the scramble.",
+            "Post B has stronger structural craft with clear rhythm and a very specific next step ('Fifteen minutes, no deck') that reduces friction to book. It also ends on 'Book a time at slatebridge.com,' which provides an actionable URL rather than just asking for one generally like Post A does."
+          ]
+        },
+        "v3-labels-swapped": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post X opens with the exact moment of discovery (7:04) and immediately visualizes the chaos—phone calls + spreadsheet—which perfectly matches ops managers' real working context.",
+            "Both posts fit well here. Post Y adds a specific number '11 jobs', which is concrete but feels slightly more like an example than universal truth, whereas X focuses on the *process* of scrambling (45 mins), aligning with their distrust of magic software that promises to fix everything instantly without human oversight."
+          ]
+        },
+        "v4-order-swapped": {
+          "winner": "B",
+          "margin": 2,
+          "reasons": [
+            "Post A's opening scenario (7:14 AM with eleven jobs) is more specific than Post B's generic 'at 6am', creating an immediate visceral recognition of the ops manager's Tuesday morning context.",
+            "Both posts accurately reflect facts from materials; however, post A explicitly mentions respecting constraints like plumber certifications for commercial refrigeration ('It does not guess...'), which adds concrete specificity to how it works in a real-world scenario without inventing new claims."
+          ]
+        }
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s1-corey-social-vs-b0-p2",
+      "verdicts": {
+        "v1-original": "A",
+        "v2-rubric-reversed": "B",
+        "v3-labels-swapped": "A",
+        "v4-order-swapped": "B"
+      },
+      "details": {
+        "v1-original": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A's hook ('At what time do we usually find out?') is more concrete and immediately resonates with an ops manager than Post B's narrative summary. It forces the reader to pause at a specific moment in their day.",
+            "Both posts fit well into real working context by describing interruptions, but post A focuses on one clear scenario (the phone call) which feels less generic ('four other techs') and more relatable as an immediate pain point than Post B's slightly cluttered timeline. It respects the 'no invented claims' rule strictly.",
+            "Post A is structurally tighter: it moves from a specific moment to the solution, then explains how Auto-Rebalance works simply without over-explaining technical logic ('matching skills...'), and ends with an actionable next step that references their actual numbers (a strong hook for conversion). Post B includes slightly more invented details about 'lost track of which SLA is closest' or a specific time 6:47 AM, whereas A sticks to the provided facts without adding fluff. It adheres strictly to constraints and word count better."
+          ]
+        },
+        "v2-rubric-reversed": {
+          "winner": "B",
+          "margin": 2,
+          "reasons": [
+            "Post B adheres more strictly to constraints: It is shorter (approx.160 words vs Post A's ~180), avoids invented details like 'Meridian account' or specific email counts that aren't in the brief facts.",
+            "\"Your tech called out sick at...\" creates a stronger hook than \"A tech calls...",
+            "Post B focuses on concrete utility ('No spreadsheet to rebuild', checking SLAs) which fits an ops manager's working context better, whereas Post A includes generic 'missed emails' and specific time stamps that feel slightly invented or less relevant."
+          ]
+        },
+        "v3-labels-swapped": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post X creates an immediate scene with 'A tech calls out sick' and immediately contrasts it to reality ('You find out... By 7:06'), which better fits the brief's success criteria of recognizing a Tuesday morning context.",
+            "Both posts fit well structurally. Post Y is slightly more verbose, risking breaching constraints or feeling less concise than X."
+          ]
+        },
+        "v4-order-swapped": {
+          "winner": "B",
+          "margin": 2,
+          "reasons": [
+            "Post A's hook is more visceral ('6:47 AM', 'haven't touched coffee') and directly addresses ops managers' specific pain point of morning chaos.",
+            "Both posts fit context well (callouts), but Post B invents a customer name/branding detail in the brief facts that isn't provided, violating constraints on invented claims. It also adds an extra email/callback missed which is not strictly necessary to make its case and feels slightly less grounded than A's focus purely on dispatch.",
+            "Post A uses concrete numbers from the company materials (45 minutes saved) effectively without inventing new ones like Post B does with 'Meridian account'. The structure in post a flows logically: problem -> solution mechanism -> benefit/efficiency gain -> availability info -> clear CTA. It is also slightly more concise and punchy, adhering to word count constraints better while maintaining impact."
+          ]
+        }
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s1-corey-social-vs-b0-p3",
+      "verdicts": {
+        "v1-original": "A",
+        "v2-rubric-reversed": "A",
+        "v3-labels-swapped": "A",
+        "v4-order-swapped": "B"
+      },
+      "details": {
+        "v1-original": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A's hook ('You have...') is more visceral and immediately recognizable as the ops manager’s Tuesday morning context than Post B which uses specific time (6:47 AM) that feels slightly invented or less universally relatable to a 'morning' scenario.",
+            "Both posts fit well structurally, but post A focuses strictly on removing phone calls ('You don't make fifteen'), aligning with company facts about distrusting software promising magic and respecting removal of interruptions. Post B adds generic industry terms (HVAC...), which dilutes the specific pain point focus slightly compared to 'fifteen phones'.",
+            "Post A adheres more closely to word count constraints without fluff, while post B feels marginally longer despite similar length; both are under 220 words but a tighter fit is better for LinkedIn scannability."
+          ]
+        },
+        "v2-rubric-reversed": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A adheres strictly to the brief's constraint of 'no invented claims' and avoids adding specific customer names or industries beyond what is provided (HVAC/electrical/plumbing/facilities are mentioned in company facts but Post B adds a very generic list that feels slightly more like filler than necessary context, whereas post A focuses purely on the operational pain).",
+            "Post A's hook ('A tech calls out sick at 7:am...') is punchier and immediately recognizable as 'Tuesday morning' chaos without needing to invent specific numbers (like an exact time of day or a count) that might feel slightly forced.",
+            "Both posts have strong structural craft, but Post B adds the list HVAC/electrical/plumbing/facilities at the end. While these are in company facts ('HVAC', 'electrical' appear), placing them there feels like generic filler rather than specific utility for an ops manager who already knows their industry; it dilutes the impact of Auto-Rebalance's core value proposition (saving 45 mins). Post A focuses tighter on saving time and phone calls, which is more concrete to a dispatcher."
+          ]
+        },
+        "v3-labels-swapped": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post X achieves the 'Success looks like' criterion perfectly by describing Tuesday's specific chaos (7 AM start) which resonates deeply with ops managers.",
+            "Both posts fit context well and use concrete facts correctly; Post X is slightly more concise without fluffing up to word count limits unnecessarily while maintaining impact, whereas Y adds a bit of generic 'HVAC...' list that dilutes the punchy opening hook relative to its length constraint (though both are under 220 words).",
+            "Post X has stronger structural craft with tighter rhythm and fewer filler phrases ('Most of', 'hoping you haven't'), making it feel more like direct dispatch advice rather than a marketing pitch."
+          ]
+        },
+        "v4-order-swapped": {
+          "winner": "B",
+          "margin": 2,
+          "reasons": [
+            "Post A's opening line ('Your tech just called out sick. It’s 6:47 AM.') creates an immediate sense of urgency and specific timing that Post B lacks.",
+            "Both posts accurately reflect the audience context (dispatcher interruptions), but post a is more concise in describing Auto-Rebalance without inventing details like '15 phone calls' or mentioning whiteboards which aren't core to Slatebridge's value proposition per facts, keeping it grounded."
+          ]
+        }
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s1-corey-social-vs-b1-p1",
+      "verdicts": {
+        "v1-original": "A",
+        "v2-rubric-reversed": "A",
+        "v3-labels-swapped": "A",
+        "v4-order-swapped": "A"
+      },
+      "details": {
+        "v1-original": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A creates an immediate visual of the specific morning chaos (7:04 discovery) that fits Ops Managers' real context better than Post B's generic 'Tuesday'. It uses concrete facts from the brief without inventing numbers like a dispatcher on two phones or chiller inspections.",
+            "Structurally, post A is tighter and more scannable. The transition to Auto-Rebalance benefits ('No phone tree...') feels earned by the previous paragraph of pain points rather than Post B's 'What used to take 45 minutes' which repeats information already in line three but less effectively as a benefit statement.",
+            "Post Adheres strictly to constraints: it is under word count, uses only two hashtags at the end (not mixed into text), and ends with one clear next step. It avoids Post B's tendency toward 'hype words like eliminates' which violates tone guardrails."
+          ]
+        },
+        "v2-rubric-reversed": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A adheres strictly to the brief by ending with 'book a demo' without extra fluff or caveats about reality. It uses concrete facts (7:04 discovery time) and avoids invented details like specific job types ('chiller inspection') that aren't in company materials.",
+            "Structurally, Post A is tighter—scannable paragraphs lead directly to the feature explanation with no tangential 'what used to take' filler at paragraph 2. The rhythm flows better from problem -> solution next step without breaking focus on Auto-Rebalance's mechanics or cost availability."
+          ]
+        },
+        "v3-labels-swapped": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post X creates an immediate visual of the specific morning chaos (7:04 phone calls) that matches 'Tuesday' in tone without inventing fake data like Y's arbitrary numbers. It respects constraints by staying under word count and avoiding invented claims.",
+            "Y introduces fabricated details ('14 jobs', a dispatcher on call, chiller inspection specifics), violating hard rules against using facts not provided or making up customers/numbers to sound more specific than the brief allows (Slatebridge doesn't have 300+ employees yet).",
+            "Post X is tighter and scannable. It ends with 'book a demo' clearly as requested in constraints, whereas Y's ending includes an extra paragraph of caveats ('We're not going to tell you it eliminates bad mornings') that dilutes the call-to-action clarity required by success criteria."
+          ]
+        },
+        "v4-order-swapped": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post B creates an immediate visual of the specific chaos (7:04-07:06) that ops managers face daily. This is stronger than Post A's generic 'Tuesday morning' hook.",
+            "Both posts fit context well and use concrete facts from Slatebridge materials regarding skills/location/SLA checks, but post b feels slightly more urgent in its pacing to match the briefs request for a specific recognition of their working reality (interruptions).",
+            "Post B adheres strictly to constraints: under 220 words? Yes. No hashtag lists; only two hashtags at end as requested by tone guardrails/brief constraint 'No hashtag lists'. It ends with clear next step and no invented claims."
+          ]
+        }
+      },
+      "stable": true
+    },
+    {
+      "pairing": "s1-corey-social-vs-b1-p2",
+      "verdicts": {
+        "v1-original": "A",
+        "v2-rubric-reversed": "A",
+        "v3-labels-swapped": "A",
+        "v4-order-swapped": "B"
+      },
+      "details": {
+        "v1-original": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A achieves the 'Tuesday morning' hook more immediately ('7:04', phone on hold) than Post B's slightly broader description of a callout taking time.",
+            "Both posts fit context well (phone calls vs. software), but post A is tighter and less wordy while retaining all key facts, whereas Post B adds some conversational padding that dilutes the impact within constraints."
+          ]
+        },
+        "v2-rubric-reversed": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A adheres strictly to the brief by ending with 'Book a link below' (a clear next step) while Post B ends on an abstract value proposition ('it's worth seeing how this works') without linking.",
+            "Both posts excel at hook strength and specificity regarding ops manager context. However, margin is awarded because post A uses concrete facts from materials: it explicitly mentions the 'Meridian account', which grounds a fictional scenario in company reality (Slatebridge customers), whereas Post B invents generic details like checking who's closest or specific SLA breaches that aren't strictly constrained to provided text.",
+            "Post A has tighter structural craft. It moves quickly into solution and ends with action, while post B meanders slightly longer on the 'why' before getting to availability."
+          ]
+        },
+        "v3-labels-swapped": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post X has the stronger hook: 'A tech calls in sick at 7 a.m.' is immediate context that perfectly matches ops managers' reality. Post Y's opening sentence repeats this but adds filler ('You spend...'), slowing down impact.",
+            "Both posts fit audience well and use concrete facts, so they tie on criteria (2) & (3).",
+            "Post X has superior structural craft: it uses a tight narrative arc—problem -> solution result-> benefit. It ends with the specific next step 'Book a demo through the link below.' Post Y is longer than necessary for LinkedIn's attention span and its ending ('Request...') feels slightly less direct despite being clear, though both are acceptable."
+          ]
+        },
+        "v4-order-swapped": {
+          "winner": "B",
+          "margin": 2,
+          "reasons": [
+            "Post A's hook ('You spend...') is more immediate than Post B's timeline details.",
+            "Both posts fit context well (interruptions), but post A focuses on 'doing arithmetic under pressure' which resonates with the specific pain point of phone calls and manual checks mentioned in company facts, whereas Post B adds a generic email/callback complaint that dilutes focus from SLA deadlines/skills/location logic."
+          ]
+        }
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s1-corey-social-vs-b1-p3",
+      "verdicts": {
+        "v1-original": "A",
+        "v2-rubric-reversed": "A",
+        "v3-labels-swapped": "A",
+        "v4-order-swapped": "B"
+      },
+      "details": {
+        "v1-original": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A's hook ('You have X open jobs...') is more visceral and immediately recognizable as an ops manager’s Tuesday morning than Post B.",
+            "Both posts fit well to context (interruptions), but post a focuses on the *result* of that interruption—45 minutes lost vs. 1 minute saved—which feels like concrete utility rather than just describing it."
+          ]
+        },
+        "v2-rubric-reversed": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A adheres more strictly and simply to all brief constraints (220 words max), avoiding invented details like '7:14' or specific SLA counts that aren't provided.",
+            "The hook in Post A ('You have...') is a stronger structural craft element than the narrative setup of B, creating immediate empathy for an ops manager's context without inventing numbers to sound more realistic (which violates hard rules).",
+            "Post A uses concrete facts from materials better: '45 minutes' and specific actions like calling techs are verbatim or implied correctly. Post B adds invented specifics ('7:14', 11 jobs, three SLA clocks) which violate the company's rule against inventing claims/facts not in provided files."
+          ]
+        },
+        "v3-labels-swapped": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post X creates an immediate visceral hook with 'A tech calls out sick at 7.a.m.', perfectly matching Success looks like: An ops manager recognizes their Tuesday morning. Post Y's specific time ('at 7a14') feels slightly contrived and less relatable than the general scenario in post X.",
+            "Both posts fit well, but they differ on specificity of facts used from materials vs invented claims that might feel 'too perfect'. While both use similar stats ('45 minutes', '<1 minute'), Post Y adds a specific time (7:14) which is not provided as fact and feels like an invention to make the scenario more dramatic. It also includes phrases about trusting algorithms they can't see, adding interpretation beyond facts.",
+            "Post X has stronger structural craft with clear rhythm 'Forty-five minutes of replanning / Under a minute.' This creates immediate impact on scannability without needing extra words or fluff like Post Y's paragraph explaining how the reassignments land ('It doesn’t ask you to trust an algorithm...'). It ends more directly and concisely, adhering strictly to constraints while driving action."
+          ]
+        },
+        "v4-order-swapped": {
+          "winner": "B",
+          "margin": 2,
+          "reasons": [
+            "Post A's opening line ('Your tech...') creates an immediate sense of urgency and specificity that Post B lacks. It feels like the ops manager is reading their own morning.",
+            "Both posts accurately reflect facts from materials (Auto-Rebalance replaces phone calls/dispatcher time), but only post A explicitly mentions '11 open jobs' which adds concrete texture without inventing new claims, whereas both are slightly generic in describing skills/locations logic. Post B's mention of an upset customer is a slight invention not supported by the brief.",
+            "Post A adheres strictly to constraints: 220 words max (A=191), no hashtag lists with more than two tags (#FieldService #CommercialMaintenance). It ends clearly ('Book...'). The tone remains plain and competent, avoiding hype. Post B also fits well but is slightly less concise in the middle section."
+          ]
+        }
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s2-corey-social-vs-b0-p1",
+      "verdicts": {
+        "v1-original": "B",
+        "v2-rubric-reversed": "B",
+        "v3-labels-swapped": "A",
+        "v4-order-swapped": "A"
+      },
+      "details": {
+        "v1-original": {
+          "winner": "B",
+          "margin": 2,
+          "reasons": [
+            "Post B uses a more concrete opening hook ('The tech didn't hustle. The dispatcher dropped the ball.') which directly addresses common audience frustrations before pivoting to data visibility.",
+            "While both posts fit well with operations managers' context of interruptions and pressure (Criterion #1), Post B provides specific illustrative details like '40 open work orders', '12 minutes away versus 45,' or a mental map that is three hours out, which creates stronger resonance than the more generalized examples in A ('three deadline-critical jobs stacked before noon').",
+            "Post B adheres strictly to constraints: it stays under word count (approx.180 words vs ~230), avoids any mention of Slatebridge features until near the end where 'giving dispatchers a picture' implies capability without pitching, and ends with an open question that invites discussion."
+          ]
+        },
+        "v2-rubric-reversed": {
+          "winner": "B",
+          "margin": 2,
+          "reasons": [
+            "Post B uses a more concrete opening hook ('The tech didn't hustle. The dispatcher dropped the ball.') which directly addresses common audience frustrations before pivoting to data visibility.",
+            "While both posts adhere well enough on facts and constraints (first person, no feature pitch), Post A's mention of Slatebridge at line 8 feels slightly forced compared to B where it is absent or softer; however this isn't a decisive factor for the 'authority' goal. The main differentiator here lies in how concretely they illustrate data visibility.",
+            "Post B provides specific operational details (40 open work orders, mental map three hours out of date) that resonate deeply with dispatch leads and operations managers facing real-world chaos; Post A is slightly more abstract ('incomplete information', 'tools') which makes it less immediately useful to the audience's working context."
+          ]
+        },
+        "v3-labels-swapped": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post X has a stronger hook ('Most missed SLAs aren't a people problem') because of its direct contradiction to common assumptions. Post Y uses 'I've seen' which is less authoritative than talking directly about the pattern.",
+            "Both posts fit well with operations managers by describing their daily reality (interruptions, pressure), but X focuses more on systemic visibility issues rather than just listing tasks like memory/habit in post Y."
+          ]
+        },
+        "v4-order-swapped": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post B has stronger structural craft and rhythm. It uses shorter sentences (e.g., 'A tech doesn’t make it...') to create a punchier narrative flow that is easier for operations managers on LinkedIn to scan quickly.",
+            "Both posts fit the audience's context well by describing dispatcher struggles with incomplete information, but Post B explicitly asks about debriefing processes ('how often does investigation get back'), which invites more specific operational feedback from peers than A’s broader question."
+          ]
+        }
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s2-corey-social-vs-b0-p2",
+      "verdicts": {
+        "v1-original": "B",
+        "v2-rubric-reversed": "B",
+        "v3-labels-swapped": "A",
+        "v4-order-swapped": "A"
+      },
+      "details": {
+        "v1-original": {
+          "winner": "B",
+          "margin": 2,
+          "reasons": [
+            "Post B has stronger hooks in lines one and two ('Most missed... assignment' vs 'I've talked to enough dispatch leads'), creating immediate curiosity about *when* a miss starts.",
+            "\"They start earlier — at the moment of assignment\" is more concrete than \"The decision was made quickly with incomplete data.\"",
+            "Both posts fit audience context well, but Post B's structure ('Someone looks... Reasonable.') feels slightly tighter and less wordy while hitting all constraints (no feature pitch). It avoids mentioning Slatebridge entirely as permitted by the brief 'softly or not at all'. Both end effectively; A asks about investigation start vs data side. The question in post b is very specific to dispatchers, fitting their context perfectly."
+          ]
+        },
+        "v2-rubric-reversed": {
+          "winner": "B",
+          "margin": 2,
+          "reasons": [
+            "Post B adheres more strictly to constraints by explicitly mentioning Slatebridge only once and softly ('This is what made me want to build...'), whereas Post A mentions 'Slatebridge' twice in a way that feels slightly less integrated with the founder voice.",
+            "Structurally, both posts are strong. However, post B has tighter rhythm: shorter sentences like \"Reasonable.\" create punchier impact than longer explanations of dispatch leads talking patterns found in text block 1 and paragraph structure differences between A's 'But when you look at what actually happened' vs B's direct cause-effect chain.",
+            "Post B is more specific to the audience. It uses concrete examples: a tech who was geographically close but didn't have certification, three SLA-critical jobs stacked on one person with 2pm deadlines (a very realistic detail for an ops manager), and mentions 'whiteboard or spreadsheet' which resonates deeply as their current reality vs A's more abstract mention of spreadsheets. The question in B ('how far back do you usually trace it') is slightly better positioned to elicit a specific dispatch story than the broader inquiry about investigation start points."
+          ]
+        },
+        "v3-labels-swapped": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post X has stronger hooks in lines one and two ('Most missed SLAs aren't a people problem' vs 'They start earlier — at the moment of assignment'), which immediately challenge common assumptions.",
+            "Both posts fit audience context well by describing dispatcher struggles with incomplete data (travel time estimates, skill gaps), but Post X explicitly mentions deadline stacking as an example that resonates more directly with operations managers dealing with SLA pressure."
+          ]
+        },
+        "v4-order-swapped": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post B has a stronger hook ('Most missed SLAs aren't a people problem') that directly addresses common misconceptions in operations management.",
+            "Both posts fit audience context well by focusing on dispatch leads and their daily struggles with incomplete data. Post A is slightly more conversational but less punchy than the specific 'who dropped the ball?' framing of B, which resonates deeply as an industry pain point (blame culture).",
+            "Post B uses concrete facts from Slatebridge's capabilities ('automatic filter for skill match', 'deadline pressure wasn't visible') to support its argument without inventing claims. Post A is slightly more generic in describing dispatch struggles but still valid; however, the specific mention of features like automatic filtering aligns better with a founder pitching their solution as an authority figure (as per brief). The tone guardrails are met by both: plain and concrete language throughout."
+          ]
+        }
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s2-corey-social-vs-b0-p3",
+      "verdicts": {
+        "v1-original": "B",
+        "v2-rubric-reversed": "B",
+        "v3-labels-swapped": "A",
+        "v4-order-swapped": "A"
+      },
+      "details": {
+        "v1-original": {
+          "winner": "B",
+          "margin": 2,
+          "reasons": [
+            "Post B has stronger hooks in lines one and two: 'Most missed SLAs don't start with... They start earlier —' is punchier than Post A's similar opening.",
+            "Both posts fit the audience well by focusing on dispatchers/ops managers. However, post b uses a more concrete example ('finishing a job 40 minutes away') which resonates better as 'real working context'.",
+            "Post B demonstrates higher specificity: it mentions specific constraints like travel time and deadline stacking without inventing facts not in the brief (e.g., no mention of Slatebridge). It avoids generic claims about coaching or performance conversations, focusing instead on data visibility at assignment. Post A is slightly more abstract with 'performance conversation'."
+          ]
+        },
+        "v2-rubric-reversed": {
+          "winner": "B",
+          "margin": 2,
+          "reasons": [
+            "Post B uses more concrete facts from Slatebridge's capabilities (e.g., 'skill match', 'deadline stacking') to support its argument about data visibility.",
+            "The hook in Post A ('lazy technician or distracted dispatcher' vs. the brief) is slightly less precise than post b which mirrors it closely but leads into a stronger, specific example of partial information missing from dispatch boards."
+          ]
+        },
+        "v3-labels-swapped": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post X has stronger hooks: 'Most missed SLAs don't start with...' vs Post Y's similar but slightly less punchy opening.",
+            "Both posts fit audience context well by describing dispatcher interruptions and the blame game. However, post x uses more concrete details like specific travel times ('90 minutes out') that feel grounded in real dispatch scenarios without inventing facts not implied or described as common patterns (like 'triple-stacked' vs Post Y's slightly vaguer description).",
+            "Post X is structurally tighter and scannable. It flows logically from the problem to a clear conclusion about data invisibility, whereas post y feels like it meanders into an argument against accepting normalcy ('What I've never heard...') which dilutes its focus on operations managers' working context as requested by 'fit'. Post X ends with one specific question that directly addresses their workflow decision-making process. Both adhere to constraints and word counts."
+          ]
+        },
+        "v4-order-swapped": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post B uses more concrete facts (90 minutes out vs '40 miles away', three jobs in a window) which creates stronger specificity and fits better with Slatebridge's focus on travel time visibility.",
+            "Both posts have strong hooks about missed SLAs being data problems rather than people problems. Post A is slightly smoother, but the difference isn't enough to overcome B's concrete advantage for an operations audience who values specific details over flowery language."
+          ]
+        }
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s2-corey-social-vs-b1-p1",
+      "verdicts": {
+        "v1-original": "B",
+        "v2-rubric-reversed": "B",
+        "v3-labels-swapped": "A",
+        "v4-order-swapped": "A"
+      },
+      "details": {
+        "v1-original": {
+          "winner": "B",
+          "margin": 2,
+          "reasons": [
+            "Post B has a stronger hook: 'Who dropped the ball?' is more immediate and resonant with dispatchers than Post A's generic opening. It better fits audience context by immediately addressing their defensive mindset.",
+            "Both posts fit well to real working contexts (dispatch leads dealing with interruptions), but post b feels slightly less preachy about blaming people, focusing instead on 'incomplete information' which is more empathetic and accurate for the persona described in company facts ('distrust software that promises magic').",
+            "Post B uses concrete specificity: mentioning a 40-minute travel time gap between calls adds tangible detail to illustrate visibility issues without inventing claims not supported by general industry logic or implied constraints. Post A relies on abstract 'three deadline-critical jobs' which is less vivid but still valid; however, post b's specific example feels more like an actual dispatch scenario described in the brief ('techs call... SLA clock runs out'). The mention of certification mismatch also adds concrete specificity to skills visibility."
+          ]
+        },
+        "v2-rubric-reversed": {
+          "winner": "B",
+          "margin": 2,
+          "reasons": [
+            "Post B adheres more strictly to constraints: it avoids mentioning Slatebridge until near the end and keeps a softer tone ('honestly') when doing so. It also ends with an open-ended question that invites specific industry context rather than just 'how often'. Post A mentions starting/starting company earlier, which feels slightly less subtle regarding promotion.",
+            "Post B demonstrates stronger structural craft: it uses concrete facts (40 minutes out from last call) to illustrate the data problem immediately in line 3. The rhythm is punchy and scannable with short paragraphs that break up dense logic about visibility vs performance problems."
+          ]
+        },
+        "v3-labels-swapped": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post X has a stronger hook ('Most missed SLAs aren't a people problem') that directly challenges common assumptions and invites engagement.",
+            "Both posts fit audience context well by describing dispatcher struggles with incomplete information. Post Y adds specific fictional details (40 minutes out) which violates the 'no invented facts' constraint, whereas post X relies on generalized but accurate observations from company materials about judgment calls under pressure without inventing numbers or scenarios not implied in general industry knowledge.",
+            "Post X is more concise and scannable with a clear structure: problem -> observation of blame cycle -> root cause (visibility) -> consequence. Post Y repeats the Slatebridge pitch ('We built...') at paragraph 4, which feels like an unnecessary feature mention that dilutes authority before ending on the question."
+          ]
+        },
+        "v4-order-swapped": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post B has stronger hooks in lines one and two ('Most missed SLAs aren\\'t a people problem.' vs 'When... who dropped'), directly addressing dispatch leads. Post A uses generic phrases like \\\"I've spent time inside operations; I don't think most ops have discipline problems, which feels slightly condescending or vague to the audience of peers.",
+            "Post B is more specific about what information was missing (travel visibility, deadline stacking) and how it affects decision-making under pressure. Post A mentions '40 minutes out' as a concrete fact but then generalizes too broadly with \\\"reasonable decisions\\\", whereas post B focuses on dispatchers making judgment calls based on incomplete data.",
+            "Post B adheres more strictly to the brief's constraint of not pitching Slatebridge features, mentioning it only once at the end. Post A mentions 'We built...' and describes capabilities ('skill', 'location') which feels like a feature pitch disguised as an opinion."
+          ]
+        }
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s2-corey-social-vs-b1-p2",
+      "verdicts": {
+        "v1-original": "B",
+        "v2-rubric-reversed": "B",
+        "v3-labels-swapped": "A",
+        "v4-order-swapped": "A"
+      },
+      "details": {
+        "v1-original": {
+          "winner": "B",
+          "margin": 2,
+          "reasons": [
+            "Post B has a stronger hook: 'Most missed SLAs I've seen get blamed on...' is more direct and immediately engages with common industry frustration than Post A's slightly softer opening.",
+            "Both posts fit the audience well by describing dispatchers' real working context (whiteboards/spreadsheets vs. mental estimates), but post B provides concrete, specific details about certification requirements ('two of those jobs require a certification this tech doesn't hold') that make it feel more authentic and less generic than Post A's 'right certification'.",
+            "Post B demonstrates better structural craft: the narrative arc moves from observation to explanation (the sequence) to consequence/debrief cycle. It ends with an even sharper question ('Where do you usually see SLA failures originate...'). The rhythm is punchier, especially in paragraphs 2 and 3 where it lists specific data gaps clearly before pivoting back."
+          ]
+        },
+        "v2-rubric-reversed": {
+          "winner": "B",
+          "margin": 2,
+          "reasons": [
+            "Post B provides a more concrete and vivid narrative sequence (Monday morning whiteboard/sheet vs. 'working fast with incomplete data' of Post A), which better illustrates how scheduling-data problems manifest in the real working context.",
+            "Both posts adhere to constraints well; however, post B's specific mention of travel time adding 40 minutes is an invented detail not present in company facts (which only mentions SLA countdown tracking and skill/location matching). While this makes it more vivid for a general audience than Post A which uses generic 'rough guess', the prompt explicitly states: outputs may *only* use facts from provided materials. Therefore, B violates constraints on specificity.",
+            "Post b's hook is slightly punchier ('I used to accept that framing') compared to post A('Most missed SLAs aren't a people problem'), but both are strong enough for LinkedIn context."
+          ]
+        },
+        "v3-labels-swapped": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post X has a stronger hook ('Most missed SLAs aren’t a people problem') that directly addresses operations managers' defensive instincts and invites them to challenge their own assumptions.",
+            "Both posts fit audience context well by describing dispatcher struggles with whiteboards/spreadsheets/skill mismatches. Post Y is slightly more specific on the 'Monday morning assignment/whiteboard' sequence, but X's description of working fast without full data feels equally authentic for a busy dispatch lead."
+          ]
+        },
+        "v4-order-swapped": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post B has a stronger hook ('Most missed SLAs aren't a people problem') that immediately challenges common assumptions.",
+            "Both posts fit audience context well by describing dispatcher struggles with incomplete information and deadline pressure. Post A is slightly more concrete in its sequence description (Monday morning assignment), but both are strong on this point."
+          ]
+        }
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s2-corey-social-vs-b1-p3",
+      "verdicts": {
+        "v1-original": "B",
+        "v2-rubric-reversed": "B",
+        "v3-labels-swapped": "A",
+        "v4-order-swapped": "A"
+      },
+      "details": {
+        "v1-original": {
+          "winner": "B",
+          "margin": 2,
+          "reasons": [
+            "Post B has stronger hooks in lines one and two ('Missed SLAs rarely start with... They *usually* start three hours earlier') compared to Post A's slightly more generic opening. It also better fits the audience of operations managers by explicitly mentioning 'whiteboard or a half-updated spreadsheet' as concrete working context, whereas post B is less specific about their daily reality.",
+            "Post B uses clearer structural craft with shorter paragraphs and distinct sections (The pattern -> The data problem), making it more scannable. It also adheres strictly to the brief's constraint of ending in one question ('For those... where does...', 'when you do a post-mortem on...' - wait, Post A ends better). Let me re-evaluate.",
+            "Post B has two questions at the end which dilutes impact compared to single strong CTA. However, looking closer: The brief asks for *one* LinkedIn post and one question ending it (singular implied by 'a clear next step'/'ends with a question'). Post A ends strongly ('When you've had an SLA miss...'), while B has two questions in the last paragraph which feels like filler or repetition. Also, regarding specificity: Both are good on facts from Slatebridge context but post B mentions spreadsheets/whiteboards explicitly as 'working' tools for dispatchers (fit to real working context), whereas A is slightly more abstract ('someone looks at a board'). Post b wins margin 2 due to hook strength and concrete fit."
+          ]
+        },
+        "v2-rubric-reversed": {
+          "winner": "B",
+          "margin": 2,
+          "reasons": [
+            "Post B adheres more strictly to constraints (no Slatebridge mention), uses concrete facts from company materials without inventing specific numbers like 'three hours earlier' which isn't in source text but is a reasonable inference; Post A mentions the founder voice well and has strong rhythm.",
+            "Structurally, both are good. However, post B's hook ('Missed SLAs rarely start with...') combined with concrete examples of debriefs (wrong tech, two jobs due same time) feels more grounded in 'real working context' than a general statement about assignment timing without specific example details from the brief.",
+            "Post A invents facts not supported by company materials: it claims dispatchers are always making assignments at speed and that SLAs have four hours left vs eight. Post B avoids these invented specifics, sticking to generic but accurate descriptions of whiteboards/spreadsheets (which align with 'replaces spreadsheets' in brief) without claiming specific timeframes or numbers not provided."
+          ]
+        },
+        "v3-labels-swapped": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post X has stronger hooks in lines one and two ('Most missed... They start earlier — at assignment.' vs 'Missed...', which is generic). Post Y invents a specific time metric (three hours) that isn't supported by the company facts or brief. It also uses vague phrases like \"a lot of operations managers\" instead of concrete observations about dispatchers' working context.",
+            "Post X adheres strictly to constraints: it stays within 250 words, avoids feature pitches for Slatebridge software features beyond general concepts (visibility), and ends with a specific question that invites discussion on the 'assignment made'. Post Y is slightly longer but less concise; its invented fact ('three hours earlier') weakens credibility.",
+            "Post X focuses specifically on *how* assignments are built without visibility, which directly addresses operations managers' real working context of interruptions. It avoids generic polish and feels like a competent dispatcher talking (tone guardrails)."
+          ]
+        },
+        "v4-order-swapped": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post B has stronger hooks: 'Most missed... dispatcher' vs Post A's similar but slightly less punchy opening. Both are good.",
+            "Both posts fit audience context well by describing dispatchers working from incomplete information and the post-mortem culture of blame."
+          ]
+        }
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s3-corey-social-vs-b0-p1",
+      "verdicts": {
+        "v1-original": "B",
+        "v2-rubric-reversed": "B",
+        "v3-labels-swapped": "A",
+        "v4-order-swapped": "B"
+      },
+      "details": {
+        "v1-original": {
+          "winner": "B",
+          "margin": 2,
+          "reasons": [
+            "Post B uses 'untangling' twice (morning context + whiteboard description), creating stronger thematic resonance than Post A's single use.",
+            "The structural craft in post B is superior: the opening sentence sets a clear problem state ('leftover problems'), followed by specific metrics and facts. The transition to Meridian isn't unusual creates better social proof for an audience of ops managers who feel isolated or overwhelmed, whereas 'That shift didn’t come from working harder' feels slightly generic.",
+            "Post B adheres more strictly to the brief's constraint on specificity: it explicitly mentions that nobody uses the whiteboard (a concrete fact derived directly from company capabilities), while Post A implies this with a less direct phrasing ('The dispatchers stopped using...'), making post B feel like tighter, zero-hype reporting."
+          ]
+        },
+        "v2-rubric-reversed": {
+          "winner": "B",
+          "margin": 2,
+          "reasons": [
+            "Post B adheres more strictly to constraints by using the exact quote provided ('I used to spend my mornings untangling...') without paraphrasing or altering context compared to Post A's slight variation.",
+            "Structurally, both posts are strong and scannable with clear next steps. However, post B feels slightly tighter in its narrative flow from problem -> solution (Slatebridge) -> proof."
+          ]
+        },
+        "v3-labels-swapped": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post X has stronger hooks by immediately contrasting the 'whiteboard' with modern software needs ('The whiteboard isn't the problem...'), which resonates more deeply than Post Y's narrative about starting mornings untangling problems.",
+            "Both posts fit well structurally and use concrete facts (120 technicians), but post X is punchier in its conclusion, offering a clear next step that feels less like marketing fluff (",
+            " just your actual dispatch workflow)."
+          ]
+        },
+        "v4-order-swapped": {
+          "winner": "B",
+          "margin": 2,
+          "reasons": [
+            "Post A uses the 'untangling' metaphor from the brief to create an immediate hook that resonates with operations managers dealing with messy schedules.",
+            "Both posts use concrete facts (120 technicians; SLAs up by X%; overtime down) and adhere strictly to provided constraints without inventing data or hype words, but Post A flows more naturally as a narrative story rather than bullet points."
+          ]
+        }
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s3-corey-social-vs-b0-p2",
+      "verdicts": {
+        "v1-original": "B",
+        "v2-rubric-reversed": "B",
+        "v3-labels-swapped": "A",
+        "v4-order-swapped": "B"
+      },
+      "details": {
+        "v1-original": {
+          "winner": "B",
+          "margin": 2,
+          "reasons": [
+            "Post B has the stronger hook by immediately contrasting 'still working off' with Post A which starts on facts but feels more like an intro sentence.",
+            "Both posts fit context well (SLA compliance and overtime), though post b's explanation of *why* it works ('information living in too many places') is slightly tighter than a, while both are accurate to the brief. However B wins marginally here due to flow",
+            "Post A invents 'None came from working harder' as an interpretation not explicitly stated but implied by context; Post B stays closer to facts without adding interpretive fluff like that specific phrase (though close enough). Actually looking closely, both are fine on specificity regarding the provided numbers. The margin is small here based purely on structural craft: post b has a slightly better rhythm and clearer 'next step' at end ('Link in comments'). Post A's next step asks for DM or comment but feels more like an ask than B which offers value first then links to book (standard LinkedIn best practice). Also, the final sentence of P-A is generic filler compared to p-B. The margin reflects this slight polish advantage without violating constraints."
+          ]
+        },
+        "v2-rubric-reversed": {
+          "winner": "B",
+          "margin": 2,
+          "reasons": [
+            "Post B adheres strictly to the brief by using exactly two of the required numbers (87% and down18%) without inventing any others or adding fluff like 'revolutionize'. It ends with an actionable next step ('Link in comments') that is more specific than Post A's generic DM.",
+            "Structurally, postB uses a tighter rhythm. The list format for facts immediately follows the hook about Meridian Facilities Group and whiteboards (lines 1-3), creating high scannability before diving into quotes or deeper explanation—this aligns better with an operations manager scanning quickly than Post A's narrative flow.",
+            "Post B fits audience context more precisely by explicitly mentioning 'managing... technicians' in the call to action, directly addressing a pain point for ops managers. It also avoids over-explaining *how* it works (e.g., avoiding lines like None of that came from working harder), which feels slightly less conversational and competent than Post B's direct statement about information visibility."
+          ]
+        },
+        "v3-labels-swapped": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post X has the stronger hook: 'Meridian Facilities Group runs... Six months ago...' immediately establishes scale and context without fluff.",
+            "Both posts fit audience needs well (ops managers), but Post Y adds an invented claim ('phone chain') which violates constraints regarding concrete facts from provided materials. This makes it less credible than post X's focus on visibility/next moves based strictly on the brief data."
+          ]
+        },
+        "v4-order-swapped": {
+          "winner": "B",
+          "margin": 2,
+          "reasons": [
+            "Post A uses the 'whiteboard' as an immediate visual hook in line two ('Six months ago... still working off'), which is more concrete than Post B's passive description of management.",
+            "Both posts use facts well (Meridian Facilities Group stats), but post A connects them to a specific pain point: information living too many places, whereas Post B focuses on 'phone tag' and guessing certifications. The brief emphasizes the dispatcher board replacing spreadsheets/whiteboards; this is more central in text flow for Option A.",
+            "Post A has stronger structural craft with clear bullet points ('— SLA compliance...', etc.) that stand out against a wall of copy, while Post B buries them deeper into paragraphs and uses italics which can be harder to scan on mobile. The 'next step' is also clearer in the final paragraph: seeing how Slatebridge handles dispatch."
+          ]
+        }
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s3-corey-social-vs-b0-p3",
+      "verdicts": {
+        "v1-original": "A",
+        "v2-rubric-reversed": "B",
+        "v3-labels-swapped": "A",
+        "v4-order-swapped": "A"
+      },
+      "details": {
+        "v1-original": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A uses the provided facts more precisely (e.g., 'dispatchers were managing that on a whiteboard' vs Post B's slightly off-timing reference to Meridian), adheres strictly to word count constraints without fluff.",
+            "\"SLA compliance: down from X%\" is presented as concrete data, whereas \"went up/down by Y amount/percentage points?\""
+          ]
+        },
+        "v2-rubric-reversed": {
+          "winner": "B",
+          "margin": 2,
+          "reasons": [
+            "Post B adheres more strictly to the brief by avoiding invented context (e.g., 'A year ago' in Post A) while maintaining all required facts.",
+            "Structurally, both posts are strong on scannability and rhythm. However, post B's explanation of *how* data reduces calls ('When a tech...') is concrete utility for an ops manager that directly addresses their working context better than the generic 'That shift didn't come from...' in Post A."
+          ]
+        },
+        "v3-labels-swapped": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post X uses the 'untangle' metaphor immediately in line two ('Their ops director described her mornings... untangling'), which creates a stronger hook by connecting directly to an audience pain point.",
+            "Both posts use facts well (Meridian Facilities Group stats), but Post Y invents specific mechanics like showing who's closest and qualified at 7am, claiming the system 'shows' this without explicit company capability data. This violates constraints on invented claims/facts."
+          ]
+        },
+        "v4-order-swapped": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post B provides deeper context for *why* SLA compliance and overtime matter (contract risk vs payroll), directly addressing an operations manager’s real working pain points.",
+            "While both posts use facts well, Post A invents a specific scenario ('a tech calls in sick at 7am') which is not explicitly stated as the primary driver of success; it adds narrative flair that risks straying from 'zero hype' and concrete usefulness for this audience. It also uses an invented claim about dispatchers making fewer phone calls.",
+            "Post B adheres strictly to provided facts, focusing on *consequences* (breaches eating afternoons) rather than inventing specific daily scenarios or hypotheticals."
+          ]
+        }
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s3-corey-social-vs-b1-p1",
+      "verdicts": {
+        "v1-original": "A",
+        "v2-rubric-reversed": "A",
+        "v3-labels-swapped": "A",
+        "v4-order-swapped": "A"
+      },
+      "details": {
+        "v1-original": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A uses 'The whiteboard came down' which is more concrete than Post B’s passive phrasing and creates stronger visual imagery of the operational change.",
+            "Both posts use facts well (Meridian Facilities Group stats), but post A's closing call to action ('Comment \"demo\" or send a message') feels less generic/templated compared to Link in comments, making it feel more personal for an ops manager audience who prefers directness over link-clicking."
+          ]
+        },
+        "v2-rubric-reversed": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A adheres strictly to constraints: uses exactly two provided numbers (87% and 18%), stays under the word count limit without fluff.",
+            "Structural craft is superior in Post A; it ends with a clear next step ('Comment \"demo\" or send a message') that requires low friction for engagement, whereas B relies on an external link which often gets ignored by LinkedIn users scrolling quickly. The rhythm of '—' lists and the transition from symptoms to solution feels more deliberate.",
+            "Specificity is handled well in both posts regarding facts (Meridian Facilities Group stats), but Post A's closing call-to-action ('Comment \"demo\"') creates a higher probability of immediate engagement than B's generic link placement, which fits an operations manager’s context where they prefer direct interaction over clicking away from the feed."
+          ]
+        },
+        "v3-labels-swapped": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post X uses 'The whiteboard came down' which is more concrete than Post Y’s passive phrasing and creates stronger visual imagery for ops managers.",
+            "Both posts use the same facts well (Meridian Facilities Group stats), but post X's closing call to action ('Comment \"demo\" or send a message') feels less generic/transactional compared to 'Link in comments'.",
+            "Post X adheres strictly to constraints with no invented claims and hits all key metrics, while Post Y adds the slightly vague phrase 'institutional memory' which isn't explicitly defined as an issue by Meridian's director quote."
+          ]
+        },
+        "v4-order-swapped": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post B uses the 'whiteboard as a symptom' framing to create stronger structural craft by connecting concrete facts (SLA compliance up) directly to an audience pain point: manual information gaps.",
+            "(1) Hook strength in Post A is functional but generic ('Meridian Facilities Group runs...'). In contrast, post B opens with specific context and immediately pivots from the whiteboard problem without fluff. Margin 2 favors this tighter opening rhythm.\n(3) Specificity check confirms both posts use provided facts accurately (120 techs; SLA up to/from numbers). Post A uses 'stopped being used entirely' while fact says dispatcher stopped using it, which is a slight deviation in nuance but acceptable within constraints. Both are accurate enough on the surface.",
+            "(4) Structural craft: While post B adds more text than allowed by brief (approx 260 words vs max), its argument flows logically from symptom to solution and ends with 'worth conversation' rather than generic polish, though it slightly exceeds word count.\n(5) Adherence constraints check confirms both use facts correctly. Post A's ending is a standard CTA; post B offers specific options ('demo', message). Margin 2 favors the more actionable closing."
+          ]
+        }
+      },
+      "stable": true
+    },
+    {
+      "pairing": "s3-corey-social-vs-b1-p2",
+      "verdicts": {
+        "v1-original": "A",
+        "v2-rubric-reversed": "A",
+        "v3-labels-swapped": "A",
+        "v4-order-swapped": "B"
+      },
+      "details": {
+        "v1-original": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A uses a stronger hook by starting directly with the specific customer and scale (120 tech across three cities) without preamble.",
+            "Both posts fit context well. Post B adds 'spreadsheets' which is implied but not in facts; while plausible for this industry segment ('whiteboards'), it slightly risks inventing detail, whereas A sticks strictly to provided constraints regarding whiteboard usage only."
+          ]
+        },
+        "v2-rubric-reversed": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A adheres strictly to the brief's constraints by using exactly two of the provided numbers (87% and down18%) without inventing data or adding context not in materials. It ends with a clear next step ('DM me' vs generic link), which is more actionable for an ops manager.",
+            "Structurally, Post A uses strong rhythm: 'Meridian Facilities Group runs 120 technicians...' followed by the problem (whiteboard/87%/overtime) and solution metrics presented as bullet points. The quote from their director anchors credibility before pivoting to Slatebridge's mechanics ('skill match', 'SLA countdown').",
+            "Post B adds invented context like a year ago, spreadsheets mentioned in passing but not provided facts, generic link at the end instead of specific call-to-action (CTA), and fluff phrases such as \"worth closer look\". It feels more polished than useful for an operations manager who wants concrete proof without hype."
+          ]
+        },
+        "v3-labels-swapped": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post X uses a stronger hook by starting directly with the specific customer and scale (120 tech) without preamble.",
+            "Both posts fit well for ops managers; Post Y adds an extra paragraph about 'patching together schedules' which is useful but slightly less concise than post x's focus on untangling mornings, though both are strong. However X feels more like a direct case study read by peers rather than sales copy targeting the reader directly.",
+            "Post X adheres strictly to constraints: uses 120 techs (brief), SLA change and overtime drop with numbers from brief; no invented claims beyond what is in materials or implied logically ('whiteboard gone'). Post Y adds 'spreadsheets' which isn't explicitly mentioned as a pain point for this specific customer, though it's generally true. It also includes the company description at the end (50-500 techs) and an external link call to action instead of DM/comment next step defined in brief constraints? Wait X ends with clear CTA 'DM me or drop comment'. Y has generic text about who we work with then a [link]. The prompt asks for adherence to constraint: Ends with clearly stated Next Step. Post x does this explicitly via social interaction (common on LinkedIn). While post y links out, the brief says "
+          ]
+        },
+        "v4-order-swapped": {
+          "winner": "B",
+          "margin": 2,
+          "reasons": [
+            "Post A has stronger structural craft with the use of em-dashes for key metrics (— SLA compliance..., — Overtime hours...) which creates immediate visual rhythm on mobile devices.",
+            "Both posts adhere to constraints and facts well. Post B adds a call-to-action ('DM me or drop...') that feels slightly more intrusive than A's 'See how Slatebridge works' link, but the main differentiator is readability."
+          ]
+        }
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s3-corey-social-vs-b1-p3",
+      "verdicts": {
+        "v1-original": "A",
+        "v2-rubric-reversed": "A",
+        "v3-labels-swapped": "A",
+        "v4-order-swapped": "A"
+      },
+      "details": {
+        "v1-original": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A uses the provided quote ('I used to spend my mornings untangling...') verbatim as requested by constraints and integrates it more naturally into an explanation of *why* those metrics matter (SLAs eating afternoons vs. payroll), whereas Post B adds 'institutional memory' which is not in company facts.",
+            "Post A explicitly connects the specific operational pain points mentioned ('wrong tech assigned', SLA clocks ticking') to concrete outcomes, showing a deeper understanding of an ops manager's context than generic mentions like 'fewer interruptions'.",
+            "Structurally, both are strong on scannability and rhythm. Post B adds fluff with phrases that aren't in the brief (e.g., 'product promised...'), while A stays strictly within constraints to deliver concrete utility."
+          ]
+        },
+        "v2-rubric-reversed": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A adheres strictly to the brief by using specific facts (120 technicians) early on without inventing context like 'institutional memory' which isn't provided.",
+            "Structurally, Post A uses a clear rhythm and scannability with bullet points for metrics. It ends strongly ('That's the job...') before pivoting clearly to CTA: showing what Meridian sees vs manual reconciliation (which is more specific than just saying it 'worth conversation').",
+            "Post B invents context by mentioning an institutional memory that isn't in company facts, and uses a generic closing call-to-action. Post A connects better with the audience's pain point of phone calls/whiteboards explicitly mentioned as their day."
+          ]
+        },
+        "v3-labels-swapped": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post X uses the 'untangling' metaphor from the brief more effectively as an opener ('Their ops director described her mornings...'), creating stronger empathy with operations managers who face chaos.",
+            "Both posts use facts well (Meridian's stats), but Post Y adds a generic claim about not promising to transform that isn't in the company materials, violating constraints on invented claims. It also uses 'institutional memory' which is vague and less concrete than X’s focus on phone calls/whiteboards."
+          ]
+        },
+        "v4-order-swapped": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post B provides significantly more context for *why* SLA compliance and overtime matter (contract risk vs payroll), directly addressing an operations manager's pain points.",
+            "The hook of Post A ('Meridian Facilities Group runs...') is functional but generic. The opening sentence in post B sets a stronger scene by contrasting the 'untangling' reality with what dispatchers actually do, creating immediate empathy for their working context."
+          ]
+        }
+      },
+      "stable": true
+    }
+  ],
+  "audited_at": "2026-08-30T16:15:30.947Z"
+}

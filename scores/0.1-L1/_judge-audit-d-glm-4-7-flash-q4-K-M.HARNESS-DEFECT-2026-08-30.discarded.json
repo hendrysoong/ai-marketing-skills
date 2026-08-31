@@ -1,0 +1,307 @@
+{
+  "protocol_version": "0.1-L1",
+  "audit_revision": "d",
+  "seat": "glm-4.7-flash:q4_K_M",
+  "variants": [
+    "v1-original",
+    "v2-rubric-reversed",
+    "v3-labels-swapped",
+    "v4-order-swapped"
+  ],
+  "material": "frozen v0.1 pilot pairings, corey-social vs b0/b1, S1-S3, r1-r3, presentation orders 1 and 2 (audit-only)",
+  "verdict_semantics": "canonical: A = the skill-side run, B = the baseline-side run, whichever slot each occupied",
+  "stability": 0,
+  "threshold": 0.9,
+  "passed": false,
+  "results": [
+    {
+      "pairing": "s1-corey-social-vs-b0-p1",
+      "verdicts": {
+        "v1-original": "unparseable",
+        "v2-rubric-reversed": "unparseable",
+        "v3-labels-swapped": "unparseable",
+        "v4-order-swapped": "unparseable"
+      },
+      "details": {
+        "v1-original": null,
+        "v2-rubric-reversed": null,
+        "v3-labels-swapped": null,
+        "v4-order-swapped": null
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s1-corey-social-vs-b0-p2",
+      "verdicts": {
+        "v1-original": "unparseable",
+        "v2-rubric-reversed": "unparseable",
+        "v3-labels-swapped": "unparseable",
+        "v4-order-swapped": "unparseable"
+      },
+      "details": {
+        "v1-original": null,
+        "v2-rubric-reversed": null,
+        "v3-labels-swapped": null,
+        "v4-order-swapped": null
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s1-corey-social-vs-b0-p3",
+      "verdicts": {
+        "v1-original": "unparseable",
+        "v2-rubric-reversed": "unparseable",
+        "v3-labels-swapped": "unparseable",
+        "v4-order-swapped": "unparseable"
+      },
+      "details": {
+        "v1-original": null,
+        "v2-rubric-reversed": null,
+        "v3-labels-swapped": null,
+        "v4-order-swapped": null
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s1-corey-social-vs-b1-p1",
+      "verdicts": {
+        "v1-original": "unparseable",
+        "v2-rubric-reversed": "unparseable",
+        "v3-labels-swapped": "unparseable",
+        "v4-order-swapped": "unparseable"
+      },
+      "details": {
+        "v1-original": null,
+        "v2-rubric-reversed": null,
+        "v3-labels-swapped": null,
+        "v4-order-swapped": null
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s1-corey-social-vs-b1-p2",
+      "verdicts": {
+        "v1-original": "unparseable",
+        "v2-rubric-reversed": "unparseable",
+        "v3-labels-swapped": "unparseable",
+        "v4-order-swapped": "unparseable"
+      },
+      "details": {
+        "v1-original": null,
+        "v2-rubric-reversed": null,
+        "v3-labels-swapped": null,
+        "v4-order-swapped": null
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s1-corey-social-vs-b1-p3",
+      "verdicts": {
+        "v1-original": "unparseable",
+        "v2-rubric-reversed": "unparseable",
+        "v3-labels-swapped": "unparseable",
+        "v4-order-swapped": "unparseable"
+      },
+      "details": {
+        "v1-original": null,
+        "v2-rubric-reversed": null,
+        "v3-labels-swapped": null,
+        "v4-order-swapped": null
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s2-corey-social-vs-b0-p1",
+      "verdicts": {
+        "v1-original": "unparseable",
+        "v2-rubric-reversed": "unparseable",
+        "v3-labels-swapped": "unparseable",
+        "v4-order-swapped": "unparseable"
+      },
+      "details": {
+        "v1-original": null,
+        "v2-rubric-reversed": null,
+        "v3-labels-swapped": null,
+        "v4-order-swapped": null
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s2-corey-social-vs-b0-p2",
+      "verdicts": {
+        "v1-original": "unparseable",
+        "v2-rubric-reversed": "unparseable",
+        "v3-labels-swapped": "unparseable",
+        "v4-order-swapped": "unparseable"
+      },
+      "details": {
+        "v1-original": null,
+        "v2-rubric-reversed": null,
+        "v3-labels-swapped": null,
+        "v4-order-swapped": null
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s2-corey-social-vs-b0-p3",
+      "verdicts": {
+        "v1-original": "unparseable",
+        "v2-rubric-reversed": "unparseable",
+        "v3-labels-swapped": "unparseable",
+        "v4-order-swapped": "unparseable"
+      },
+      "details": {
+        "v1-original": null,
+        "v2-rubric-reversed": null,
+        "v3-labels-swapped": null,
+        "v4-order-swapped": null
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s2-corey-social-vs-b1-p1",
+      "verdicts": {
+        "v1-original": "unparseable",
+        "v2-rubric-reversed": "unparseable",
+        "v3-labels-swapped": "unparseable",
+        "v4-order-swapped": "unparseable"
+      },
+      "details": {
+        "v1-original": null,
+        "v2-rubric-reversed": null,
+        "v3-labels-swapped": null,
+        "v4-order-swapped": null
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s2-corey-social-vs-b1-p2",
+      "verdicts": {
+        "v1-original": "unparseable",
+        "v2-rubric-reversed": "unparseable",
+        "v3-labels-swapped": "unparseable",
+        "v4-order-swapped": "unparseable"
+      },
+      "details": {
+        "v1-original": null,
+        "v2-rubric-reversed": null,
+        "v3-labels-swapped": null,
+        "v4-order-swapped": null
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s2-corey-social-vs-b1-p3",
+      "verdicts": {
+        "v1-original": "unparseable",
+        "v2-rubric-reversed": "unparseable",
+        "v3-labels-swapped": "unparseable",
+        "v4-order-swapped": "unparseable"
+      },
+      "details": {
+        "v1-original": null,
+        "v2-rubric-reversed": null,
+        "v3-labels-swapped": null,
+        "v4-order-swapped": null
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s3-corey-social-vs-b0-p1",
+      "verdicts": {
+        "v1-original": "unparseable",
+        "v2-rubric-reversed": "unparseable",
+        "v3-labels-swapped": "unparseable",
+        "v4-order-swapped": "unparseable"
+      },
+      "details": {
+        "v1-original": null,
+        "v2-rubric-reversed": null,
+        "v3-labels-swapped": null,
+        "v4-order-swapped": null
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s3-corey-social-vs-b0-p2",
+      "verdicts": {
+        "v1-original": "unparseable",
+        "v2-rubric-reversed": "unparseable",
+        "v3-labels-swapped": "unparseable",
+        "v4-order-swapped": "unparseable"
+      },
+      "details": {
+        "v1-original": null,
+        "v2-rubric-reversed": null,
+        "v3-labels-swapped": null,
+        "v4-order-swapped": null
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s3-corey-social-vs-b0-p3",
+      "verdicts": {
+        "v1-original": "unparseable",
+        "v2-rubric-reversed": "unparseable",
+        "v3-labels-swapped": "unparseable",
+        "v4-order-swapped": "unparseable"
+      },
+      "details": {
+        "v1-original": null,
+        "v2-rubric-reversed": null,
+        "v3-labels-swapped": null,
+        "v4-order-swapped": null
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s3-corey-social-vs-b1-p1",
+      "verdicts": {
+        "v1-original": "unparseable",
+        "v2-rubric-reversed": "unparseable",
+        "v3-labels-swapped": "unparseable",
+        "v4-order-swapped": "unparseable"
+      },
+      "details": {
+        "v1-original": null,
+        "v2-rubric-reversed": null,
+        "v3-labels-swapped": null,
+        "v4-order-swapped": null
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s3-corey-social-vs-b1-p2",
+      "verdicts": {
+        "v1-original": "unparseable",
+        "v2-rubric-reversed": "unparseable",
+        "v3-labels-swapped": "unparseable",
+        "v4-order-swapped": "unparseable"
+      },
+      "details": {
+        "v1-original": null,
+        "v2-rubric-reversed": null,
+        "v3-labels-swapped": null,
+        "v4-order-swapped": null
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s3-corey-social-vs-b1-p3",
+      "verdicts": {
+        "v1-original": "unparseable",
+        "v2-rubric-reversed": "unparseable",
+        "v3-labels-swapped": "unparseable",
+        "v4-order-swapped": "unparseable"
+      },
+      "details": {
+        "v1-original": null,
+        "v2-rubric-reversed": null,
+        "v3-labels-swapped": null,
+        "v4-order-swapped": null
+      },
+      "stable": false
+    }
+  ],
+  "audited_at": "2026-08-30T07:27:17.100Z"
+}

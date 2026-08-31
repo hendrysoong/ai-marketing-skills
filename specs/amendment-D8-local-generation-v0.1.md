@@ -329,3 +329,575 @@ pre-registers Report 002's, and the deterministic generator that makes both repr
   dropped, `**bold**` pairs become bold runs, every other byte carried verbatim (an unpaired `**`
   stays literal). The evaluator writes the numbers; the generator writes the specimens; articles
   only quote them.
+
+## 13. Revision d — the order-swap variant joins the qualification audit (2026-08-29)
+
+**Status: RATIFIED by the owner 2026-08-29**, after the machinery was built, tested and pushed
+(`7b4e020`) and before any seat had run under it. Everything below was **pre-registered before any
+datum produced under it exists**, and it now binds. The owner ratified in the same exchange in
+which he was told, explicitly, to expect it to disqualify the seat locked earlier the same day. It is written in the same session, and committed alongside, the transcript audit that
+motivated it (`scores/0.1-L1/_transcript-audit.md`), so the record shows the fix was specified
+before it was ever run. Everything not named here carries verbatim from revisions a/b/c.
+
+### 13.1 The gap this closes
+
+§4's audit presents its 18 frozen pairings at **presentation order 1 only** and varies the rubric
+order (V2) and the post labels (V3). Scoring, by contrast, judges every pairing in **both**
+presentation orders. The gate therefore never tested the axis on which a seat can most easily fail.
+
+That gap is now measured, not hypothesised. The seat locked on 2026-08-29,
+`mistral-nemo:12b-instruct-2407-q4_K_M`, passed the three-variant audit at 18/18 and then, across
+the 109 real-call pairings of the same cycle, disagreed with itself on 90 when the presentation
+order was swapped. In **90 of those 90** it selected whichever post was presented first, and in
+none did it select the second. A judge can hold every rubric and label perturbation perfectly and
+still be answering a question about position rather than about writing.
+
+### 13.2 V4: the fourth registered variant
+
+- **V4 (order-swapped):** the operative judge prompt verbatim, the rubric in its original order,
+  the labels unchanged as Post A and Post B, and **the two posts exchanged in presentation
+  position**. Nothing else moves. Canonicalisation follows the existing §8 rule, so V4's winner is
+  compared against the other variants after mapping back to the canonical skill/baseline sides.
+- **Stability, extended:** a pairing is stable when **all four** variants return the identical
+  canonical winner and none is unparseable. The audit remains 18 pairings, now 72 calls per seat.
+- **The bar does not move.** Pass remains stability >= 90% over the 18 pairings, exactly as
+  registered in §4 and unchanged since before any 0.1-L1 datum existed. Widening the test while
+  lowering the bar would defeat the purpose.
+
+### 13.3 Re-qualification, and what stands
+
+- **A seat audited under the three-variant definition is not qualified for any cycle run under
+  revision d.** §12.1's "an audited seat is never re-audited" continues to bind *within* an audit
+  definition; it cannot carry a seat across a change in what the audit tests. Existing
+  `_judge-audit-*.json` artifacts stand permanently as records of the test they actually ran, are
+  never rewritten, and a re-audit under revision d writes a separate artifact.
+- **The 0.1-L1 grades already recorded stand as recorded.** Records are append-only and nothing is
+  re-scored after the data has been seen. Report 002 publishes them together with the transcript
+  audit that finds them uninterpretable as a measure of craft; that disclosure, not a silent
+  revision, is the sanctioned response.
+- **Expected consequence, stated in advance:** the currently locked seat is unlikely to survive its
+  own corrected exam. That outcome is pre-registered as acceptable and publishable, on the same
+  terms as the three refusals that preceded it.
+
+### 13.4 Scope
+
+Revision d changes the qualification gate and nothing else. The 5% unparseable ceiling, the grade
+bands, the consistency cap, the head-to-head exclusion (§6.6), the held-out disclosure (§6.8) and
+the exhibit rules (§12.4) all carry unchanged. D9's precondition 1 now reads against the
+four-variant audit: no tournament datum exists until a seat passes it.
+
+## 14. Revision e — seats 5 and 6, the 30B class (2026-08-30)
+
+**Status: RATIFIED by the owner 2026-08-30**, before either candidate had judged a single pairing,
+with the seat order, the stopping rule, the disclosed exception and the falsifiable prediction all
+fixed in advance and committed at `d263a91` prior to ratification. Revision d changed the TEST; this changes the SEAT LIST, and the two are deliberately
+separate amendments so neither can be tuned to the other's outcome.
+
+### 14.1 What the revision-d re-audit established
+
+All four pre-registered seats failed the four-variant gate on 2026-08-30
+(`_judge-audit-d-*.json`): llama3.1:8b 16.7%, gemma2:9b 0.0%, phi4:14b 5.6%,
+mistral-nemo:12b 0.0%. The seat that scored 18/18 under three variants scored **0/18** under four,
+and all 18 of its unstable pairings flipped on the order swap alone, with the three
+prompt-perturbation variants agreeing throughout. That is position dependence with no rubric or
+label contamination mixed into it.
+
+**The tested set was narrow in exactly one way that matters: every seat was 8B to 14.7B.** No
+conclusion about locally hostable judges in general follows from four models of one size class,
+and this amendment tests the next class up rather than declaring the lane dead.
+
+### 14.2 The seats, in pre-registered order
+
+5. **`glm-4.7-flash:q4_K_M`** — Zhipu, `glm4moelite`, 29.9B, Q4_K_M. A house no seat has used,
+   disjoint from the generator, and the largest candidate that satisfies §12.1 unmodified.
+6. **`gemma4:31b`** — Google, `gemma4`, 31.3B, Q4_K_M. This **repeats a house that already failed**
+   (gemma2:9b at 9.2B) at 3.4x the parameter count, which is a deliberate and disclosed relaxation
+   of §12.1's no-family-repeats rule among seats. The justification is that a same-house baseline
+   is what makes it the single most informative size test available: gemma2 scored 83.3% under
+   three variants and 0.0% under four, so any movement at 31.3B is attributable to scale rather
+   than to house.
+
+**Generator-disjointness does NOT relax.** `qwen3.6:35b-a3b` (36.0B) and every other qwen3.x build
+on the host is excluded despite being the largest model available, because it shares the family of
+the pinned generator `qwen2.5:7b-instruct-q4_K_M`. A judge drawn from the generator's house risks
+self-preference on the generator's own output, and the research record (`eval-craft-research-v0.1`,
+`frontier-self-improvement-research-v0.2`) documents self-preference as the bias frontier judges
+show most strongly. Size does not buy an exception to it.
+
+The `-64k` builds already on the host are excluded as duplicates: they are the same weights at a
+different context configuration, and `num_ctx` is pinned at 16384 by §3 regardless.
+
+### 14.3 Everything else carries unchanged
+
+The audit is the four-variant gate ratified as revision d: 18 frozen pilot pairings, variants
+V1-V4, stability requiring the same canonical winner across all four with none unparseable, and
+**the 90% bar, which has not moved since before any 0.1-L1 datum existed and does not move here.**
+Digest pinning (§12.3), the append-only artifact rule and the revision-scoped filenames (§13.3)
+all carry. Both models are already on the host, so no download is required by this amendment.
+
+### 14.4 Stopping rule, fixed in advance
+
+Seats are audited in the order above and the first to pass locks. **If both fail, the only
+further candidate admissible without a new amendment is the conditional seat 7 in §14.7, and no
+other seat is improvised.** Once that is exhausted, six or seven seats across five or six houses
+and two size classes is the result, and the lane decision it forces (a larger local judge, a paid
+frontier judge, or a pre-registered ensemble whose held-out perturbation is fixed before it runs)
+is the owner's alone.
+
+### 14.5 The prediction, recorded before the run
+
+Stated so it can be wrong. **Expectation: both seats fail, and the 30B class shows materially
+higher stability than the 8-14.7B class without reaching 90%.** The reasoning is that position
+bias is documented as a capability gradient rather than a threshold, so scale should move the
+number without eliminating the defect. **A result at or near 0% for either seat would contradict
+this and would point away from capability and toward the material** — that the frozen audit
+pairings may not be separable enough for any judge to discriminate on, in which case position
+fills a vacuum rather than overriding a signal. That alternative is not tested by this amendment
+and would need its own.
+
+### 14.6 Disclosed exception: `gemma4:31b` does not pin quantization in its tag
+
+§3 requires an explicit quantization in every pinned tag so a tag cannot silently re-point.
+`glm-4.7-flash:q4_K_M` satisfies it. **`gemma4:31b` does not**, because it is a locally built tag
+on this host rather than a registry tag carrying the quantization in its name. The runtime reports
+`Q4_K_M` for it today.
+
+This is recorded as a **named exception, not a relaxation**: the rule continues to bind every other
+seat, and the exception is encoded by name in the test rather than by loosening the pattern, so
+adding a seventh unpinned seat fails the suite.
+
+**Residual risk, stated rather than waved away.** The digest pin (§3, §12.3) records
+`31.3B Q4_K_M` immediately before this seat's first audit call and aborts any later stage on a
+change, so the tag cannot drift mid-cycle undetected. What the digest pin cannot protect is the
+first resolution itself: if the local tag were re-pointed before that first call, the wrong build
+would be pinned without anything noticing. On a single-user host with a locally built model that
+risk is low, and it is the reason this is disclosed here rather than left implicit.
+
+
+### 14.7 Conditional seat 7: DeepSeek, admissible ONLY on an architecture check
+
+DeepSeek is pre-registered as seat 7 **conditionally**, because the family rule cannot be applied
+to it by name. Most DeepSeek builds that fit 48 GB are **R1 distills onto another house's base**:
+`deepseek-r1:32b` distils onto a Qwen base and `deepseek-r1:8b` onto Llama. A seat named
+"deepseek" can therefore BE Qwen, which is the generator's family, and would smuggle past a
+name-level check the exact violation §14.2 exists to prevent. The genuinely DeepSeek-architecture
+models (V3 / MoE, 671B) do not fit this host at any quantization.
+
+**The admission test, fixed here and verifiable:** after the model is pulled, `ollama show` must
+report an `architecture` that matches neither `/qwen/i` nor `/llama/i`. If it matches either, the
+candidate is **inadmissible as a seat regardless of its name**, the result is recorded, and no
+substitute is improvised in its place. If it passes, it is appended as seat 7 and audited under
+the same four-variant gate and the same unmoved 90% bar.
+
+This is pre-registered before any DeepSeek model exists on the host, so the check cannot be
+reinterpreted once its architecture is known. Its download, like every other, is surfaced by name,
+source and size before it runs.
+
+## 15. Harness defect repair — the reasoning channel (2026-08-30)
+
+**This is a defect repair, not a threshold change.** No pre-registered parameter moves: the 90%
+bar, the four-variant gate, the 5% unparseable ceiling, the 512-token judge cap and the §8 schema
+rule are all untouched. What changed is that the harness now reads the channel the runtime actually
+wrote to.
+
+### 15.1 The defect
+
+`src/safety/local-provider.ts` read only the runtime's `response` field. A **reasoning model**
+leaves `response` empty and returns its generated text in `thinking`. Reading `response` alone
+therefore recorded a perfectly schema-conformant verdict as `unparseable`, and did so **silently**:
+the call succeeded, the one registered retry produced the same empty string, and the seat was
+disqualified.
+
+Seat 5 `glm-4.7-flash:q4_K_M` was disqualified this way on 2026-08-30 with **72 of 72 audit calls
+unparseable and a recorded stability of 0.0%**. Diagnosis on a real judge pairing, outside the
+harness and writing no record: `response` 0 chars, `thinking` 797 chars containing complete
+schema-conformant verdict JSON with substantive reasons, `done_reason: stop`, 169 tokens generated
+against the 512 cap. **The model complied fully. The harness could not see it.**
+
+`gemma4:31b` was checked the same way and returns its verdict in `response` with no `thinking`
+field, so its audit is unaffected and stands.
+
+### 15.2 The repair, deliberately narrow
+
+`generatedText()` returns `response` whenever it has content, so every non-reasoning seat is read
+exactly as before and remains comparable to the seats already audited. `thinking` is consulted
+**only** when `response` is empty or whitespace, which is precisely the case that was previously
+unrecoverable. Where neither channel has content the §8 unparseable rule applies unchanged.
+
+Reading the right channel is not the same as relaxing what counts as a valid verdict: whatever
+`generatedText()` returns is still held to the full registered schema. Two regression tests lock
+this, including one that reproduces the exact 72/72 shape and asserts the old read still yields
+`null`, so the silent-disqualification path cannot return unnoticed.
+
+### 15.3 The invalid artifact is quarantined, not deleted
+
+The seat-5 artifact records what a defective harness produced and must never be read as a
+measurement of that model. Following the precedent set for the contaminated 2026-07-31 rater
+ratings, it is **renamed rather than deleted**, so the evidence survives and nothing can score it:
+
+    _judge-audit-d-glm-4-7-flash-q4-K-M.HARNESS-DEFECT-2026-08-30.discarded.json
+
+Seat 5 is then re-audited under the repaired harness and writes the canonical artifact name. Its
+re-audit is a first measurement of that seat, not a second attempt at one.
+
+### 15.4 The class of failure this closes
+
+Any reasoning model, at any size, from any house, would have scored 0.0% on this harness and
+looked like a total capability failure. That is the same shape as the defect revision d fixed: an
+instrument that is silent about the thing it cannot see, and a result that looks like data. It is
+recorded here so the next reasoning candidate is not disqualified by our own code.
+
+## 16. Revision f — a seat is a model IN A MODE, and every call records how it was made (2026-08-30)
+
+**Status: RATIFIED by the owner 2026-08-30**, before any seat had run under it. The mode split and
+the provenance requirements below were fixed before the first (model, mode) seat was audited.
+
+### 16.1 What we did not know we were doing
+
+Until 2026-08-30 the harness **never sent the `think` parameter**. Every seat therefore ran in
+whatever mode the runtime chose by default, and no artifact recorded which mode that was. The
+results are not wrong, but they are **under-specified**: nothing in the record says how to
+reproduce them, which is the definition of an unreplicable measurement.
+
+Measured on the host, same prompt, same sampling, only the mode changed:
+
+| model | `think: true` | `think: false` |
+|---|---|---|
+| `glm-4.7-flash` | verdict in `thinking`, 15 tokens, terse | verdict in `response`, 60 tokens, fuller reasons |
+| `gemma4:31b` | accepted | accepted |
+| `llama3.1:8b` | **ERROR, "does not support thinking"** | accepted |
+
+`glm-4.7-flash` in the two modes is not one judge measured twice. It is two judges.
+
+### 16.2 Seat identity becomes (model, mode)
+
+A **seat** is a model tag **and** an explicit thinking mode. `glm-4.7-flash:q4_K_M @ think=false`
+and `glm-4.7-flash:q4_K_M @ think=true` are distinct seats, audited separately, with separate
+artifacts, and are never averaged or reported as one model's result.
+
+- **`think` is sent explicitly on every call and never left to a runtime default.** A default is a
+  hidden variable, and a hidden variable is the thing this amendment exists to remove.
+- **`think: false` is the control mode.** It is accepted by every model tested, including those
+  with no reasoning capability, so it is the mode in which any two seats are comparable.
+- **`think: true` seats exist only where the runtime accepts the flag.** A model that errors with
+  "does not support thinking" is recorded as not thinking-capable and contributes one seat, not
+  two. That error is a recorded property of the model, never a failed audit.
+
+**Seats 1-4 are not invalidated.** `llama3.1`, `gemma2`, `phi4` and `mistral-nemo` reject or lack
+the flag, so their default was equivalent to `think: false` and their recorded results stand as
+control-mode measurements. Seat 6 `gemma4:31b` IS thinking-capable, and its 2026-08-30 audit ran
+at the runtime default, verified on this host to route to `response` with no `thinking` content.
+That artifact is a valid control-mode measurement, but of a **different failure than the others**:
+61 of its 72 calls were unparseable because the model DEGENERATES. On a real judge pairing it
+opens with substantive, specific reasons, then collapses into a repetition loop of foreign-language
+tokens ("dụng dụng dụng ..."), runs into the 512-token cap mid-string, and emits unterminated JSON.
+At temperature 0 with repeat_penalty 1.1.
+
+**So the 30B class is still effectively unmeasured for judging ability.** Seat 5 was disqualified
+by a harness defect (§15) and seat 6 never got far enough to be judged on its judgment. Three
+distinct failure modes are now on record and must not be conflated: **position dependence**
+(seats 1-4), **harness incompatibility** (seat 5, invalid, re-run pending), and **degeneration**
+(seat 6). Only the first is a statement about a model's judgment.
+
+§16.4 requires the mode be stamped on every artifact written from here on so no future reader has
+to reconstruct it.
+
+### 16.3 Do not narrow the field prematurely
+
+The purpose is breadth with provenance, not breadth instead of it. Reasoning models are an
+untested class: the four seats that failed revision d were all non-reasoning, and the first
+reasoning candidate was disqualified by our own harness (§15) rather than measured. **No
+conclusion about local judges should be drawn until at least one reasoning seat has been measured
+in both modes**, and this amendment exists so that measurement is reproducible when it happens.
+
+### 16.4 Every artifact carries the configuration that produced it
+
+Each audit artifact records, alongside the existing fields, a `runtime_config` block naming the
+exact call shape: `temperature`, `num_predict`, `top_p`, `top_k`, `repeat_penalty`, `num_ctx`,
+`format`, and `think`. It also records `output_channels`, a per-seat tally of how many calls
+returned via `response` versus `thinking`.
+
+The channel tally is diagnostic, not decorative: a seat that silently changes channel mid-run, or
+splits between the two, is a finding about the runtime that would otherwise be invisible, and it
+is exactly the signal that would have surfaced the §15 defect on its first call instead of after
+72 of them.
+
+### 16.5 What does not change
+
+The 90% bar, the four-variant gate, the 18 frozen pairings, the 5% unparseable ceiling, the
+512-token cap, the §8 schema rule, digest pinning and the append-only artifact discipline all
+carry verbatim. This amendment adds provenance and splits seat identity. It relaxes nothing.
+
+## 17. Failure evidence — an unparseable call must carry the reason (2026-08-30)
+
+**Diagnostic instrumentation, not a threshold change.** Nothing pre-registered moves. This adds
+evidence to a record that previously discarded it.
+
+### 17.1 Why
+
+§8 records a call that fails extraction as `unparseable` and stops there. That single word is
+compatible with at least five completely different causes: an empty channel, a truncated response,
+a degeneration loop, unconstrained reasoning prose, and a schema-shaped near-miss. **Only the last
+is a statement about the model's judgment.** The other four are statements about the instrument.
+
+This project has now hit three instrument defects that presented as model failures:
+- §15, a reasoning model recorded 72/72 unparseable because the harness read the wrong channel;
+- seat 6, 61/72 unparseable from a degeneration loop that only a manual probe revealed;
+- seat 5 in thinking mode, 69/72 unparseable that a manual probe could **not** reproduce, and
+  which remains unexplained at the time of writing.
+
+Every one required hand investigation outside the harness, because the artifact recorded no
+evidence. That is a defect in what we record, and it is the reason the third is still open.
+
+### 17.2 What is recorded
+
+When a call fails extraction after its one registered retry, the pairing record gains a `failures`
+map keyed by variant, holding the runtime `channel`, the full output length in `chars`, and the
+first **400 characters** of the raw output as `sample`.
+
+Only failures are captured, so a clean seat's artifact is unchanged in size and shape. 400
+characters is chosen as the smallest window that reliably distinguishes the five causes above from
+one another: truncation shows a severed string, degeneration shows repetition, reasoning prose
+shows narration, an empty channel shows nothing, and a near-miss shows well-formed JSON with the
+wrong field types.
+
+### 17.3 What it does not change
+
+The §8 rule is untouched: a response must still parse AND conform to the registered schema, there
+is still exactly one retry, and a failure still records as a tie with reason `judge-unparseable`.
+Capturing why a call failed is not the same as accepting it. **No salvage parsing is introduced,
+and none is permitted:** the sample is evidence for a human reading the record, never an input to
+the verdict.
+
+## 18. Revision g — the runtime enforces the registered schema (2026-08-30)
+
+**Status: RATIFIED by the owner 2026-08-30**, before any seat ran under it, with the pre-flight
+table in §18.2 measured and committed beforehand.
+
+### 18.1 The harness has been under-implementing §8
+
+§8 requires a judge response to "parse as one JSON object AND conform to the registered schema",
+and `src/types.ts` calls the responses "grammar-constrained JSON". The harness passed
+`format: 'json'` to the runtime, which guarantees only that the output is **valid JSON** — not that
+it matches our schema. A model could satisfy the runtime completely and still fail §8 on a missing
+field or a quoted integer, and two seats did exactly that.
+
+Ollama accepts a full JSON Schema in that same field and constrains decoding to it. Passing the
+registered schema is therefore not a new rule; it is the rule §8 already states, enforced where it
+can actually be enforced rather than only checked after the fact.
+
+### 18.2 Measured, not assumed
+
+`scripts/seat-preflight.mjs` probes each candidate on three real pairings across both thinking
+modes and both format settings, writing nothing. Run on 2026-08-30 over all six candidates:
+
+| seat | think | `format:'json'` | `format:schema` |
+|---|---|---|---|
+| llama3.1:8b, gemma2:9b, phi4:14b, mistral-nemo:12b | false | PASS | PASS |
+| the same four | true | not supported by the model | not supported |
+| glm-4.7-flash | false | PASS | PASS |
+| **glm-4.7-flash** | **true** | **reasons-missing x3** | **PASS** |
+| gemma4:31b | false | PASS | PASS |
+| **gemma4:31b** | **true** | **margin-string x2** | **PASS** |
+
+Two consequences follow directly, and neither is a judgement call:
+
+1. **Comparability is preserved.** Every control-mode seat conforms identically under both
+   settings, so seats 1-6 are unaffected by the change and their recorded results stand.
+2. **The two reasoning seats were disqualified by the instrument.** Their 0.0% scores are
+   artifacts of an unenforced schema, not measurements of judgment, and both are quarantined and
+   re-audited under revision g.
+
+### 18.3 What does not change
+
+Extraction is untouched: §8 still parses the returned text and still checks the full schema, so a
+runtime that ignores the constraint is still caught. There is still one retry, a failure still
+records as `judge-unparseable`, and **no salvage parsing is introduced**. The 90% bar, the
+four-variant gate, the 18 frozen pairings, the 5% ceiling, the 512-token cap and digest pinning all
+carry verbatim.
+
+### 18.4 The process change that matters more than the fix
+
+Four instrument defects were found on 2026-08-30, each by a full audit that produced a "0%" which
+was not a result: the wrong channel read (§15), a degeneration loop, a missing field, and a quoted
+integer. Every one cost a full audit and a manual investigation, and none was a model failing to
+judge.
+
+`seat-preflight.mjs` exists so that stops. **No seat is worth a full audit until its cell reads
+PASS**, and the screen costs three calls per cell against the real material. Finding four defects
+serially is four wasted cycles; finding them in one pass is a pre-flight.
+
+## 19. Correction — the family rule was applied by brand, not architecture (2026-08-30)
+
+**A recorded error in this amendment's own reasoning, disclosed rather than quietly fixed.**
+
+§12.1 states that the seat list "spans five houses: generator Alibaba; seats Meta, Google,
+Microsoft, Mistral — no family repeats". That is true by **vendor**. The runtime's reported
+architectures say otherwise:
+
+| seat | vendor | `ollama show` architecture |
+|---|---|---|
+| llama3.1:8b | Meta | `llama` |
+| **mistral-nemo:12b** | Mistral | **`llama`** |
+| phi4:14b | Microsoft | `phi3` |
+| gemma2:9b | Google | `gemma2` |
+
+**Seats 1 and 4 share the `llama` architecture.** The original four seats were therefore less
+diverse than pre-registered, and mistral-nemo's 18/18 pure position dependence sitting beside
+llama3.1's 10-of-15 may reflect a shared architecture rather than two independent observations.
+
+**Binding correction:** any future disjointness claim is made on the reported **architecture**, not
+on the vendor's brand. Existing artifacts stand as recorded; nothing is re-scored. This is a
+disclosure about how the evidence should be read, not a change to it.
+
+### 19.1 The generator pin is a choice, not a constraint
+
+§14.2 excludes every qwen build at any size because it shares the pinned generator's family. That
+protects 0.1-L1, whose 99 records qwen2.5 generated, from self-preference. It also permanently
+excludes the two largest models on the host (35.1B and 36.0B) from ever judging.
+
+**Self-preference is a PAIRING problem, not a property of a model.** A future cycle may pin a
+non-qwen generator, which frees those models as judges without weakening the rule. That option was
+never put to the owner and is recorded here so it is not lost.
+
+### 19.2 A class of candidate never tried
+
+Every seat audited to date is a general instruction-tuned chat model pressed into judging. Models
+fine-tuned specifically for evaluation exist — Prometheus-2, JudgeLM, Auto-J — as do reward models
+such as Skywork-Reward and ArmoRM. **None has been tried.** A model trained for fine-grained
+evaluation is a better prior than a larger chat model, and one pre-flight cell settles each.
+Availability under the pinned runtime must be VERIFIED before any of them is pre-registered.
+
+## 20. Provenance repair — an artifact must record the call that was actually made (2026-08-30)
+
+**Defect repair and instrumentation, not a threshold change**, in the same class as §15 and §17.
+Nothing pre-registered moves: the 90% bar, the four-variant gate, the 18 frozen pairings, the 5%
+unparseable ceiling, the 512-token cap, the §8 schema rule and digest pinning all carry verbatim.
+No recorded number changes and no artifact is rewritten.
+
+### 20.1 Two artifacts describe a call that was never made
+
+§16.4 requires every artifact to carry `runtime_config`, "the exact call shape". The audit writer
+spelled that block **by hand**, including the literal `format: 'json'`. Revision g then changed the
+call to send the registered schema in that field (§18.1) and the hand-written literal did not move.
+
+Both revision-g artifacts therefore record `"format": "json"` for calls that were made with
+`format: <judge_schema>`:
+
+| artifact | audited_at | records | was sent |
+|---|---|---|---|
+| `_judge-audit-d-gemma4-31b-think.json` | 2026-08-30T16:45Z | `format: "json"` | the registered schema |
+| `_judge-audit-d-glm-4-7-flash-q4-K-M-think.json` | 2026-08-30T16:15Z | `format: "json"` | the registered schema |
+
+Both stand as recorded. **Records are append-only and the response to a defect is disclosure, never
+revision.** Their stability figures, 22.2% and 16.7%, are unaffected: the constraint that was
+actually applied is the stricter one, which is what §18 ratified, and the extraction check that
+produced the verdicts is unchanged. What was wrong is the field that claims how they were produced,
+which is precisely the field §16.4 exists to make trustworthy. Seats audited before revision g
+recorded `format: 'json'` and were sent `format: 'json'`; those artifacts are accurate.
+
+### 20.2 The repair is a control, not a reminder
+
+`requestFormat()` in `local-provider.ts` is now the single expression producing the value, and
+`localGenerate()` puts on the wire exactly what it returns. `JUDGE_CALL_SHAPE` in `local-cycle.ts`
+is the single description of a judge call: the audit call spreads it and `judgeRuntimeConfig()`
+projects it into the artifact. Neither can drift from the other without the other moving too.
+
+A provenance field written by hand beside the call it describes will drift. That is not a lesson to
+remember, it is a defect to design out, and this is the fourth time in this project a rule that had
+to be remembered was not.
+
+### 20.3 The mandatory screen was not screening what the audit runs
+
+`scripts/seat-preflight.mjs` is mandatory before any seat audit
+(`DEC-preflight-before-any-seat-audit`), so a PASS cell is the evidence on which a full audit is
+spent. Its schema was a **hand-copied literal** that had drifted from `PROTOCOL_L1.judge_schema` in
+two independent directions at once:
+
+- it added `enum: ['A','B','tie']` to `winner`, which the registered schema does **not** have, so
+  the screen **constrained decoding more tightly** than the audit does; and
+- its conformance check tested only `typeof winner === 'string'` and ignored the margin range,
+  while `extractJudgeVerdict()` rejects a winner that is not one of the presented labels or `tie`
+  and rejects a margin outside 1..3, so the screen **accepted verdicts the audit calls
+  unparseable**.
+
+A PASS cell was therefore weaker evidence than it read, in both directions. The screen now derives
+the schema from `src/types.ts`, the way it already derived the judge header from `src/judge.ts`, and
+rejects both cases the audit rejects. `checks/preflight_fidelity.mjs` runs inside `npm run verify`
+and holds it there; the gate was proven against a deliberately reintroduced enum before it was
+wired in.
+
+### 20.4 What this does not change
+
+No verdict, stability figure, grade or interval moves. §18.2's pre-flight table stands as recorded
+of the test it actually ran, and is read with §20.3 beside it. The two artifacts named in §20.1 are
+never rewritten. Any artifact written from here on records the literal value the runtime received.
+
+## 21. The qualification gate binds downstream, not only at the audit (2026-08-31)
+
+**Defect repair, same class as §15, §17 and §20.** Nothing pre-registered moves: the 90% bar, the
+four-variant gate, the 18 frozen pairings, the 5% ceiling, the 512-token cap, the §8 schema rule and
+digest pinning all carry verbatim. No recorded number changes and no artifact is rewritten. This
+implements a rule §13.3 already states; it does not add one.
+
+### 21.1 The rule was written and nothing enforced it
+
+§13.3 says a seat audited under the three-variant definition "is not qualified for any cycle run
+under revision d", and `auditStage` accordingly writes its lock to
+`_judge-seat-${AUDIT_REVISION}.json`. **Every consumer read the unversioned `_judge-seat.json`:**
+
+| call site | what it decides |
+|---|---|
+| `judgeStage` | which model judges every pairing of a cycle |
+| `scoreStage` | the seat named in the cycle manifest |
+| `pinModelDigests` | which model's digest is pinned against mid-cycle drift |
+| `tournament.pinActiveDigests` | **D9 precondition 1**, "no tournament datum exists until a seat passes it" |
+
+That file still exists and still names `mistral-nemo:12b-instruct-2407-q4_K_M`, which passed the
+three-variant audit at 18/18 and then scored **0.0%** under the four-variant gate that binds, with
+all 18 unstable pairings flipping on the order swap alone. `npm run local-cycle -- --local judge`
+would have judged a cycle with it, and the tournament would have passed its own precondition on it.
+
+**This is the same shape as every other defect on record here: a rule that has to be remembered is
+not a control.** The amendment stated the rule, the audit honoured it, and four consumers did not.
+
+### 21.2 One accessor, and it refuses by name
+
+`lockedSeat(root)` is now the only way a stage learns which seat may judge. It reads the
+revision-scoped lock and returns a `{model, think}` pair, because §16 makes a seat a model **in a
+mode**. A lock written before revision f carries no mode and reads as `think: false`, which is what
+those models measured, so `think` never reaches the runtime as `undefined`.
+
+A superseded lock is **refused by name**, not ignored: a stage that reports "no seat is locked"
+while a lock file plainly sits on disk sends the next reader looking in the wrong place. The
+refusal names the stale seat, the binding revision, and the fact that the artifact stands as a
+record of the test it actually ran.
+
+`lockedSeatOrNull()` serves the scorer, which must be able to write a manifest for an ungraded
+cycle. It returns `null` rather than a superseded seat, so a manifest records `unlocked` rather
+than a name that would read as qualification.
+
+### 21.3 Two further defects found in the same call sites
+
+- **`judgeStage` never sent `think`.** §16.2 requires the mode explicitly on every call, never left
+  to a runtime default. Every judged pairing of the graded 0.1-L1 cycle therefore ran in an
+  unrecorded mode. The mode now comes from the lock.
+- **The tournament's judge call sent `jsonFormat: true` with no schema**, so it carried the exact
+  §18 defect revision g repaired, and restated the call shape by hand where it could drift from the
+  audit's. Both stages now spread `JUDGE_CALL_SHAPE` (§20), so a seat is judged with the shape it
+  was qualified with.
+
+### 21.4 The control
+
+`checks/seat_lock_gate.mjs` runs inside `npm run verify` and fails if any file under `src/` outside
+the accessor names a seat lock directly, or if the writer and the readers stop deriving the path
+from the same `AUDIT_REVISION`. It was proven RED against a deliberately reintroduced direct read
+before being wired in, and the refusal itself was proven against the record host's live state: the
+judge stage stopped with the named error and the 324 committed judgments were untouched.
+
+### 21.5 What this does not change
+
+No verdict, stability figure, grade or interval moves. The 0.1-L1 grades stand as recorded with
+Report 002's disclosure. `_judge-seat.json` is **not deleted**: §13.3 makes it a permanent record of
+the test it ran. No seat is qualified under revision d, so the practical effect is that judging,
+scoring against a seat, and the tournament all now stop where the protocol always said they should.

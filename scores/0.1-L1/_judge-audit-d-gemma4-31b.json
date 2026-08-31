@@ -1,0 +1,925 @@
+{
+  "protocol_version": "0.1-L1",
+  "audit_revision": "d",
+  "seat": "gemma4:31b",
+  "think": false,
+  "seat_label": "gemma4:31b @ think=false",
+  "runtime_config": {
+    "temperature": 0,
+    "num_predict": 512,
+    "top_p": 0.9,
+    "top_k": 40,
+    "repeat_penalty": 1.1,
+    "num_ctx": 16384,
+    "format": {
+      "type": "object",
+      "properties": {
+        "winner": {
+          "type": "string"
+        },
+        "margin": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 3
+        },
+        "reasons": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "maxItems": 3
+        }
+      },
+      "required": [
+        "winner",
+        "margin",
+        "reasons"
+      ]
+    },
+    "think": false
+  },
+  "output_channels": {
+    "response": 72,
+    "thinking": 0,
+    "empty": 0
+  },
+  "variants": [
+    "v1-original",
+    "v2-rubric-reversed",
+    "v3-labels-swapped",
+    "v4-order-swapped"
+  ],
+  "material": "frozen v0.1 pilot pairings, corey-social vs b0/b1, S1-S3, r1-r3, presentation orders 1 and 2 (audit-only)",
+  "verdict_semantics": "canonical: A = the skill-side run, B = the baseline-side run, whichever slot each occupied",
+  "stability": 0.3888888888888889,
+  "threshold": 0.9,
+  "passed": false,
+  "results": [
+    {
+      "pairing": "s1-corey-social-vs-b0-p1",
+      "verdicts": {
+        "v1-original": "B",
+        "v2-rubric-reversed": "B",
+        "v3-labels-swapped": "B",
+        "v4-order-swapped": "B"
+      },
+      "details": {
+        "v1-original": {
+          "winner": "B",
+          "margin": 1,
+          "reasons": [
+            "Post B has a stronger hook by adding specific stakes (eleven jobs, three SLAs) that make the scenario feel more visceral to an ops manager.",
+            "Post B better captures the 'real working context' mentioned in the company facts—specifically the distrust of magic and the need for constraints like certifications.",
+            "The structural craft is superior; it explicitly contrasts the old way (whiteboards/call lists) with the new result (two minutes of review)."
+          ]
+        },
+        "v2-rubric-reversed": {
+          "winner": "B",
+          "margin": 1,
+          "reasons": [
+            "Post B has a stronger hook that better captures the 'Tuesday morning' chaos requested in the brief by adding specific pressure (the ringing phone).",
+            "Post B demonstrates a deeper understanding of the audience's context by mentioning specific constraints like certifications (plumbers vs refrigeration), which aligns with the company facts about skill-based assignment.",
+            "The call to action in Post B is more concrete ('Fifteen minutes, no deck') and provides a direct path to the demo, whereas Post A is slightly more generic."
+          ]
+        },
+        "v3-labels-swapped": {
+          "winner": "B",
+          "margin": 1,
+          "reasons": [
+            "Post Y has a stronger hook by adding specific stakes (eleven jobs, three SLAs) that make the scenario feel more visceral to an ops manager.",
+            "Post Y better reflects the 'real working context' mentioned in the company facts, specifically referencing certifications/skills (plumbers vs refrigeration) which demonstrates how the software actually respects constraints.",
+            "The call to action in Post Y is more concrete ('Fifteen minutes, no deck') compared to the generic request in Post X."
+          ]
+        },
+        "v4-order-swapped": {
+          "winner": "B",
+          "margin": 2,
+          "reasons": [
+            "Post A has a stronger hook that immediately puts the Ops Manager in their specific Tuesday morning context (the ringing phone and the pressure of noon deadlines).",
+            "Post A demonstrates better specificity by referencing concrete operational constraints mentioned in the company facts, such as the distinction between plumbers and commercial refrigeration certification.",
+            "The structural craft in Post A is superior; it clearly contrasts the 'before' (whiteboard/call list) with the 'after' (two minutes of review), making the value proposition more tangible than Post B's general description of a scramble."
+          ]
+        }
+      },
+      "stable": true
+    },
+    {
+      "pairing": "s1-corey-social-vs-b0-p2",
+      "verdicts": {
+        "v1-original": "A",
+        "v2-rubric-reversed": "A",
+        "v3-labels-swapped": "A",
+        "v4-order-swapped": "A"
+      },
+      "details": {
+        "v1-original": {
+          "winner": "A",
+          "margin": 1,
+          "reasons": [
+            "Post A has a stronger hook that better captures the 'Tuesday morning' feeling requested in the brief by focusing on the immediate sequence of events.",
+            "Post A adheres more strictly to the company tone guardrails (plain, concrete, competent) and avoids slightly more emotive phrasing found in Post B ('haven't touched your coffee').",
+            "Post A uses a more compelling call to action by offering to use the prospect's 'actual numbers' rather than just a generic 30-minute demo offer."
+          ]
+        },
+        "v2-rubric-reversed": {
+          "winner": "A",
+          "margin": 1,
+          "reasons": [
+            "Post A's hook is superior; it creates a visceral timeline (7:00, 7:04, 7:06) that perfectly captures the 'Tuesday morning' experience requested in the brief.",
+            "Post A adheres better to the company tone guardrails ('plain, concrete, competent') by avoiding slightly more emotive phrases found in B like 'haven't touched your coffee'.",
+            "Post A's call to action is more compelling and specific, offering to use the prospect's 'actual numbers' rather than just a generic 30-minute demo offer."
+          ]
+        },
+        "v3-labels-swapped": {
+          "winner": "A",
+          "margin": 1,
+          "reasons": [
+            "Post X has a stronger hook that better captures the 'Tuesday morning' feeling requested in the brief by focusing on the immediate sequence of events.",
+            "Post X adheres more strictly to the company tone guardrails (plain, concrete, competent) and avoids slightly more emotive phrasing found in Post Y ('haven't touched your coffee').",
+            "Post X uses a more compelling call to action by offering to use the prospect's 'actual numbers' rather than just a generic 30-minute demo offer."
+          ]
+        },
+        "v4-order-swapped": {
+          "winner": "A",
+          "margin": 1,
+          "reasons": [
+            "Post B has a stronger hook that better captures the 'Tuesday morning' chaos requested in the brief by focusing on the immediate sequence of events.",
+            "Post B avoids inventing specific details (like 'coffee' or 'spreadsheets') and stays closer to the provided company facts while maintaining a concrete tone.",
+            "The rhythm of Post B is tighter, using shorter paragraphs that mirror the urgency of a dispatcher's morning better than Post A's slightly more narrative style."
+          ]
+        }
+      },
+      "stable": true
+    },
+    {
+      "pairing": "s1-corey-social-vs-b0-p3",
+      "verdicts": {
+        "v1-original": "A",
+        "v2-rubric-reversed": "A",
+        "v3-labels-swapped": "A",
+        "v4-order-swapped": "B"
+      },
+      "details": {
+        "v1-original": {
+          "winner": "A",
+          "margin": 1,
+          "reasons": [
+            "Post A has a stronger hook that better captures the 'Tuesday morning' chaos requested in the brief by including the tension of an upset customer and the indifference of the SLA clock.",
+            "Post A's structural rhythm is superior, specifically the punchy contrast line: 'Forty-five minutes of replanning. Under a minute.'",
+            "Both posts adhered well to constraints and facts, but Post A feels more aligned with the 'plain, concrete, competent' tone guardrails by avoiding slightly more dramatic phrasing found in B."
+          ]
+        },
+        "v2-rubric-reversed": {
+          "winner": "A",
+          "margin": 1,
+          "reasons": [
+            "Post A has a stronger hook that better captures the 'Tuesday morning' chaos requested in the brief by including the tension of an upset customer and the indifference of the SLA clock.",
+            "Post A's rhythm is slightly superior, particularly the punchy contrast: 'Forty-five minutes of replanning. Under a minute.'",
+            "Both posts adhered strictly to the facts and constraints, but Post A felt more aligned with the 'plain, concrete, competent' tone guardrails."
+          ]
+        },
+        "v3-labels-swapped": {
+          "winner": "A",
+          "margin": 1,
+          "reasons": [
+            "Post X has a stronger hook that better captures the 'Tuesday morning' chaos requested in the brief by including the tension of an upset customer and the indifference of the SLA clock.",
+            "Post X avoids inventing specific numbers (like '6:47 AM' or '11 jobs') that weren't in the brief, whereas Post Y adds these for flavor, which borders on inventing facts.",
+            "The rhythm and structural craft of Post X are superior, particularly the punchy contrast line: 'Forty-five minutes of replanning. Under a minute.'"
+          ]
+        },
+        "v4-order-swapped": {
+          "winner": "B",
+          "margin": 1,
+          "reasons": [
+            "Post A has a stronger hook that more precisely targets the 'Tuesday morning' requirement by specifying the exact time (6:47 AM) and the immediate pressure of running SLA clocks.",
+            "Post A adheres better to the company tone guardrails; Post B introduces an 'upset customer,' which is a plausible scenario but not provided in the brief or facts, whereas Post A sticks strictly to the provided data.",
+            "Post A's structure flows more logically from the problem (the call-out) to the specific solution and the concrete value proposition without unnecessary filler."
+          ]
+        }
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s1-corey-social-vs-b1-p1",
+      "verdicts": {
+        "v1-original": "A",
+        "v2-rubric-reversed": "B",
+        "v3-labels-swapped": "A",
+        "v4-order-swapped": "B"
+      },
+      "details": {
+        "v1-original": {
+          "winner": "A",
+          "margin": 1,
+          "reasons": [
+            "Post A's hook is superior; it creates a visceral timeline (7:00, 7:04, 7:06) that perfectly captures the 'Tuesday morning' experience requested in the brief.",
+            "Post B invents specific details not found in the provided facts, such as '14 jobs', 'chiller inspection', and 'whiteboard edits'.",
+            "Post A adheres strictly to the tone guardrails (plain, concrete, competent) without adding unnecessary narrative fluff or speculative scenarios."
+          ]
+        },
+        "v2-rubric-reversed": {
+          "winner": "B",
+          "margin": 1,
+          "reasons": [
+            "Post B better captures the 'real working context' of an ops manager by mentioning specific scenarios like chiller inspections and the reality that software doesn't eliminate bad mornings, only the scramble.",
+            "The hook in Post B is stronger and more visceral, immediately establishing the stakes (14 jobs, running clocks).",
+            "Both posts adhered strictly to the facts and constraints, but Post B's rhythm and tone better align with the 'plain, concrete, competent' guardrails of a good dispatcher."
+          ]
+        },
+        "v3-labels-swapped": {
+          "winner": "A",
+          "margin": 1,
+          "reasons": [
+            "Post X has a stronger hook that puts the reader directly in the moment of the 'Tuesday morning' scramble described in the brief.",
+            "Post Y invents specific details not found in the provided facts (e.g., '14 jobs', 'chiller inspection', 'whiteboard edits'), violating the hard rule against invented claims.",
+            "Post X adheres more strictly to the tone guardrails, avoiding slightly more emotive phrasing like 'before the first coffee gets cold'."
+          ]
+        },
+        "v4-order-swapped": {
+          "winner": "B",
+          "margin": 1,
+          "reasons": [
+            "Post A better captures the 'Tuesday morning' requirement from the brief by explicitly referencing the day and the specific tension of a dispatcher being on the phone instead of watching the board.",
+            "Post A adheres more closely to the company tone guardrails ('plain, concrete, competent') by acknowledging that software doesn't eliminate all bad mornings, which appeals to the target audience's distrust of 'magic'.",
+            "Post A provides a slightly more specific call-to-action by suggesting the user ask for a 'callout scenario' during the demo, making the next step more concrete."
+          ]
+        }
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s1-corey-social-vs-b1-p2",
+      "verdicts": {
+        "v1-original": "A",
+        "v2-rubric-reversed": "A",
+        "v3-labels-swapped": "A",
+        "v4-order-swapped": "A"
+      },
+      "details": {
+        "v1-original": {
+          "winner": "A",
+          "margin": 1,
+          "reasons": [
+            "Post A has a stronger hook that better captures the 'Tuesday morning' experience requested in the brief by using a chronological narrative (7:00, 7:04, 7:06) to build tension.",
+            "Post A adheres more closely to the company tone guardrails; it is plain and concrete without the slightly more emotive phrasing found in Post B ('doing arithmetic under pressure').",
+            "Post A's structure is more scannable with shorter paragraphs and a clearer rhythm that mirrors the fast-paced nature of dispatching."
+          ]
+        },
+        "v2-rubric-reversed": {
+          "winner": "A",
+          "margin": 1,
+          "reasons": [
+            "Post A has a significantly stronger hook; the minute-by-minute breakdown (7:00, 7:04, 7:06) perfectly captures the 'Tuesday morning' chaos requested in the brief.",
+            "Post A adheres better to the company tone guardrails ('plain, concrete, competent') by avoiding slightly more emotive phrasing found in Post B (e.g., 'doing arithmetic under pressure').",
+            "The structure of Post A is more scannable for a LinkedIn audience, using shorter paragraphs and a clearer narrative arc from problem to solution to action."
+          ]
+        },
+        "v3-labels-swapped": {
+          "winner": "A",
+          "margin": 1,
+          "reasons": [
+            "Post X has a stronger hook that better captures the 'Tuesday morning' experience requested in the brief by using a chronological timeline (7:00, 7:04, 7:06) to build tension.",
+            "Post X adheres more strictly to the company tone guardrails; it is plain and concrete without the slightly more emotive phrasing found in Post Y ('doing arithmetic under pressure').",
+            "Post X provides a more compelling call to action by offering to use the prospect's 'actual numbers' during the demo, which appeals to the audience's distrust of 'magic' software mentioned in the company facts."
+          ]
+        },
+        "v4-order-swapped": {
+          "winner": "A",
+          "margin": 1,
+          "reasons": [
+            "Post B has a stronger hook that better captures the 'Tuesday morning' chaos requested in the brief by using a timeline (7:00, 7:04, 7:06) to illustrate the immediate pressure.",
+            "Post B demonstrates better structural craft and rhythm, using shorter paragraphs and punchier sentences that mirror the fast-paced environment of an operations manager.",
+            "Both posts adhered strictly to the facts and constraints, but Post B's call to action is slightly more compelling by offering to use the prospect's 'actual numbers'."
+          ]
+        }
+      },
+      "stable": true
+    },
+    {
+      "pairing": "s1-corey-social-vs-b1-p3",
+      "verdicts": {
+        "v1-original": "A",
+        "v2-rubric-reversed": "A",
+        "v3-labels-swapped": "A",
+        "v4-order-swapped": "B"
+      },
+      "details": {
+        "v1-original": {
+          "winner": "A",
+          "margin": 1,
+          "reasons": [
+            "Post A has a stronger hook that better captures the 'Tuesday morning' chaos requested in the brief by emphasizing the tension between the upset customer and the SLA clock.",
+            "Post A adheres more strictly to the provided facts; Post B introduces an invented claim about how the feature works ('You review, you confirm') which was not in the brief or company facts.",
+            "Post A provides a direct URL for the next step, whereas Post B refers to a link in the comments, which is a common LinkedIn tactic but less direct as a call to action within the post text itself."
+          ]
+        },
+        "v2-rubric-reversed": {
+          "winner": "A",
+          "margin": 1,
+          "reasons": [
+            "Post A has a stronger hook that better captures the 'Tuesday morning' chaos requested in the brief.",
+            "Post A adheres more strictly to the provided facts; Post B introduces an invented claim about how the feature works ('You review, you confirm') and mentions certifications which were not in the source text (the brief specifies 'skills').",
+            "Post A provides a direct URL for the next step, whereas Post B refers to a link in the comments, which is less immediate for a demo request goal."
+          ]
+        },
+        "v3-labels-swapped": {
+          "winner": "A",
+          "margin": 1,
+          "reasons": [
+            "Post X has a stronger hook that better captures the 'Tuesday morning' chaos requested in the brief by emphasizing the tension between the upset customer and the SLA clock.",
+            "Post X adheres more strictly to the provided company facts; Post Y introduces concepts not found in the source material, such as 'certifications' (the brief specifies 'skills') and a specific review/confirm workflow ('You review, you confirm').",
+            "Post X provides a direct URL for the next step, whereas Post Y refers to a link in the comments, which is less immediate for a demo request goal."
+          ]
+        },
+        "v4-order-swapped": {
+          "winner": "B",
+          "margin": 1,
+          "reasons": [
+            "Post A has a stronger hook that more precisely hits the 'Tuesday morning' requirement from the brief.",
+            "Post A adheres better to the company tone guardrails by avoiding slightly emotive phrases like 'upset customer' and focusing on concrete operational friction.",
+            "Post A provides a clearer path for existing customers (explaining it is already 'on'), whereas Post B focuses primarily on new leads, making it more useful as a general announcement."
+          ]
+        }
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s2-corey-social-vs-b0-p1",
+      "verdicts": {
+        "v1-original": "A",
+        "v2-rubric-reversed": "A",
+        "v3-labels-swapped": "A",
+        "v4-order-swapped": "B"
+      },
+      "details": {
+        "v1-original": {
+          "winner": "A",
+          "margin": 1,
+          "reasons": [
+            "Post A has a stronger, more punchy hook that immediately establishes the core argument.",
+            "Post A better adheres to the 'founder' persona by explaining why they started Slatebridge as a logical conclusion to the problem described, whereas Post B omits the company entirely despite it being an option for soft mention.",
+            "Post A's structural rhythm is superior; it uses shorter paragraphs and targeted questions to build tension before providing the solution, making it more scannable for LinkedIn users.-"
+          ]
+        },
+        "v2-rubric-reversed": {
+          "winner": "A",
+          "margin": 1,
+          "reasons": [
+            "Post A adheres more closely to the brief's specific argument regarding 'deadline stacking,' whereas Post B focuses more on general mental maps.",
+            "Post A has a stronger structural rhythm and scannability, using shorter paragraphs and targeted questions to build the case.",
+            "Post A integrates the mention of Slatebridge more naturally as a result of observing the problem, while Post B omits it entirely (which is allowed, but A's inclusion adds founder authority without becoming a pitch)."
+          ]
+        },
+        "v3-labels-swapped": {
+          "winner": "A",
+          "margin": 1,
+          "reasons": [
+            "Post X has a stronger hook; the first line is a punchy, definitive statement rather than a qualified observation.",
+            "Post X better adheres to the brief's specific argument regarding 'deadline stacking,' whereas Post Y focuses more on general mental maps and memory.",
+            "The structural rhythm of Post X is superior for LinkedIn, using shorter paragraphs and targeted questions to build tension before providing the solution/insight.-"
+          ]
+        },
+        "v4-order-swapped": {
+          "winner": "B",
+          "margin": 1,
+          "reasons": [
+            "Post A has a stronger hook by contrasting the 'people problem' with specific examples of blame (hustle, dropping the ball), which resonates more with the emotional reality of an Ops Manager.",
+            "Post A provides better concrete imagery—mentioning '40 open work orders' and '12 minutes versus 45'—which makes the argument feel grounded in real working context rather than theoretical patterns.",
+            "Post B includes a mention of Slatebridge that feels slightly more like a pitch ('I started Slatebridge because...'), whereas Post A adheres more strictly to the goal of authority and discussion without promotion."
+          ]
+        }
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s2-corey-social-vs-b0-p2",
+      "verdicts": {
+        "v1-original": "B",
+        "v2-rubric-reversed": "B",
+        "v3-labels-swapped": "B",
+        "v4-order-swapped": "B"
+      },
+      "details": {
+        "v1-original": {
+          "winner": "B",
+          "margin": 1,
+          "reasons": [
+            "Post B has a stronger hook by immediately framing the problem as a systemic failure rather than just 'not a people problem'.",
+            "Post B better captures the audience's real working context by mentioning specific tools they use (whiteboards and spreadsheets) which are listed in the company facts.",
+            "The rhythm and scannability of Post B are superior, using shorter paragraphs to build a logical argument that leads naturally to the conclusion that training/hiring cannot fix data gaps."
+          ]
+        },
+        "v2-rubric-reversed": {
+          "winner": "B",
+          "margin": 1,
+          "reasons": [
+            "Post B has a stronger hook and better rhythmic pacing, using shorter paragraphs that are more scannable for a LinkedIn audience.",
+            "Post B avoids the slight 'pitch' feel of Post A; while both mention Slatebridge/the product softly, Post A explicitly mentions building the company, whereas Post B stays focused on the operational problem and the reader's experience.",
+            "Post B better captures the 'real working context' by mentioning whiteboards and spreadsheets—specific pain points listed in the company facts that resonate with the target audience (Ops Managers)."
+          ]
+        },
+        "v3-labels-swapped": {
+          "winner": "B",
+          "margin": 1,
+          "reasons": [
+            "Post Y has a stronger hook by immediately framing the problem as a systemic failure rather than just 'not a people problem'.",
+            "Post Y better captures the audience's real working context by mentioning specific tools they use (whiteboards and spreadsheets) which are listed in the company facts.",
+            "The rhythm and scannability of Post Y are superior, using shorter paragraphs and punchier sentences to build the argument logically toward the conclusion. Both posts adhered well to constraints and avoided hype."
+          ]
+        },
+        "v4-order-swapped": {
+          "winner": "B",
+          "margin": 1,
+          "reasons": [
+            "Post A has a stronger hook that immediately frames the conflict between people and process.",
+            "Post A better adheres to the 'authority and discussion' goal by focusing entirely on the operational insight rather than pivoting to the company origin story.",
+            "Post B includes a soft pitch ('This is what made me want to build Slatebridge') which, while allowed, shifts the tone from an industry peer perspective to a founder-pitch perspective more abruptly than Post A's pure thought-leadership approach."
+          ]
+        }
+      },
+      "stable": true
+    },
+    {
+      "pairing": "s2-corey-social-vs-b0-p3",
+      "verdicts": {
+        "v1-original": "A",
+        "v2-rubric-reversed": "A",
+        "v3-labels-swapped": "A",
+        "v4-order-swapped": "B"
+      },
+      "details": {
+        "v1-original": {
+          "winner": "A",
+          "margin": 1,
+          "reasons": [
+            "Post A has a stronger rhythmic flow and better structural craft, particularly in how it builds the tension of the 'post-mortem' conversation.",
+            "Post A avoids the slightly contradictory phrasing in Post B ('skill match is right but barely'), staying more aligned with the brief's focus on visibility and data gaps.",
+            "Both posts followed constraints perfectly and avoided feature pitching, but Post A's closing question is more likely to elicit the 'stories' requested in the success criteria by asking for a specific breakdown analysis."
+          ]
+        },
+        "v2-rubric-reversed": {
+          "winner": "A",
+          "margin": 1,
+          "reasons": [
+            "Post A has a stronger rhythmic flow and better scannability, using shorter paragraphs to build tension and clarity.",
+            "Post A's description of 'triple-stacked' assignments is more concrete and resonates better with the operational reality of an Ops Manager than Post B's phrasing.",
+            "Post A adheres perfectly to all constraints and avoids the slightly philosophical tone at the end of Post B ('why we've accepted that as normal'), staying focused on the structural problem defined in the brief."
+          ]
+        },
+        "v3-labels-swapped": {
+          "winner": "A",
+          "margin": 1,
+          "reasons": [
+            "Post X has a stronger rhythmic flow and better structural craft, particularly in how it builds the tension of the 'post-mortem' conversation.",
+            "Post X avoids the slightly contradictory phrasing in Post Y ('skill match is right but barely'), staying more aligned with the brief's focus on visibility and data gaps.",
+            "Both posts followed constraints perfectly and avoided feature pitching, but Post X's closing question is more likely to elicit the 'stories' requested in the success criteria by asking for a specific breakdown analysis."
+          ]
+        },
+        "v4-order-swapped": {
+          "winner": "B",
+          "margin": 1,
+          "reasons": [
+            "Post A has a slightly stronger hook by avoiding the word 'lazy', which can feel overly emotive/judgmental for a professional audience compared to 'bad'.",
+            "Post A's rhythm and structural craft are superior; it builds the argument more logically from the moment of assignment to the systemic failure.",
+            "Both posts adhered well to constraints, but Post A's phrasing ('the SLA dies before the tech ever gets in the truck') is a more concrete and evocative image for an Ops Manager than Post B's more generic descriptions."
+          ]
+        }
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s2-corey-social-vs-b1-p1",
+      "verdicts": {
+        "v1-original": "A",
+        "v2-rubric-reversed": "A",
+        "v3-labels-swapped": "A",
+        "v4-order-swapped": "B"
+      },
+      "details": {
+        "v1-original": {
+          "winner": "A",
+          "margin": 1,
+          "reasons": [
+            "Post A has a stronger hook; starting with a definitive statement about SLAs is more provocative for an Ops Manager than Post B's question.",
+            "Post A better captures the 'real working context' by describing the cycle of updating protocols only for the problem to recur two weeks later—a specific pain point for this audience.",
+            "Post A handles the mention of Slatebridge more softly and naturally, whereas Post B's mention feels slightly more like a feature pitch ('put skill, location, and deadline information in one place')."
+          ]
+        },
+        "v2-rubric-reversed": {
+          "winner": "A",
+          "margin": 1,
+          "reasons": [
+            "Post A has a stronger hook; it leads with a provocative counter-intuitive statement rather than a question.",
+            "Post A better captures the 'working context' of an Ops Manager by describing the cycle of updating protocols only for the problem to recur two weeks later.",
+            "Post A handles the mention of Slatebridge more softly and naturally as part of the founder's motivation, whereas Post B pivots into a slight feature pitch ('put skill, location, and deadline information in one place')."
+          ]
+        },
+        "v3-labels-swapped": {
+          "winner": "A",
+          "margin": 1,
+          "reasons": [
+            "Post X has a stronger, more provocative hook that immediately addresses the core argument of the brief.",
+            "Post X better captures the 'real working context' by describing the cycle of updating protocols only for the problem to recur two weeks later, which resonates with Ops Managers.",
+            "Post X adheres more strictly to the tone guardrails; Post Y's mention of Slatebridge feels slightly more like a feature pitch ('put skill, location, and deadline information in one place') compared to X's soft mention as a reason for starting the company."
+          ]
+        },
+        "v4-order-swapped": {
+          "winner": "B",
+          "margin": 1,
+          "reasons": [
+            "Post A has a stronger hook by framing it as a specific question ('who dropped the ball?') which mirrors the actual tension in an ops manager's day.",
+            "Post A provides more concrete examples of 'scheduling-data problems' (e.g., certification mismatch and deadline stacking in the same building) compared to Post B's slightly more generic phrasing.",
+            "Post A better adheres to the tone guardrails; it feels like a 'good dispatcher talks' by focusing on the specific friction of the work rather than the philosophical nature of the problem seen in Post B."
+          ]
+        }
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s2-corey-social-vs-b1-p2",
+      "verdicts": {
+        "v1-original": "B",
+        "v2-rubric-reversed": "B",
+        "v3-labels-swapped": "B",
+        "v4-order-swapped": "B"
+      },
+      "details": {
+        "v1-original": {
+          "winner": "B",
+          "margin": 1,
+          "reasons": [
+            "Post B provides a much stronger 'real working context' by referencing whiteboards and spreadsheets, which aligns with the company facts regarding what Slatebridge replaces.",
+            "The narrative flow in Post B is superior; it walks through a chronological sequence (Monday morning to 2 p.m.) that makes the abstract concept of 'scheduling-data problem' concrete for an Ops Manager.",
+            "Post A mentions the product as a reason for building it, whereas Post B focuses entirely on the industry problem and the human cost (performance on the line), which better serves the goal of authority over promotion."
+          ]
+        },
+        "v2-rubric-reversed": {
+          "winner": "B",
+          "margin": 1,
+          "reasons": [
+            "Post B provides a more concrete 'day-in-the-life' scenario (whiteboards/spreadsheets) that resonates better with the target audience's real working context.",
+            "The narrative arc in Post B—tracing a job from Monday morning to 2 p.m.—is more compelling and demonstrates the problem more effectively than Post A's list of examples.",
+            "Post B adheres better to the 'authority, not promotion' goal by omitting the company mention entirely, focusing purely on the industry insight to drive discussion."
+          ]
+        },
+        "v3-labels-swapped": {
+          "winner": "B",
+          "margin": 1,
+          "reasons": [
+            "Post Y provides a more concrete 'working context' by mentioning whiteboards and spreadsheets, which aligns with the company facts regarding what Slatebridge replaces.",
+            "The narrative flow in Post Y is superior; it walks through a chronological sequence (Monday morning to 2 p.m.) that mirrors the actual experience of an operations manager.",
+            "Post X mentions specific features like 'automatic filter for skill match' which leans slightly closer to a feature pitch, whereas Post Y focuses on the systemic failure of the process as requested by the brief."
+          ]
+        },
+        "v4-order-swapped": {
+          "winner": "B",
+          "margin": 1,
+          "reasons": [
+            "Post A has a stronger hook by immediately contrasting the common blame game with a personal shift in perspective.",
+            "Post A's narrative structure is superior; it walks through a concrete 'sequence' of a failure (Monday morning to 2 p.m.), which feels more authentic to an operations manager's reality than Post B's list of scenarios.",
+            "Post A adheres better to the brief's goal of authority and discussion over promotion by omitting the product pitch entirely, whereas Post B introduces Slatebridge in a way that shifts the tone toward a founder's origin story rather than an industry insight."
+          ]
+        }
+      },
+      "stable": true
+    },
+    {
+      "pairing": "s2-corey-social-vs-b1-p3",
+      "verdicts": {
+        "v1-original": "A",
+        "v2-rubric-reversed": "A",
+        "v3-labels-swapped": "A",
+        "v4-order-swapped": "B"
+      },
+      "details": {
+        "v1-original": {
+          "winner": "A",
+          "margin": 1,
+          "reasons": [
+            "Post A has a stronger, more immediate hook that creates tension by contrasting 'lazy technicians' with systemic failure.",
+            "Post A better captures the 'real working context' of an Ops Manager by describing the specific feeling of a post-mortem turning into a performance conversation.",
+            "Post A is tighter and more rhythmic; it avoids the slightly more generic narrative framing found in Post B ('I started building toward this problem')."
+          ]
+        },
+        "v2-rubric-reversed": {
+          "winner": "A",
+          "margin": 1,
+          "reasons": [
+            "Post A has a stronger hook and better rhythmic pacing, using shorter paragraphs that increase scannability for a LinkedIn audience.",
+            "Post A focuses more tightly on the 'argument' requested in the brief (the specific nature of scheduling-data problems) without drifting into the founder's origin story ('I started building toward this problem'), which leans closer to promotion than authority.",
+            "Both posts adhered well to constraints and avoided invented facts, but Post A's structure better mirrors the 'real working context' of a stressed Ops Manager by illustrating the scenario concretely before moving to the theory."
+          ]
+        },
+        "v3-labels-swapped": {
+          "winner": "A",
+          "margin": 1,
+          "reasons": [
+            "Post X has a stronger hook; it immediately frames the conflict between people and process without adding unnecessary filler.",
+            "Post X better captures the 'real working context' by describing the specific tension of the post-mortem turning into a performance conversation, which resonates with Ops Managers.",
+            "Post X is more concise and maintains a tighter rhythm, avoiding the slightly more generic narrative framing found in Post Y ('I started building toward this problem')."
+          ]
+        },
+        "v4-order-swapped": {
+          "winner": "B",
+          "margin": 1,
+          "reasons": [
+            "Post A has a stronger hook that immediately frames the argument as a systemic issue rather than just 'lazy' technicians.",
+            "Post A better incorporates the specific constraints of the brief by mentioning the common tools (whiteboards/spreadsheets) mentioned in the company facts, which grounds the post in the audience's real working context.",
+            "Post A's structure flows more logically from the observation to the argument and finally to the personal motivation ('I started building toward this problem'), creating a natural bridge for authority without becoming a pitch."
+          ]
+        }
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s3-corey-social-vs-b0-p1",
+      "verdicts": {
+        "v1-original": "A",
+        "v2-rubric-reversed": "A",
+        "v3-labels-swapped": "A",
+        "v4-order-swapped": "B"
+      },
+      "details": {
+        "v1-original": {
+          "winner": "A",
+          "margin": 1,
+          "reasons": [
+            "Post A has a stronger hook by immediately contrasting the current state (120 techs) with the outdated method (whiteboard/phone calls).",
+            "Post A's structural craft is superior; the bulleted list of results is more scannable for an Ops Manager than Post B's paragraph format.",
+            "Post A provides better context on *why* the software works by explicitly mentioning 'job assignments, technician locations, and SLA countdowns', which aligns with the company facts regarding core capabilities. Post B is slightly more generic in its explanation of the shift."
+          ]
+        },
+        "v2-rubric-reversed": {
+          "winner": "A",
+          "margin": 1,
+          "reasons": [
+            "Post A has a stronger hook by immediately contrasting the current state (120 techs) with the old method (whiteboard/phone calls), creating immediate tension.",
+            "The structural craft in Post A is superior; the bulleted list of results is more scannable for an Operations Manager than the paragraph format used in Post B.",
+            "Post A's insight regarding the whiteboard being a 'symptom' rather than the problem speaks more directly to the audience's real working context and psychological pain points (relying on a dispatcher's memory)."
+          ]
+        },
+        "v3-labels-swapped": {
+          "winner": "A",
+          "margin": 1,
+          "reasons": [
+            "Post X has a stronger hook by immediately contrasting the current state (120 techs) with the specific pain point (whiteboard/phone calls).",
+            "Post X better utilizes the 'Company Facts' regarding core capabilities, specifically mentioning 'SLA countdowns,' which is a concrete detail that appeals to an Ops Manager's real working context.",
+            "The structural craft of Post X is superior; the bulleted list of results is more scannable than the paragraph format in Post Y, making the social proof hit harder and faster."
+          ]
+        },
+        "v4-order-swapped": {
+          "winner": "B",
+          "margin": 1,
+          "reasons": [
+            "Post A has a stronger hook by painting a concrete picture of the 'morning untangling' process rather than just listing tools.",
+            "Post A better captures the audience's real working context (the fragility of institutional knowledge when someone calls in sick), which aligns with the company facts about the buyer's pain points.",
+            "The call to action in Post A is more professional and lower-friction ('no demo script') compared to the generic 'Comment demo' request in Post B, which can feel like engagement bait on LinkedIn."
+          ]
+        }
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s3-corey-social-vs-b0-p2",
+      "verdicts": {
+        "v1-original": "A",
+        "v2-rubric-reversed": "A",
+        "v3-labels-swapped": "A",
+        "v4-order-swapped": "B"
+      },
+      "details": {
+        "v1-original": {
+          "winner": "A",
+          "margin": 1,
+          "reasons": [
+            "Post A has a stronger hook by separating the technician count and the whiteboard pain point into distinct lines, creating better rhythm for LinkedIn.",
+            "Post A's structural craft is superior; it uses white space more effectively to build tension before revealing the results.",
+            "Both posts adhered strictly to the facts and constraints, but Post A's phrasing ('The schedule untangles itself') ties back to the customer quote more cohesively than Post B's analysis of the whiteboard as a 'symptom'."
+          ]
+        },
+        "v2-rubric-reversed": {
+          "winner": "A",
+          "margin": 1,
+          "reasons": [
+            "Post A has a stronger hook by separating the technician count and the whiteboard pain point into distinct lines, creating better rhythm for LinkedIn's feed.",
+            "Post A integrates the 'working context' (tech calling in sick/customer escalations) more naturally as part of the solution narrative rather than just a list of features.",
+            "The structure of Post A is slightly more scannable, using white space to emphasize the transition from the problem to the result and then to the logic behind it."
+          ]
+        },
+        "v3-labels-swapped": {
+          "winner": "A",
+          "margin": 1,
+          "reasons": [
+            "Post X has a stronger hook by separating the technician count and the whiteboard pain point into distinct lines, creating better rhythm for LinkedIn.",
+            "Post X does a better job of integrating the 'company facts' (skill match, certifications) to explain *how* the results were achieved, making it more credible and less like a generic case study.",
+            "The structural craft in Post X is superior; the use of short paragraphs and a clear narrative arc from pain to result to mechanism feels more natural for the target audience."
+          ]
+        },
+        "v4-order-swapped": {
+          "winner": "B",
+          "margin": 1,
+          "reasons": [
+            "Post A has a stronger hook by immediately contrasting the scale of the operation (120 techs) with the primitive tool used (whiteboard).",
+            "Post A better connects the software's specific features—job assignments and SLA countdowns—to the real-world pain points mentioned in the company facts (tech calling in sick, customer escalations).",
+            "Post A avoids the slightly hyperbolic claim 'The schedule untangles itself' found in Post B, adhering more closely to the 'zero hype' requirement."
+          ]
+        }
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s3-corey-social-vs-b0-p3",
+      "verdicts": {
+        "v1-original": "A",
+        "v2-rubric-reversed": "A",
+        "v3-labels-swapped": "A",
+        "v4-order-swapped": "B"
+      },
+      "details": {
+        "v1-original": {
+          "winner": "A",
+          "margin": 1,
+          "reasons": [
+            "Post A has a stronger hook by isolating the whiteboard detail into its own line, creating better rhythm for LinkedIn.",
+            "Post A provides superior context on why the numbers matter (SLA breaches as 'calls that eat your afternoon'), which speaks directly to the Ops Manager's real working pain points described in the company facts.",
+            "Post B introduces a slight factual inconsistency/confusion by mentioning 'A year ago' and then 'Six months after switching', whereas Post A stays strictly within the six-month window provided in the brief."
+          ]
+        },
+        "v2-rubric-reversed": {
+          "winner": "A",
+          "margin": 1,
+          "reasons": [
+            "Post A provides superior context for the numbers; instead of just listing them, it explains why SLA compliance and overtime matter to an Ops Manager's daily stress levels.",
+            "The hook in Post A is stronger, using a slower build that creates more tension before presenting the solution.",
+            "Post A adheres better to the 'zero hype' and 'plain/concrete' tone guardrails by focusing on the operational pain of 'untangling' rather than the slightly more generic narrative in B."
+          ]
+        },
+        "v3-labels-swapped": {
+          "winner": "A",
+          "margin": 1,
+          "reasons": [
+            "Post X has a stronger hook by isolating the whiteboard detail into its own line, creating better rhythm and tension.",
+            "Post X provides superior context for the numbers; instead of just listing them, it explains *why* SLA compliance and overtime matter to an Ops Manager (contract risk and payroll), which increases the 'save/share' value.",
+            "Post Y introduces a slight factual inconsistency by mentioning 'A year ago' in the first paragraph while the brief specifies results 'After six months'. Post X adheres strictly to the timeline provided."
+          ]
+        },
+        "v4-order-swapped": {
+          "winner": "B",
+          "margin": 1,
+          "reasons": [
+            "Post A has a stronger hook by immediately contrasting the scale of the operation (120 techs) with the primitive tool used to manage it (whiteboard).",
+            "Post A better reflects the audience's real working context by describing the specific '7 a.m. sick call' scenario, which aligns with the company facts regarding the buyer's daily interruptions.",
+            "Post A avoids the slight narrative drift in Post B, where the author begins explaining why numbers matter (which can lean toward 'teaching' rather than 'proving'). Post A stays focused on the operational shift from memory/calls to data-driven decisions."
+          ]
+        }
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s3-corey-social-vs-b1-p1",
+      "verdicts": {
+        "v1-original": "A",
+        "v2-rubric-reversed": "A",
+        "v3-labels-swapped": "A",
+        "v4-order-swapped": "A"
+      },
+      "details": {
+        "v1-original": {
+          "winner": "A",
+          "margin": 1,
+          "reasons": [
+            "Post A has a stronger structural craft; the paragraph explaining why the whiteboard is a 'symptom' speaks directly to the operational pain of an Ops Manager (the reliance on institutional memory).",
+            "Post A provides a more frictionless next step ('Comment demo') compared to Post B's external link, which often performs better in LinkedIn algorithms and user experience.",
+            "Both posts adhered strictly to the facts and constraints, but Post A's rhythm and insight into the 'gap' make it feel less like a case study and more like an industry observation."
+          ]
+        },
+        "v2-rubric-reversed": {
+          "winner": "A",
+          "margin": 1,
+          "reasons": [
+            "Post A has a stronger structural craft; the paragraph explaining why the whiteboard is a 'symptom' speaks directly to the operational pain of an Ops Manager (the reliance on institutional memory).",
+            "Post A provides a more frictionless next step ('Comment demo') compared to Post B's external link, which often performs better in LinkedIn's current algorithm.",
+            "Both posts adhered perfectly to constraints and facts, but Post A's rhythm and insight into the 'working context' of the audience make it slightly more credible and less like a template."
+          ]
+        },
+        "v3-labels-swapped": {
+          "winner": "A",
+          "margin": 1,
+          "reasons": [
+            "Post X has a stronger structural craft; the paragraph explaining why the whiteboard is a 'symptom' speaks directly to the operational pain of an Ops Manager (the reliance on institutional memory).",
+            "Post X provides a more frictionless next step ('Comment demo') compared to Post Y's external link, which often performs better in LinkedIn's current algorithm.",
+            "Both posts adhered strictly to facts and constraints, but Post X felt slightly more tailored to the 'real working context' of the audience by describing the specific questions a dispatcher needs to answer."
+          ]
+        },
+        "v4-order-swapped": {
+          "winner": "A",
+          "margin": 1,
+          "reasons": [
+            "Post B has a stronger connection to the audience's real working context by articulating the 'whiteboard as a symptom' and the mental load of the dispatcher.",
+            "Both posts followed constraints perfectly, but Post B's structural craft is superior, moving from specific results to a deeper insight about operational gaps before the CTA.",
+            "Post B provides a more frictionless next step (comment/message) compared to Post A's external link in comments."
+          ]
+        }
+      },
+      "stable": true
+    },
+    {
+      "pairing": "s3-corey-social-vs-b1-p2",
+      "verdicts": {
+        "v1-original": "A",
+        "v2-rubric-reversed": "A",
+        "v3-labels-swapped": "A",
+        "v4-order-swapped": "A"
+      },
+      "details": {
+        "v1-original": {
+          "winner": "A",
+          "margin": 1,
+          "reasons": [
+            "Post A has a stronger hook by immediately contrasting the scale of operations (120 techs) with the inefficiency of the tool used (whiteboard).",
+            "Post A better captures the 'real working context' described in the company facts—specifically mentioning the pain points of tech call-outs and customer escalations.",
+            "Post B introduces an invented fact ('spreadsheets') not present in the brief for Meridian Facilities Group, whereas Post A sticks strictly to provided data points."
+          ]
+        },
+        "v2-rubric-reversed": {
+          "winner": "A",
+          "margin": 1,
+          "reasons": [
+            "Post A has a stronger hook by immediately contrasting the scale of operations (120 techs) with the inefficiency of the tool used (whiteboard).",
+            "Post A's structure creates better rhythm and tension, using the quote as a bridge between the problem and the result.",
+            "Post B introduces 'spreadsheets' in the first paragraph, which is a company fact but not part of the specific Meridian case study provided in the brief, slightly blurring the line between general facts and the fixture's specifics.- Post A's call to action (DM/comment) feels more native to LinkedIn engagement than a generic link."
+          ]
+        },
+        "v3-labels-swapped": {
+          "winner": "A",
+          "margin": 1,
+          "reasons": [
+            "Post X has a stronger hook by immediately contrasting the scale of operations (120 techs) with the inefficiency of the tool used (whiteboard).",
+            "Post X better captures the 'real working context' described in the company facts—specifically mentioning the pain points of tech call-outs and customer escalations.",
+            "Post Y introduces an invented fact ('spreadsheets') not present in the brief for Meridian Facilities Group, whereas Post X sticks strictly to provided data points."
+          ]
+        },
+        "v4-order-swapped": {
+          "winner": "A",
+          "margin": 1,
+          "reasons": [
+            "Post B has a stronger hook by immediately contrasting the scale (120 techs) with the primitive tool (whiteboard).",
+            "Post B better reflects the audience's real working context by mentioning specific pain points like 'tech calls in sick' and 'phone tag', which are listed in the company facts as key stressors for ops managers.",
+            "The structural rhythm of Post B is superior, using shorter paragraphs and a more natural flow into the call to action (CTA)."
+          ]
+        }
+      },
+      "stable": true
+    },
+    {
+      "pairing": "s3-corey-social-vs-b1-p3",
+      "verdicts": {
+        "v1-original": "A",
+        "v2-rubric-reversed": "A",
+        "v3-labels-swapped": "A",
+        "v4-order-swapped": "B"
+      },
+      "details": {
+        "v1-original": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A provides much stronger context for the audience (Ops Managers) by explaining *why* SLA and overtime numbers matter in their specific working reality.",
+            "Post A's hook is more effective; it creates a clearer 'before' state of chaos that resonates with the target persona's pain points.",
+            "Post B introduces a factual inconsistency/invention: it claims they were using whiteboards 'a year ago', whereas the brief only provides data for a six-month window on Slatebridge and doesn't specify the timeline prior to that point (though minor, Post A sticks closer to provided facts)."
+          ]
+        },
+        "v2-rubric-reversed": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A provides superior context for the numbers; instead of just listing them, it explains *why* SLA compliance and overtime matter to an Ops Manager (contract risk and payroll), which increases the post's value as a 'saveable' piece of social proof.",
+            "Post A adheres better to the persona of the audience by describing the specific pain points—wrong tech assignments and spreadsheet distrust—that resonate with someone in commercial maintenance.",
+            "Post B introduces a slight factual inconsistency/confusion by mentioning 'A year ago' in the first paragraph but then referencing results 'Six months after moving', whereas Post A stays consistent with the six-month timeline provided in the brief."
+          ]
+        },
+        "v3-labels-swapped": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post X provides much stronger context for the audience (Ops Managers) by explaining *why* SLA and overtime numbers matter in their specific working reality.",
+            "The hook in Post X is more effective; it creates a narrative tension between the scale of the operation (120 techs) and the primitive tool used to manage it (whiteboard).",
+            "Post X avoids generic phrasing like 'institutional memory' or 'transform their operation,' adhering better to the 'zero hype' and 'plain, concrete' tone guardrails provided in the company facts."
+          ]
+        },
+        "v4-order-swapped": {
+          "winner": "B",
+          "margin": 1,
+          "reasons": [
+            "Post A adheres more strictly to the 'zero hype' and 'plain, concrete' tone guardrails.",
+            "Post B introduces speculative scenarios (e.g., 'SLA breaches aren't just contract risk', 'technicians backtrack') that are not in the provided facts or brief, bordering on invented claims about how the software works.",
+            "Post A's structure is tighter and more scannable, moving quickly from the social proof to the specific capabilities (skill/location matching) mentioned in the company facts."
+          ]
+        }
+      },
+      "stable": false
+    }
+  ],
+  "audited_at": "2026-08-30T21:59:57.699Z"
+}

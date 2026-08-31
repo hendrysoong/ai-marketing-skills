@@ -1,0 +1,4 @@
+interface:
+  display_name: "hendry-linkedin-inmail"
+  short_description: "Writes one cold LinkedIn InMail from a brief, facts only"
+  default_prompt: "Use $hendry-linkedin-inmail to write one cold InMail from my brief."

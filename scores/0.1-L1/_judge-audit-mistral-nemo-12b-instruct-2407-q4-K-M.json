@@ -1,0 +1,699 @@
+{
+  "protocol_version": "0.1-L1",
+  "seat": "mistral-nemo:12b-instruct-2407-q4_K_M",
+  "variants": [
+    "v1-original",
+    "v2-rubric-reversed",
+    "v3-labels-swapped"
+  ],
+  "material": "frozen v0.1 pilot pairings, corey-social vs b0/b1, S1-S3, r1-r3, order 1 (audit-only)",
+  "stability": 1,
+  "threshold": 0.9,
+  "passed": true,
+  "results": [
+    {
+      "pairing": "s1-corey-social-vs-b0-p1",
+      "verdicts": {
+        "v1-original": "A",
+        "v2-rubric-reversed": "A",
+        "v3-labels-swapped": "A"
+      },
+      "details": {
+        "v1-original": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A better captures the audience's real working context with specific details like '7:04', '45-minute scramble', and 'SLA deadlines before noon'. Post B uses more general timings.",
+            "Post A has a stronger hook in the first two lines, immediately putting the reader in their morning routine.",
+            "Post A is more concise and scannable, making it easier to understand at a glance. Post B has some repetition and could be tightened."
+          ]
+        },
+        "v2-rubric-reversed": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A adheres more closely to the brief's word count constraint (198 vs. Post B's 247).",
+            "Post A has a stronger hook in the first two lines, immediately painting a vivid picture of the ops manager's Tuesday morning.",
+            "Post A provides a clearer next step: 'book a demo and we'll walk through it live' is more engaging than Post B's 'Book a time at slatebridge.com. #FieldService #Dispatch'."
+          ]
+        },
+        "v3-labels-swapped": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post X better captures the audience's real working context (7:04 vs 7:14).",
+            "Post X provides more specific details about the problem it solves (spreadsheet, SLA deadlines), making it more relatable.",
+            "Post X has a clearer next step ('book a demo') and makes it more enticing by offering to walk through a live scenario."
+          ]
+        }
+      },
+      "stable": true
+    },
+    {
+      "pairing": "s1-corey-social-vs-b0-p2",
+      "verdicts": {
+        "v1-original": "A",
+        "v2-rubric-reversed": "A",
+        "v3-labels-swapped": "A"
+      },
+      "details": {
+        "v1-original": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A better captures the audience's real working context with more specific details (e.g., 'Meridian account', 'certified for what')",
+            "Post A has a stronger hook in the first two lines that immediately resonates with the target audience",
+            "Post A provides a clearer next step ('Book a demo through the link below') compared to Post B's general 'Request a demo'"
+          ]
+        },
+        "v2-rubric-reversed": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A adheres more closely to the brief's word count constraint (198 vs. Post B's 247 words).",
+            "Post A has a stronger hook that immediately resonates with the audience's real working context.",
+            "Post A provides a clearer next step by offering a demo tailored to the customer's specific crew size and job mix, while Post B offers a generic 30-minute demo."
+          ]
+        },
+        "v3-labels-swapped": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post X better captures the audience's real working context with specific details like '7:04', '7:06', and 'Forty-five minutes later'. Post Y uses more generic timelines.",
+            "Post X provides a clear next step ('Book a demo through the link below') while Post Y asks users to request a demo at a website, which is less direct.",
+            "Post X adheres better to the word count constraint (147 words) compared to Post Y (162 words)."
+          ]
+        }
+      },
+      "stable": true
+    },
+    {
+      "pairing": "s1-corey-social-vs-b0-p3",
+      "verdicts": {
+        "v1-original": "A",
+        "v2-rubric-reversed": "A",
+        "v3-labels-swapped": "A"
+      },
+      "details": {
+        "v1-original": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A better captures the audience's real working context with 'You have 14 open jobs, a dispatcher on the phone with an upset customer, and an SLA clock that doesn't care about any of it.' compared to Post B's 'You have 11 jobs on their board, three SLA clocks already running...'",
+            "Post A provides more concrete facts: 'Most of the next hour goes to figuring out who can cover what, calling techs to check availability, and manually rebuilding the day's schedule — hoping you haven't missed a skill requirement or sent someone to the wrong side of the city.' compared to Post B's less specific 'No manual sorting. No calls to figure out who's closest or who's certified for what.'",
+            "Post A has a clearer next step: 'Book a demo at slatebridge.com' compared to Post B's 'Request a demo at slatebridge.com'"
+          ]
+        },
+        "v2-rubric-reversed": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A adheres more closely to the brief's word count constraint (219 vs. Post B's 237)",
+            "Post A has a stronger hook that immediately resonates with the audience's real working context ('A tech calls out sick at 7 a.m.')",
+            "Post A provides a clearer next step ('Book a demo at slatebridge.com') compared to Post B's 'Request a demo'"
+          ]
+        },
+        "v3-labels-swapped": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post X better captures the audience's real working context with more specific details (14 open jobs, upset customer, SLA clock running out) compared to Post Y's generic '11 jobs' and 'three SLA clocks already running'.",
+            "Post X provides a clearer next step by inviting ops managers who still rely on manual processes to book a demo, while Post Y uses a more passive 'request a demo'."
+          ]
+        }
+      },
+      "stable": true
+    },
+    {
+      "pairing": "s1-corey-social-vs-b1-p1",
+      "verdicts": {
+        "v1-original": "A",
+        "v2-rubric-reversed": "A",
+        "v3-labels-swapped": "A"
+      },
+      "details": {
+        "v1-original": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A better captures the audience's real working context with specific details like '7:04', '45-minute scramble', and 'SLA deadlines before noon'. Post B uses more generic language.",
+            "Post A provides a clearer next step ('book a demo') and a more compelling reason to do so ('see how it handles a callout on a busy morning'). Post B's next step is less specific and the reason is more general.",
+            "Post A adheres better to the word count constraint (147 words) compared to Post B (162 words)."
+          ]
+        },
+        "v2-rubric-reversed": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A adheres more closely to the brief's word count constraint (198 vs. Post B's 247).",
+            "Post A has a stronger hook in the first two lines, immediately painting a vivid picture of the ops manager's Tuesday morning.",
+            "Post A provides a clearer next step: 'book a demo and we'll walk through it live' is more actionable than Post B's 'it's worth seeing how this works in practice.'"
+          ]
+        },
+        "v3-labels-swapped": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post X better captures the audience's real working context with specific details like '7:04', '45-minute scramble', and 'SLA deadlines before noon'. Post Y uses more generic language.",
+            "Post X provides a clearer next step ('book a demo') and a more compelling reason to do so ('see how it handles a callout on a busy morning'). Post Y's next step is less specific and the reason is more general.",
+            "Post X adheres better to the word count constraint (147 words) compared to Post Y (162 words)."
+          ]
+        }
+      },
+      "stable": true
+    },
+    {
+      "pairing": "s1-corey-social-vs-b1-p2",
+      "verdicts": {
+        "v1-original": "A",
+        "v2-rubric-reversed": "A",
+        "v3-labels-swapped": "A"
+      },
+      "details": {
+        "v1-original": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A better captures the audience's real working context in the first two lines.",
+            "Post B uses 'something else has already gone sideways' which is too generic and doesn't speak to the specific pain point of callouts.",
+            "Post A provides a clear next step with a link for demo booking, while Post B only mentions the website URL."
+          ]
+        },
+        "v2-rubric-reversed": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A adheres more closely to the brief's word count constraint (198 vs. Post B's 247)",
+            "Post A has a stronger hook that immediately resonates with the audience's real working context",
+            "Post A provides a clearer next step by offering a demo tailored to the customer's specific crew size and job mix"
+          ]
+        },
+        "v3-labels-swapped": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post X better captures the audience's real working context in the first two lines.",
+            "Post X uses concrete facts from the brief more effectively (e.g., '45 minutes' vs. 'the next 45 minutes').",
+            "Post X has a clearer and more compelling next step ('Book a demo through the link below') compared to Post Y's general 'Request a demo at slatebridge.com'."
+          ]
+        }
+      },
+      "stable": true
+    },
+    {
+      "pairing": "s1-corey-social-vs-b1-p3",
+      "verdicts": {
+        "v1-original": "A",
+        "v2-rubric-reversed": "A",
+        "v3-labels-swapped": "A"
+      },
+      "details": {
+        "v1-original": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A better captures the audience's real working context with more specific details (14 open jobs, upset customer, SLA clock). Post B uses general numbers.",
+            "Post A provides a clearer before-and-after contrast, making the benefit of Auto-Rebalance more tangible. Post B focuses more on the old process than the new solution.",
+            "Post A has a stronger hook in the first two lines, immediately painting a vivid picture of the audience's Tuesday morning. Post B starts with a statement that could apply to any day of the week."
+          ]
+        },
+        "v2-rubric-reversed": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A adheres more closely to the brief's word count constraint (217 vs. Post B's 235)",
+            "Post A has a stronger hook that immediately paints a vivid picture of the audience's working context.",
+            "Post A provides a clearer next step by including the demo booking URL in the post itself, rather than directing users to comments."
+          ]
+        },
+        "v3-labels-swapped": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post X better captures the audience's real working context with more specific details (14 open jobs, upset customer, SLA clock). Post Y uses generic numbers.",
+            "Post X provides a clearer before-and-after contrast, making the benefit of Auto-Rebalance more tangible. Post Y focuses more on the old process than the new solution.",
+            "Post X has a stronger hook with 'Most of the next hour goes to...' compared to Post Y's 'That Tuesday morning used to cost about 45 minutes'."
+          ]
+        }
+      },
+      "stable": true
+    },
+    {
+      "pairing": "s2-corey-social-vs-b0-p1",
+      "verdicts": {
+        "v1-original": "A",
+        "v2-rubric-reversed": "A",
+        "v3-labels-swapped": "A"
+      },
+      "details": {
+        "v1-original": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A directly addresses the scheduling-data problem as per the brief, while Post B starts with a more general 'people problem' perspective.",
+            "Post A uses specific, relatable scenarios ('a tech doesn't make it to a site on time', 'the system showed...') that fit the audience's real working context better than Post B's general '40 open work orders' scenario.",
+            "Post A ends with a clear, relevant question ('when you debrief a missed SLA, how often does the investigation get back to the assignment itself?'), while Post B's ending question is more generic and less tied to the argument made."
+          ]
+        },
+        "v2-rubric-reversed": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A adheres more closely to the brief's constraint of not mentioning Slatebridge directly until the last line.",
+            "Post A uses concrete facts and examples to illustrate the problem, making it more relatable and specific to the audience.",
+            "Post A asks a question that is more likely to encourage discussion and engagement from the target audience."
+          ]
+        },
+        "v3-labels-swapped": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post X has a stronger hook with 'Most missed SLAs aren't a people problem.' compared to Post Y's generic start.",
+            "Post X stays closer to the audience's real working context by focusing on the assignment moment and the information available then.",
+            "Post X uses specific scenarios ('Was travel time visible...', 'Did the system show...') that are more relatable and concrete than Post Y's general descriptions."
+          ]
+        }
+      },
+      "stable": true
+    },
+    {
+      "pairing": "s2-corey-social-vs-b0-p2",
+      "verdicts": {
+        "v1-original": "A",
+        "v2-rubric-reversed": "A",
+        "v3-labels-swapped": "A"
+      },
+      "details": {
+        "v1-original": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A has a stronger hook with 'Most missed SLAs aren't a people problem.' compared to Post B's 'Most missed SLAs don't start with...'",
+            "Post A fits better into the audience's real working context by using specific scenarios like 'the job went to a tech who was geographically close but didn't have the right certification' and 'three SLA-critical jobs were stacked on one person because the deadline pressure wasn't visible at assignment time.'",
+            "Post A uses concrete facts well, such as the specific questions dispatchers ask when an SLA is missed and the types of data that are missing in the decision-making process."
+          ]
+        },
+        "v2-rubric-reversed": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A adheres more closely to the brief's constraint of not featuring Slatebridge prominently.",
+            "Post A uses concrete facts and examples to illustrate the problem better than Post B.",
+            "Post A has a stronger hook in the first two lines."
+          ]
+        },
+        "v3-labels-swapped": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post X uses concrete examples to illustrate the problem (e.g., 'the job went to a tech who was geographically close but didn't have the right certification', 'three SLA-critical jobs were stacked on one person') which makes it more relatable and specific to the audience's real working context.",
+            "Post X ends with a clear question that encourages discussion ('I'm curious what you've seen in the field: when an SLA gets missed at your operation, where does the investigation usually start — and does it ever land on the data side?'), while Post Y's ending is more of a statement than a question.",
+            "Post X better adheres to the brief's constraint of being no longer than 250 words (149 words) compared to Post Y (167 words)."
+          ]
+        }
+      },
+      "stable": true
+    },
+    {
+      "pairing": "s2-corey-social-vs-b0-p3",
+      "verdicts": {
+        "v1-original": "A",
+        "v2-rubric-reversed": "A",
+        "v3-labels-swapped": "A"
+      },
+      "details": {
+        "v1-original": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A better captures the audience's real working context by focusing on the specific challenges dispatchers face when making assignments.",
+            "Post A uses more concrete facts and examples to illustrate its points, making it more relatable and useful to the target audience.",
+            "While both posts end with a question, Post A's question is more thought-provoking and encourages discussion, better serving the brief's goal of authority and discussion."
+          ]
+        },
+        "v2-rubric-reversed": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A adheres more closely to the brief's constraints (no mention of Slatebridge vs. soft mention in Post B)",
+            "Post A has a stronger hook with its first two lines",
+            "Post A uses concrete facts and examples better (e.g., '90 minutes out', 'three jobs that close in the same window')"
+          ]
+        },
+        "v3-labels-swapped": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post X better addresses the audience's real working context by focusing on the scheduling-data problem rather than just the people problem.",
+            "Post X uses more specific and concrete facts to illustrate its points (e.g., '90 minutes out', 'three jobs that close in the same window', 'four hours left, not eight').",
+            "Post X has a clearer structure and rhythm, making it easier to scan and follow."
+          ]
+        }
+      },
+      "stable": true
+    },
+    {
+      "pairing": "s2-corey-social-vs-b1-p1",
+      "verdicts": {
+        "v1-original": "A",
+        "v2-rubric-reversed": "A",
+        "v3-labels-swapped": "A"
+      },
+      "details": {
+        "v1-original": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A directly addresses the audience's real working context (missed SLAs) and the pain points they face (incomplete information, pressure), making it more relatable and actionable.",
+            "Post A uses concrete examples and a clear narrative structure to illustrate the problem, making it more engaging and easier to understand.",
+            "Post A ends with a specific question that encourages discussion and reflection, aligning well with the brief's goal of authority and discussion."
+          ]
+        },
+        "v2-rubric-reversed": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A adheres more closely to the brief's constraints (no mention of Slatebridge in the first two lines)",
+            "Post A has a stronger hook with 'Most missed SLAs aren't a people problem.'",
+            "Post A maintains a clear focus on the scheduling-data problem throughout, while Post B introduces the idea of discipline as an issue."
+          ]
+        },
+        "v3-labels-swapped": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post X has a stronger hook with 'Most missed SLAs aren't a people problem.' compared to Post Y's 'When a field team misses an SLA...'",
+            "Post X fits better into the audience's real working context by focusing on common patterns and pressures dispatchers face.",
+            "Post X uses concrete facts like 'Was travel time visible, or was it a guess?' and 'Did the system show that this tech already had three deadline-critical jobs stacked before noon?', while Post Y relies more on generalizations."
+          ]
+        }
+      },
+      "stable": true
+    },
+    {
+      "pairing": "s2-corey-social-vs-b1-p2",
+      "verdicts": {
+        "v1-original": "A",
+        "v2-rubric-reversed": "A",
+        "v3-labels-swapped": "A"
+      },
+      "details": {
+        "v1-original": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A has a stronger hook with 'Most missed SLAs aren't a people problem.' compared to Post B's generic opening.",
+            "Post A fits better into the audience's real working context by directly addressing dispatch leads' experiences and common assumptions.",
+            "Post A uses concrete facts and examples ('the job went to a tech who was geographically close but didn't have the right certification', 'three SLA-critical jobs were stacked on one person') that are more specific and relatable than Post B's general description."
+          ]
+        },
+        "v2-rubric-reversed": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A adheres more closely to the brief's constraint of not mentioning Slatebridge directly.",
+            "Post A uses a stronger hook with 'Most missed SLAs aren't a people problem.' compared to Post B's 'Most missed SLAs I've seen get blamed on...'",
+            "Post A maintains a better rhythm and scannability, making it easier for the audience to follow the argument."
+          ]
+        },
+        "v3-labels-swapped": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post X has a stronger hook with 'Most missed SLAs aren't a people problem.' compared to Post Y's generic start.",
+            "Post X fits better into the audience's real working context by directly addressing dispatch leads' experiences and common assumptions.",
+            "Both posts use concrete facts well, but Post X uses them more effectively in its argument structure."
+          ]
+        }
+      },
+      "stable": true
+    },
+    {
+      "pairing": "s2-corey-social-vs-b1-p3",
+      "verdicts": {
+        "v1-original": "A",
+        "v2-rubric-reversed": "A",
+        "v3-labels-swapped": "A"
+      },
+      "details": {
+        "v1-original": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A has a stronger hook with 'Most missed SLAs don't start...'",
+            "Post A is more specific in its examples and use of numbers (90 minutes out, three jobs, four hours left)",
+            "Post A's structure is clearer and more scannable, with shorter paragraphs and better use of line breaks"
+          ]
+        },
+        "v2-rubric-reversed": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A adheres more closely to the brief's constraints (no mention of Slatebridge vs. soft mention in Post B)",
+            "Post A has a stronger hook with its first two lines",
+            "Post A uses concrete facts and examples better to illustrate the problem"
+          ]
+        },
+        "v3-labels-swapped": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post X uses concrete examples and numbers (90 minutes out, four hours left) to illustrate its points, making it more specific and engaging.",
+            "Post X has a clearer structure with a narrative arc that builds towards the question at the end, making it more scannable and compelling.",
+            "While both posts make valid points about the scheduling-data problem, Post X frames it in a way that is more relatable to the audience's real working context (dispatchers making decisions at speed)."
+          ]
+        }
+      },
+      "stable": true
+    },
+    {
+      "pairing": "s3-corey-social-vs-b0-p1",
+      "verdicts": {
+        "v1-original": "A",
+        "v2-rubric-reversed": "A",
+        "v3-labels-swapped": "A"
+      },
+      "details": {
+        "v1-original": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A uses two provided numbers (18% overtime reduction, 96% SLA compliance) while Post B only uses one (18% overtime reduction).",
+            "Post A's hook is stronger and more specific ('Meridian Facilities Group runs 120 technicians...'), setting the scene better for the audience.",
+            "Post A has a clearer next step ('Comment 'demo' or send a message...') compared to Post B's 'Link in comments to book a walkthrough.'"
+          ]
+        },
+        "v2-rubric-reversed": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A adheres more closely to the brief's constraints (180 words vs. Post B's 239)",
+            "Post A has a stronger hook in the first two lines, immediately presenting the customer and their challenge.",
+            "Post A uses the provided numbers (120 technicians, 6 months) more organically within the narrative."
+          ]
+        },
+        "v3-labels-swapped": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post X uses two provided numbers (18% overtime reduction, 96% SLA compliance) while Post Y only uses one.",
+            "Post X has a stronger hook with 'Here's what changed' and immediately presents the results.",
+            "Post X provides a clear next step ('Comment \"demo\" or send a message') without being overly promotional."
+          ]
+        }
+      },
+      "stable": true
+    },
+    {
+      "pairing": "s3-corey-social-vs-b0-p2",
+      "verdicts": {
+        "v1-original": "A",
+        "v2-rubric-reversed": "A",
+        "v3-labels-swapped": "A"
+      },
+      "details": {
+        "v1-original": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A uses two specific numbers (18% overtime reduction, 96% SLA compliance) from the brief, while Post B only uses one.",
+            "Post A has a stronger hook with 'Six months ago...', setting up a clear before-and-after contrast that Post B lacks.",
+            "Post A provides a more concrete next step ('DM me or drop a comment and I'll share a short walkthrough'), making it easier for the audience to engage, compared to Post B's vague 'Link in comments to book a walkthrough'."
+          ]
+        },
+        "v2-rubric-reversed": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A adheres better to the brief's constraints by using exactly two of the provided numbers accurately.",
+            "Post A has a stronger hook with 'Six months ago...' immediately drawing the audience into a before-and-after scenario.",
+            "Post A provides more specific details about how Slatebridge works ('skill match, location, SLA countdown'), making it more concrete and useful to operations managers."
+          ]
+        },
+        "v3-labels-swapped": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post X uses two specific numbers (18% overtime reduction, 96% SLA compliance) from the brief, while Post Y only uses one.",
+            "Post X provides a clear quote from the ops director, making it more relatable and concrete for the audience.",
+            "Post X has a stronger hook with 'Six months ago... Here's what changed', compared to Post Y's 'Here's what changed after they moved to Slatebridge'."
+          ]
+        }
+      },
+      "stable": true
+    },
+    {
+      "pairing": "s3-corey-social-vs-b0-p3",
+      "verdicts": {
+        "v1-original": "A",
+        "v2-rubric-reversed": "A",
+        "v3-labels-swapped": "A"
+      },
+      "details": {
+        "v1-original": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A uses two provided numbers (18% overtime reduction, 96% SLA compliance) accurately, while Post B only uses one.",
+            "Post A's structure is more scannable with clear sectioning of problems and solutions, making it easier for the audience to understand and engage with.",
+            "Post A ends with a specific next step (a link to a walkthrough in the comments), whereas Post B's next step is vague ('it's worth a conversation') and not easily actionable."
+          ]
+        },
+        "v2-rubric-reversed": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A adheres more closely to the brief's constraints (180 words vs. Post B's 237)",
+            "Post A has a stronger hook in the first two lines, immediately establishing the customer and their pain point.",
+            "Post A uses the provided numbers more effectively, integrating them into specific scenarios rather than listing them as bullet points."
+          ]
+        },
+        "v3-labels-swapped": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post X uses two provided numbers (18% overtime reduction, 96% SLA compliance) accurately, while Post Y only uses one.",
+            "Post X has a stronger hook with a clear before-and-after scenario, making it more engaging for the target audience.",
+            "Post X provides more concrete details about how Slatebridge improved operations, making it more specific and useful to operations managers."
+          ]
+        }
+      },
+      "stable": true
+    },
+    {
+      "pairing": "s3-corey-social-vs-b1-p1",
+      "verdicts": {
+        "v1-original": "A",
+        "v2-rubric-reversed": "A",
+        "v3-labels-swapped": "A"
+      },
+      "details": {
+        "v1-original": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A uses two provided numbers (18% overtime reduction, 96% SLA compliance) while Post B only uses one.",
+            "Post A's hook is stronger and more specific ('Meridian Facilities Group runs 120 technicians...'), setting the stage for the transformation better than Post B's generic opening.",
+            "Post A's structure is clearer and more scannable, with bullet points breaking up information and making it easier to digest quickly."
+          ]
+        },
+        "v2-rubric-reversed": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A adheres more closely to the brief's constraints by using exactly two of the provided numbers.",
+            "Post A has a stronger hook with 'Here's what changed' compared to Post B's 'Six months after switching, a few things changed'.",
+            "Post A provides a clearer next step: 'Comment \"demo\" or send a message...', while Post B's '→ Link in comments to book a walkthrough...' is less prominent and clear."
+          ]
+        },
+        "v3-labels-swapped": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post X uses two provided numbers (18% overtime reduction, 96% SLA compliance) and the context of 'six months ago' more effectively.",
+            "Post X's hook is stronger: it starts with a specific customer scenario rather than a general statement.",
+            "Post X provides a clearer next step ('Comment \"demo\" or send a message') compared to Post Y's vague 'Link in comments'."
+          ]
+        }
+      },
+      "stable": true
+    },
+    {
+      "pairing": "s3-corey-social-vs-b1-p2",
+      "verdicts": {
+        "v1-original": "A",
+        "v2-rubric-reversed": "A",
+        "v3-labels-swapped": "A"
+      },
+      "details": {
+        "v1-original": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A uses two provided numbers accurately (18% overtime reduction and 96% SLA compliance) while Post B only uses one.",
+            "Post A's hook is stronger and more relevant to the audience ('Six months ago...'), making it more likely to be read by operations managers.",
+            "Post A provides a clear next step with a specific offer ('I'd be glad to show you how Slatebridge works. DM me or drop a comment...') while Post B uses a generic 'worth a closer look' phrase."
+          ]
+        },
+        "v2-rubric-reversed": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A adheres more closely to the brief's constraints (using two provided numbers accurately)",
+            "Post A has a stronger hook in the first two lines",
+            "Post A provides a clearer next step for the audience"
+          ]
+        },
+        "v3-labels-swapped": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post X uses two provided numbers accurately (18% overtime reduction and 96% SLA compliance) while Post Y only uses one.",
+            "Post X adheres to the word limit more closely, with a clear next step at the end.",
+            "Post X maintains a consistent rhythm and scannability throughout, making it easier to read and understand."
+          ]
+        }
+      },
+      "stable": true
+    },
+    {
+      "pairing": "s3-corey-social-vs-b1-p3",
+      "verdicts": {
+        "v1-original": "A",
+        "v2-rubric-reversed": "A",
+        "v3-labels-swapped": "A"
+      },
+      "details": {
+        "v1-original": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A uses two provided numbers (18% overtime reduction, 96% SLA compliance) and the quote from the ops director, while Post B only uses one number (18% overtime reduction).",
+            "Post A provides more specific context about why these numbers matter to the audience's working context, making it more compelling.",
+            "Post A has a clear next step ('Link to a 20-minute walkthrough in the comments') and is more concise within the word limit."
+          ]
+        },
+        "v2-rubric-reversed": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A adheres more closely to the brief's constraints by using two provided numbers accurately.",
+            "Post A has a stronger hook with specific details about Meridian Facilities Group's initial challenges.",
+            "Post A provides a clearer next step with a link to a walkthrough in the comments."
+          ]
+        },
+        "v3-labels-swapped": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post X uses two provided numbers (18% overtime reduction, 96% SLA compliance) and the quote from the ops director, while Post Y only uses one number (18% overtime reduction).",
+            "Post X provides more specific context about why these numbers matter to the audience's working context, making it more compelling.",
+            "Post X has a clearer next step ('Link to a 20-minute walkthrough in the comments') compared to Post Y's 'Link in comments to book a 30-minute walkthrough.'"
+          ]
+        }
+      },
+      "stable": true
+    }
+  ],
+  "audited_at": "2026-08-29T17:19:17.492Z"
+}

@@ -1,0 +1,395 @@
+{
+  "protocol_version": "0.1-L1",
+  "audit_revision": "d",
+  "seat": "gemma4:31b",
+  "variants": [
+    "v1-original",
+    "v2-rubric-reversed",
+    "v3-labels-swapped",
+    "v4-order-swapped"
+  ],
+  "material": "frozen v0.1 pilot pairings, corey-social vs b0/b1, S1-S3, r1-r3, presentation orders 1 and 2 (audit-only)",
+  "verdict_semantics": "canonical: A = the skill-side run, B = the baseline-side run, whichever slot each occupied",
+  "stability": 0,
+  "threshold": 0.9,
+  "passed": false,
+  "results": [
+    {
+      "pairing": "s1-corey-social-vs-b0-p1",
+      "verdicts": {
+        "v1-original": "unparseable",
+        "v2-rubric-reversed": "unparseable",
+        "v3-labels-swapped": "unparseable",
+        "v4-order-swapped": "unparseable"
+      },
+      "details": {
+        "v1-original": null,
+        "v2-rubric-reversed": null,
+        "v3-labels-swapped": null,
+        "v4-order-swapped": null
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s1-corey-social-vs-b0-p2",
+      "verdicts": {
+        "v1-original": "unparseable",
+        "v2-rubric-reversed": "unparseable",
+        "v3-labels-swapped": "unparseable",
+        "v4-order-swapped": "B"
+      },
+      "details": {
+        "v1-original": null,
+        "v2-rubric-reversed": null,
+        "v3-labels-swapped": null,
+        "v4-order-swapped": {
+          "winner": "B",
+          "margin": 2,
+          "reasons": [
+            "Post A's hook is more visceral and the 'coffee' detail adds a high degree of realism to the operational context of an ops manager.",
+            "Post A explicitly mentions that jobs closest to breach move first, which demonstrates a deeper understanding of the kinship between Auto-Rebalance and SLA tracking mentioned in the company facts.",
+            "Post B invents a specific customer name ('Meridian account') which is a violation of the hard rule against inventing facts not provided in the materials."
+          ]
+        }
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s1-corey-social-vs-b0-p3",
+      "verdicts": {
+        "v1-original": "A",
+        "v2-rubric-reversed": "A",
+        "v3-labels-swapped": "unparseable",
+        "v4-order-swapped": "unparseable"
+      },
+      "details": {
+        "v1-original": {
+          "winner": "A",
+          "margin": 1,
+          "reasons": [
+            "Post A has a stronger hook that better captures the 'Tuesday morning' feeling of an ops manager by including the dispatcher and the upset customer, adding more tension than Post B.",
+            "Both posts followed all constraints and used only provided facts without inventing claims.",
+            "Post A's rhythm and structural craft is slightly superior, particularly the 'Forty-five minutes of replanning. Under a minute.' line which emphasizes the value proposition clearly and concisely."
+          ]
+        },
+        "v2-rubric-reversed": {
+          "winner": "A",
+          "margin": 1,
+          "reasons": [
+            "Post A has a stronger hook that better captures the 'Tuesday morning' feeling of an ops manager by including the dispatcher and the SLA clock tension.",
+            "Post A's rhythm and scannability are are more effective; it contrasts the manual process (the hour) against the software solution (under a minute) more sharply than Post B.",
+            "Both posts followed all constraints and used only provided facts, but Post A's tone is slightly more aligned with the 'plain, concrete, competent' guardrails."
+          ]
+        },
+        "v3-labels-swapped": null,
+        "v4-order-swapped": null
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s1-corey-social-vs-b1-p1",
+      "verdicts": {
+        "v1-original": "A",
+        "v2-rubric-reversed": "unparseable",
+        "v3-labels-swapped": "unparseable",
+        "v4-order-swapped": "unparseable"
+      },
+      "details": {
+        "v1-original": {
+          "winner": "A",
+          "margin": 1,
+          "reasons": [
+            "Post A's hook is more focused on the the operations manager (the target audience) directly, whereas Post B introduces a third party (the dispatcher) which slightly shifts the focus away from the user.",
+            "Post A is more concise and scannable, fitting the LinkedIn format better than Post B",
+            "Post B invents facts not provided in the brief or company facts (e.g., '14 jobs', 'chiller inspection', 'first coffee gets cold', 'whiteboard edits' - while whiteboards are mentioned as something Slatebridge replaces, it is not stated that dispatchers use them for re-planning specifically during a callout)."
+          ]
+        },
+        "v2-rubric-reversed": null,
+        "v3-labels-swapped": null,
+        "v4-order-swapped": null
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s1-corey-social-vs-b1-p2",
+      "verdicts": {
+        "v1-original": "unparseable",
+        "v2-rubric-reversed": "unparseable",
+        "v3-labels-swapped": "unparseable",
+        "v4-order-swapped": "unparseable"
+      },
+      "details": {
+        "v1-original": null,
+        "v2-rubric-reversed": null,
+        "v3-labels-swapped": null,
+        "v4-order-swapped": null
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s1-corey-social-vs-b1-p3",
+      "verdicts": {
+        "v1-original": "A",
+        "v2-rubric-reversed": "A",
+        "v3-labels-swapped": "A",
+        "v4-order-swapped": "unparseable"
+      },
+      "details": {
+        "v1-original": {
+          "winner": "A",
+          "margin": 1,
+          "reasons": [
+            "Post A's hook is slightly stronger and more visceral; it captures the 'Tuesday morning' feeling requested by the brief better than Post B.",
+            "Post A focuses on the a-priori pain of the manual process (the phone calls) which aligns with the buyer persona's distrust of magic software.",
+            "Post B introduces an external claim about 'trusting an algorithm you can't see', which is not in the provided facts or brief, though it is slightly more specific with the timing (7:14 a.m.)."
+          ]
+        },
+        "v2-rubric-reversed": {
+          "winner": "A",
+          "margin": 1,
+          "reasons": [
+            "Post A has a stronger hook that more effectively captures the 'Tuesday morning' feeling described in the brief by emphasizing the tension of an SLA clock and an upset customer.",
+            "Post A's rhythm and scannability are are better; it uses shorter paragraphs and a more punchy delivery that fits the 'plain, concrete, competent' tone guardrails.",
+            "Post B introduces claims not found in the source material, such as 'no setup required' and 'review, you confirm', which violates the hard rule against inventing facts."
+          ]
+        },
+        "v3-labels-swapped": {
+          "winner": "A",
+          "margin": 1,
+          "reasons": [
+            "Post X has a stronger hook that more accurately reflects the 'Tuesday morning' chaos described in the brief's success criteria.",
+            "Post X is more concise and avoids adding speculative details about how the user interacts with the with software (e.g., 'review, you confirm', 'no setup required') which were not in the provided facts.",
+            "Post X follows the tone guardrails better by remaining plain and concrete without introducing unnecessary narrative fluff."
+          ]
+        },
+        "v4-order-swapped": null
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s2-corey-social-vs-b0-p1",
+      "verdicts": {
+        "v1-original": "unparseable",
+        "v2-rubric-reversed": "unparseable",
+        "v3-labels-swapped": "unparseable",
+        "v4-order-swapped": "unparseable"
+      },
+      "details": {
+        "v1-original": null,
+        "v2-rubric-reversed": null,
+        "v3-labels-swapped": null,
+        "v4-order-swapped": null
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s2-corey-social-vs-b0-p2",
+      "verdicts": {
+        "v1-original": "unparseable",
+        "v2-rubric-reversed": "unparseable",
+        "v3-labels-swapped": "unparseable",
+        "v4-order-swapped": "unparseable"
+      },
+      "details": {
+        "v1-original": null,
+        "v2-rubric-reversed": null,
+        "v3-labels-swapped": null,
+        "v4-order-swapped": null
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s2-corey-social-vs-b0-p3",
+      "verdicts": {
+        "v1-original": "unparseable",
+        "v2-rubric-reversed": "unparseable",
+        "v3-labels-swapped": "unparseable",
+        "v4-order-swapped": "unparseable"
+      },
+      "details": {
+        "v1-original": null,
+        "v2-rubric-reversed": null,
+        "v3-labels-swapped": null,
+        "v4-order-swapped": null
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s2-corey-social-vs-b1-p1",
+      "verdicts": {
+        "v1-original": "unparseable",
+        "v2-rubric-reversed": "unparseable",
+        "v3-labels-swapped": "unparseable",
+        "v4-order-swapped": "unparseable"
+      },
+      "details": {
+        "v1-original": null,
+        "v2-rubric-reversed": null,
+        "v3-labels-swapped": null,
+        "v4-order-swapped": null
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s2-corey-social-vs-b1-p2",
+      "verdicts": {
+        "v1-original": "unparseable",
+        "v2-rubric-reversed": "unparseable",
+        "v3-labels-swapped": "unparseable",
+        "v4-order-swapped": "unparseable"
+      },
+      "details": {
+        "v1-original": null,
+        "v2-rubric-reversed": null,
+        "v3-labels-swapped": null,
+        "v4-order-swapped": null
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s2-corey-social-vs-b1-p3",
+      "verdicts": {
+        "v1-original": "unparseable",
+        "v2-rubric-reversed": "unparseable",
+        "v3-labels-swapped": "unparseable",
+        "v4-order-swapped": "unparseable"
+      },
+      "details": {
+        "v1-original": null,
+        "v2-rubric-reversed": null,
+        "v3-labels-swapped": null,
+        "v4-order-swapped": null
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s3-corey-social-vs-b0-p1",
+      "verdicts": {
+        "v1-original": "unparseable",
+        "v2-rubric-reversed": "unparseable",
+        "v3-labels-swapped": "unparseable",
+        "v4-order-swapped": "unparseable"
+      },
+      "details": {
+        "v1-original": null,
+        "v2-rubric-reversed": null,
+        "v3-labels-swapped": null,
+        "v4-order-swapped": null
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s3-corey-social-vs-b0-p2",
+      "verdicts": {
+        "v1-original": "unparseable",
+        "v2-rubric-reversed": "unparseable",
+        "v3-labels-swapped": "unparseable",
+        "v4-order-swapped": "unparseable"
+      },
+      "details": {
+        "v1-original": null,
+        "v2-rubric-reversed": null,
+        "v3-labels-swapped": null,
+        "v4-order-swapped": null
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s3-corey-social-vs-b0-p3",
+      "verdicts": {
+        "v1-original": "A",
+        "v2-rubric-reversed": "unparseable",
+        "v3-labels-swapped": "unparseable",
+        "v4-order-swapped": "unparseable"
+      },
+      "details": {
+        "v1-original": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A has a stronger hook by breaking the first two lines into separate paragraphs for better scannability on LinkedIn. ",
+            "Post A provides much more concrete context on why the specific numbers (SLA compliance and overtime) actually matter to an operations manager's daily life, avoiding generic polish in favor of concrete usefulness.",
+            "Post B introduces a 'year ago' timeline that is not present in the provided facts, which violates the constraint against inventing facts/numbers."
+          ]
+        },
+        "v2-rubric-reversed": null,
+        "v3-labels-swapped": null,
+        "v4-order-swapped": null
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s3-corey-social-vs-b1-p1",
+      "verdicts": {
+        "v1-original": "unparseable",
+        "v2-rubric-reversed": "unparseable",
+        "v3-labels-swapped": "unparseable",
+        "v4-order-swapped": "A"
+      },
+      "details": {
+        "v1-original": null,
+        "v2-rubric-reversed": null,
+        "v3-labels-swapped": null,
+        "v4-order-swapped": {
+          "winner": "A",
+          "margin": 1,
+          "reasons": [
+            "Post B has a stronger hook by immediately establishing the 'before' state of the chaos (whiteboard/phone calls) alongside the customer name and scale.",
+            "Post B provides better context for the audience (Ops Managers), specifically mentioning the 'chasing information across three tools and a group chat' which resonates with their real working context.",
+            "Post B's structural craft is more sophisticated, particularly the section explaining why the whiteboard is a symptom of a lack of visibility into skill/location/SLA timing, which adds credibility without using hype words."
+          ]
+        }
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s3-corey-social-vs-b1-p2",
+      "verdicts": {
+        "v1-original": "unparseable",
+        "v2-rubric-reversed": "unparseable",
+        "v3-labels-swapped": "unparseable",
+        "v4-order-swapped": "A"
+      },
+      "details": {
+        "v1-original": null,
+        "v2-rubric-reversed": null,
+        "v3-labels-swapped": null,
+        "v4-order-swapped": {
+          "winner": "A",
+          "margin": 1,
+          "reasons": [
+            "Post B has a stronger hook by creating more tension between the 'before' state (whiteboard/87% SLA) and the 'after' state.",
+            "Post B better reflects the audience's real working context by mentioning specific pain points like techs calling in sick or customer escalations, which were explicitly mentioned as the buyer's daily reality in the company facts.",
+            "Post B's structure is more scannable and uses a quote to build narrative momentum rather than just listing it as a point of evidence."
+          ]
+        }
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s3-corey-social-vs-b1-p3",
+      "verdicts": {
+        "v1-original": "unparseable",
+        "v2-rubric-reversed": "unparseable",
+        "v3-labels-swapped": "unparseable",
+        "v4-order-swapped": "B"
+      },
+      "details": {
+        "v1-original": null,
+        "v2-rubric-reversed": null,
+        "v3-labels-swapped": null,
+        "v4-order-swapped": {
+          "winner": "B",
+          "margin": 1,
+          "reasons": [
+            "Post A is more concise and follows the tone guardrails better by avoiding slightly over-dramatic phrasing like 'damage the customer relationship you spent years building'.",
+            "Post A's hook is tighter and immediately establishes the scale of the company (120 techs) and the old way of working.",
+            "Post B spends too much time explaining why SLA compliance and overtime matter, which likely insults the intelligence of an experienced Operations Manager who already knows these pain points."
+          ]
+        }
+      },
+      "stable": false
+    }
+  ],
+  "audited_at": "2026-08-30T08:18:50.537Z"
+}

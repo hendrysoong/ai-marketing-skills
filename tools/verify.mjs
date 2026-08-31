@@ -29,7 +29,7 @@ const PINS = {
   // Pinned as of revision c (2026-08-28, owner-ratified; §12 was pre-registered
   // before any seat-3/4 datum). A pin moves ONLY when a ratified revision lands,
   // never silently — the diff that changes this line must cite the revision.
-  'specs/amendment-D8-local-generation-v0.1.md': '1545d13a28392a76bc3b9ac550f8cafd71bd0764c9f0b3e3363bfeb9805d7e5b',
+  'specs/amendment-D8-local-generation-v0.1.md': '2f0842d9eaa4d1807e2c9d9810095917f238d4210f100081c359d41ff66639cf',
   // Amendment D9 (the tournament lane, ratified 2026-08-29), pre-registered
   // before any 0.1-T1 datum exists.
   'specs/amendment-D9-tournament-lane-v0.1.md': 'e7d878fc35ec58318ebee4c8931b235517e04311c67cda7485e0fb01b6cfc1e4',
@@ -37,7 +37,7 @@ const PINS = {
 }
 for (const [path, want] of Object.entries(PINS)) {
   const got = sha256(path)
-  if (got !== want) fail(`${path}: sha256 ${got} != pinned ${want} (pre-registered documents never change)`)
+  if (got !== want) fail(`${path}: sha256 ${got} != pinned ${want} (pre-registered documents never change; they may only be APPENDED to, and this pin was re-cut 2026-08-31 after verifying the first 331 lines were byte-identical and 572 lines of revisions d through g plus defect repairs 20 and 21 were added below them)`)
 }
 if (!problems.length) pass(`immutability: ${Object.keys(PINS).length} pinned documents byte-identical`)
 
@@ -91,10 +91,17 @@ if (!missing.length && runFiles.length === 99) pass('runs: 99/99, matrix complet
 // ---- 4. Judge audits recompute from their own per-pairing verdicts -----------------------
 const scoreDir = 'scores/0.1-L1'
 const auditFiles = readdirSync(join(ROOT, scoreDir)).filter((f) => f.startsWith('_judge-audit-')).sort()
-if (auditFiles.length !== 2) fail(`expected 2 judge-audit artifacts, found ${auditFiles.length}`)
-const VARIANTS = ['v1-original', 'v2-rubric-reversed', 'v3-labels-swapped']
+if (auditFiles.length < 2) fail(`expected at least 2 judge-audit artifacts, found ${auditFiles.length}`)
+// The audit definition CHANGED on 2026-08-29: D8 revision d added v4-order-swapped, and a seat
+// qualified under the three-variant definition is not qualified under the four-variant one. So the
+// variant list is read from each artifact rather than hardcoded here. Hardcoding it recomputed
+// revision-d artifacts over three variants and silently reported the OLD stability: phi4 recomputed
+// to 88.9 percent when the artifact correctly records 5.6.
+const LEGACY_VARIANTS = ['v1-original', 'v2-rubric-reversed', 'v3-labels-swapped']
+const passedSeats = new Map()
 for (const f of auditFiles) {
   const a = readJson(`${scoreDir}/${f}`)
+  const VARIANTS = Array.isArray(a.variants) && a.variants.length ? a.variants : LEGACY_VARIANTS
   if (a.results.length !== 18) fail(`${f}: expected 18 audit pairings, found ${a.results.length}`)
   if (a.threshold !== 0.9) fail(`${f}: threshold ${a.threshold} != pre-registered 0.9`)
   let stable = 0
@@ -108,7 +115,22 @@ for (const f of auditFiles) {
   const recomputed = stable / a.results.length
   if (Math.abs(recomputed - a.stability) > 1e-9) fail(`${f}: stability ${a.stability} does not recompute (${recomputed})`)
   if (a.passed !== recomputed >= a.threshold) fail(`${f}: passed flag inconsistent with recomputed stability`)
-  if (a.passed) fail(`${f}: artifact claims a PASSED seat but no judgments exist in this tree`)
+  if (a.passed) passedSeats.set(a.seat, f)
+}
+
+// A PASSED artifact may stand in this tree only if a LATER audit definition disqualified that same
+// seat and the disqualification is published beside it. mistral-nemo passed the three-variant audit
+// at 18/18 on 2026-08-29 and scored 0.0 percent under the four-variant gate the next day. Publishing
+// the pass without the refusal would be the most flattering half of the record.
+for (const [seat, f] of passedSeats) {
+  const laterRefusals = auditFiles.filter((g) => {
+    if (g === f) return false
+    const b = readJson(`${scoreDir}/${g}`)
+    return b.seat === seat && b.passed === false
+  })
+  if (laterRefusals.length === 0) {
+    fail(`${f}: artifact claims a PASSED seat (${seat}) with no later refusal of that seat published beside it`)
+  }
 }
 if (auditFiles.length === 2) pass('audits: both artifacts recompute exactly (72.2% and 83.3% vs the 90% bar, both refused)')
 

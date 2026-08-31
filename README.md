@@ -9,6 +9,24 @@ Built and run by [Hendry Soong](https://hendry.ai). Reports are published on the
 [skills track at hendry.ai](https://hendry.ai/ai-marketing/skills); this repository carries the
 evidence behind them.
 
+## The skills
+
+`skills/` carries the skills built against this benchmark, packaged as they ship.
+
+| skill | job | measured |
+|---|---|---|
+| `hendry-cold-email` | one cold B2B outreach email | 9/9 on the field rubric, dominates the bare model and the placebo |
+| `hendry-linkedin-inmail` | one cold LinkedIn InMail | 7/7 on the field rubric, dominates both baselines |
+
+**These are not graded.** No judge model has qualified, so nothing here is crowned. What is measured
+is **rule conformance**: `benchmark/rubrics/` holds rubrics derived from the checkable rules that
+independent skill authors publish about the same job, each rule recording who stated it. A skill
+that satisfies more of the field's own published bar than a baseline does dominates it, and
+dominance is a partial order, so two skills can be incomparable and are reported that way.
+
+Rule conformance measures compliance, not persuasion. A fully compliant email can still be dull.
+It is a floor and never a ceiling.
+
 ## What this is
 
 AI marketing skills, packaged instruction files that a model loads before writing, mostly get

@@ -1,0 +1,159 @@
+{
+  "$comment": "A rubric DERIVED from what independent skill authors publish about the same job, not authored by us and not supplied by the owner. Each rule records who stated it. Consensus is the count of INDEPENDENT authors, which is the weight an agent can compute without a human in the loop.",
+  "schema": "field-rubric/v1",
+  "jtbd": "cold-email-outreach",
+  "derived_at": "2026-08-31",
+  "sources": [
+    {
+      "author": "coreyhaines31",
+      "skill": "skills/cold-email/SKILL.md",
+      "stars": 46267,
+      "sweep": "SCAN-0001"
+    },
+    {
+      "author": "thatrebeccarae",
+      "skill": "skills/cold-email-outreach/SKILL.md",
+      "stars": 122,
+      "sweep": "SCAN-0001"
+    }
+  ],
+  "rules": [
+    {
+      "id": "no-hope-this-finds-you",
+      "stated_by": [
+        "coreyhaines31",
+        "thatrebeccarae"
+      ],
+      "rule": "Do not open with 'I hope this email finds you well' or an equivalent throat-clear.",
+      "check": {
+        "type": "forbidden_terms",
+        "terms": [
+          "hope this email finds you well",
+          "hope this message finds you well",
+          "hope this finds you well",
+          "hope you're doing well",
+          "hope you are doing well",
+          "hope all is well",
+          "hope this note finds you",
+          "i wanted to reach out",
+          "just reaching out",
+          "trust this email finds you"
+        ]
+      },
+      "terms_note": "Widened 2026-08-31 after a baseline generation opened with 'I hope this message finds you well' and passed. The RULE already said 'or an equivalent throat-clear'; the term list was under-implementing it."
+    },
+    {
+      "id": "no-fake-thread",
+      "stated_by": [
+        "coreyhaines31",
+        "thatrebeccarae"
+      ],
+      "rule": "Do not fake a reply thread with Re: or Fwd: on first contact.",
+      "check": {
+        "type": "forbidden_terms",
+        "terms": [
+          "subject: re:",
+          "subject: fwd:",
+          "subject: fw:"
+        ]
+      }
+    },
+    {
+      "id": "link-restraint",
+      "stated_by": [
+        "coreyhaines31",
+        "thatrebeccarae"
+      ],
+      "rule": "At most one link. Multiple links read as a blast and trigger spam filters.",
+      "check": {
+        "type": "link_cap",
+        "max": 1
+      }
+    },
+    {
+      "id": "short-body",
+      "stated_by": [
+        "coreyhaines31",
+        "thatrebeccarae"
+      ],
+      "rule": "Ruthlessly short. 125 words is the outer edge.",
+      "check": {
+        "type": "length_cap"
+      },
+      "context": {
+        "length_cap": {
+          "max": 125,
+          "unit": "words"
+        }
+      }
+    },
+    {
+      "id": "no-jargon",
+      "stated_by": [
+        "coreyhaines31"
+      ],
+      "rule": "No sales jargon: synergy, leverage, circle back, best-in-class, leading provider.",
+      "check": {
+        "type": "forbidden_terms",
+        "terms": [
+          "synergy",
+          "leverage",
+          "circle back",
+          "best-in-class",
+          "best in class",
+          "leading provider"
+        ]
+      }
+    },
+    {
+      "id": "no-spam-triggers",
+      "stated_by": [
+        "thatrebeccarae"
+      ],
+      "rule": "No spam trigger words in the subject: free, guarantee, act now.",
+      "check": {
+        "type": "forbidden_terms",
+        "terms": [
+          "act now",
+          "100% free",
+          "money back guarantee"
+        ]
+      }
+    },
+    {
+      "id": "reader-first",
+      "stated_by": [
+        "coreyhaines31"
+      ],
+      "rule": "Lead with the reader's world, not the sender's. Second person outweighs first person.",
+      "check": {
+        "type": "reader_first_ratio",
+        "min": 1.0
+      }
+    },
+    {
+      "id": "subject-terse",
+      "stated_by": [
+        "coreyhaines31"
+      ],
+      "rule": "Subject line is two to four words.",
+      "check": {
+        "type": "subject_word_cap",
+        "min": 2,
+        "max": 4
+      }
+    },
+    {
+      "id": "subject-lowercase",
+      "stated_by": [
+        "coreyhaines31"
+      ],
+      "rule": "Subject line is lowercase with no terminal punctuation.",
+      "check": {
+        "type": "subject_style",
+        "lowercase": true,
+        "no_terminal_punctuation": true
+      }
+    }
+  ]
+}

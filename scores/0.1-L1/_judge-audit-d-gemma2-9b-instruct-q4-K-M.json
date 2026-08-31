@@ -1,0 +1,859 @@
+{
+  "protocol_version": "0.1-L1",
+  "audit_revision": "d",
+  "seat": "gemma2:9b-instruct-q4_K_M",
+  "variants": [
+    "v1-original",
+    "v2-rubric-reversed",
+    "v3-labels-swapped",
+    "v4-order-swapped"
+  ],
+  "material": "frozen v0.1 pilot pairings, corey-social vs b0/b1, S1-S3, r1-r3, presentation orders 1 and 2 (audit-only)",
+  "verdict_semantics": "canonical: A = the skill-side run, B = the baseline-side run, whichever slot each occupied",
+  "stability": 0,
+  "threshold": 0.9,
+  "passed": false,
+  "results": [
+    {
+      "pairing": "s1-corey-social-vs-b0-p1",
+      "verdicts": {
+        "v1-original": "A",
+        "v2-rubric-reversed": "A",
+        "v3-labels-swapped": "B",
+        "v4-order-swapped": "B"
+      },
+      "details": {
+        "v1-original": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A's opening scenario is more relatable and immediately grabs the reader's attention.",
+            "Post A is more concise and to the point, while Post B gets bogged down in unnecessary details.",
+            "Both posts effectively explain the feature, but Post A does a better job of highlighting the time savings and ease of use."
+          ]
+        },
+        "v2-rubric-reversed": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A better hooks the reader with a relatable Tuesday morning scenario.",
+            "Post A is more concise and gets to the point faster.",
+            "Post B's language is overly verbose and loses momentum in the middle."
+          ]
+        },
+        "v3-labels-swapped": {
+          "winner": "B",
+          "margin": 2,
+          "reasons": [
+            "Post Y's opening scenario is more specific to the audience's pain point (eleven jobs, three SLA deadlines).",
+            "Post Y emphasizes the concrete benefits of Auto-Rebalance in a way that Post X doesn't (e.g., 'It does not guess. It does not ignore...').",
+            "Post Y's call to action is more compelling and specific (walkthrough against your team size and SLA mix)."
+          ]
+        },
+        "v4-order-swapped": {
+          "winner": "B",
+          "margin": 2,
+          "reasons": [
+            "Post A better hooks the reader with a relatable scenario in the first two lines.",
+            "Post A provides more concrete details about how Auto-Rebalance works and its benefits (e.g., checking skills, locations, SLA deadlines).",
+            "Post A's structure is more engaging with shorter paragraphs and a clearer call to action."
+          ]
+        }
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s1-corey-social-vs-b0-p2",
+      "verdicts": {
+        "v1-original": "A",
+        "v2-rubric-reversed": "A",
+        "v3-labels-swapped": "A",
+        "v4-order-swapped": "B"
+      },
+      "details": {
+        "v1-original": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A better hooks the reader with a relatable Tuesday morning scenario.",
+            "Post A is more specific about how Auto-Rebalance works and its benefits (e.g., matching skills, locations, and SLA deadlines).",
+            "Post A has a clearer call to action that is more tailored to the target audience's needs (seeing it handle their specific crew size and job mix)."
+          ]
+        },
+        "v2-rubric-reversed": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A better hooks the reader with a relatable Tuesday morning scenario.",
+            "Post A is more concise and gets to the point faster.",
+            "Post A's structure is clearer, with a stronger call to action at the end."
+          ]
+        },
+        "v3-labels-swapped": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post X better hooks the reader with a relatable Tuesday morning scenario.",
+            "Post X is more specific about how Auto-Rebalance works and its benefits (e.g., matching skills, locations, SLA deadlines).",
+            "Post X has a clearer call to action that focuses on a personalized demo."
+          ]
+        },
+        "v4-order-swapped": {
+          "winner": "B",
+          "margin": 2,
+          "reasons": [
+            "Post A better hooks the reader with a relatable scenario in the first two lines.",
+            "Post A is more specific about how Auto-Rebalance works and its benefits (e.g., checking skills, locations, SLA deadlines).",
+            "Post A provides a clearer next step by offering a demo tailored to the user's specific needs."
+          ]
+        }
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s1-corey-social-vs-b0-p3",
+      "verdicts": {
+        "v1-original": "A",
+        "v2-rubric-reversed": "A",
+        "v3-labels-swapped": "A",
+        "v4-order-swapped": "B"
+      },
+      "details": {
+        "v1-original": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A better hooks the reader with a relatable scenario and builds tension effectively.",
+            "Post A uses more concrete details about the dispatcher's workload (14 jobs, SLA clock) that resonate with the target audience.",
+            "Post A's structure is clearer and more scannable, with shorter paragraphs and stronger transitions. "
+          ]
+        },
+        "v2-rubric-reversed": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A better hooks the reader with a relatable Tuesday morning scenario.",
+            "Post A's structure is more concise and scannable, leading to a clearer next step.",
+            "Post A avoids unnecessary detail about the company's target industries, keeping the focus on the problem and solution. "
+          ]
+        },
+        "v3-labels-swapped": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post X better hooks the reader with a relatable scenario and builds tension effectively.",
+            "Post X uses more concrete details about the dispatcher's workload (14 jobs, SLA clock) making it more specific to the audience's context.",
+            "Both posts are well-structured, but Post X's comparison of 45 minutes vs. under a minute is more impactful."
+          ]
+        },
+        "v4-order-swapped": {
+          "winner": "B",
+          "margin": 2,
+          "reasons": [
+            "Post A better hooks the reader with a relatable Tuesday morning scenario.",
+            "Post A is more concise and gets to the point faster.",
+            "Post A avoids unnecessary detail about the dispatcher's phone call, keeping the focus on the problem and solution."
+          ]
+        }
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s1-corey-social-vs-b1-p1",
+      "verdicts": {
+        "v1-original": "A",
+        "v2-rubric-reversed": "A",
+        "v3-labels-swapped": "A",
+        "v4-order-swapped": "B"
+      },
+      "details": {
+        "v1-original": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A better hooks the reader with a relatable Tuesday morning scenario.",
+            "Post A is more concise and gets to the point faster.",
+            "Post A's structure is clearer and more scannable. The benefits of Auto-Rebalance are presented in a more straightforward way."
+          ]
+        },
+        "v2-rubric-reversed": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A better hooks the reader with a relatable Tuesday morning scenario.",
+            "Post A is more concise and gets to the point faster.",
+            "Post A's structure is clearer, with a problem-solution flow that's easy to follow. Post B meanders a bit."
+          ]
+        },
+        "v3-labels-swapped": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post X hooks the reader with a relatable Tuesday morning scenario immediately.",
+            "Post X is more concise and gets to the point faster.",
+            "Post X's structure is clearer, with a problem-solution flow that's easy to follow. Post Y's middle section feels slightly repetitive."
+          ]
+        },
+        "v4-order-swapped": {
+          "winner": "B",
+          "margin": 2,
+          "reasons": [
+            "Post A better hooks the reader with a relatable Tuesday morning scenario.",
+            "Post A more effectively uses concrete details (14 jobs, three SLA clocks) to illustrate the problem.",
+            "Post A's structure is more engaging, building tension and then offering the solution. Post B feels more like a list of features."
+          ]
+        }
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s1-corey-social-vs-b1-p2",
+      "verdicts": {
+        "v1-original": "A",
+        "v2-rubric-reversed": "A",
+        "v3-labels-swapped": "A",
+        "v4-order-swapped": "B"
+      },
+      "details": {
+        "v1-original": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A better hooks the reader with a relatable Tuesday morning scenario.",
+            "Post A is more specific about the time saved (45 minutes) and the tasks involved in re-planning.",
+            "Post A has a clearer call to action: 'If you want to see how it handles a callout on your crew size and job mix, we'll walk through it with your actual numbers.'"
+          ]
+        },
+        "v2-rubric-reversed": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A better hooks the reader with a relatable Tuesday morning scenario.",
+            "Post A is more concise and gets to the point faster.",
+            "Post A uses stronger action verbs and imagery (e.g., 'find out', 'moving jobs around', 'watching the SLA clock tick down')."
+          ]
+        },
+        "v3-labels-swapped": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post X better hooks the reader with a vivid depiction of a typical Tuesday morning problem.",
+            "Post X is more specific about the time saved (45 minutes) and the tasks involved (checking skills, locations, SLA deadlines).",
+            "Post X has a clearer call to action: 'If you want to see how it handles a callout on your crew size and job mix, we'll walk through it with your actual numbers. Book a demo through the link below.'"
+          ]
+        },
+        "v4-order-swapped": {
+          "winner": "B",
+          "margin": 2,
+          "reasons": [
+            "Post A better hooks the reader by directly addressing their Tuesday morning pain point.",
+            "Post A provides more concrete details about how Auto-Rebalance works and its benefits (e.g., checking skills, locations, SLA deadlines).",
+            "Post A has a stronger call to action that is more specific and tailored to the target audience."
+          ]
+        }
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s1-corey-social-vs-b1-p3",
+      "verdicts": {
+        "v1-original": "A",
+        "v2-rubric-reversed": "A",
+        "v3-labels-swapped": "A",
+        "v4-order-swapped": "B"
+      },
+      "details": {
+        "v1-original": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A better hooks the reader with a relatable Tuesday morning scenario.",
+            "Post A is more specific about the problem and solution, using concrete examples like '14 open jobs' and 'SLA clock'.",
+            "Post A has a clearer call to action: 'Book a demo at slatebridge.com'."
+          ]
+        },
+        "v2-rubric-reversed": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A better hooks the reader with a relatable Tuesday morning scenario.",
+            "Post A's structure is clearer and more concise, leading to a stronger call to action.",
+            "Post B uses unnecessary jargon like 'redistributes' and 'algorithm you can't see', which alienates the target audience. "
+          ]
+        },
+        "v3-labels-swapped": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post X better hooks the reader with a relatable Tuesday morning scenario.",
+            "Post X more clearly explains the problem and solution in concrete terms.",
+            "Post X has a stronger call to action that is more specific and actionable."
+          ]
+        },
+        "v4-order-swapped": {
+          "winner": "B",
+          "margin": 2,
+          "reasons": [
+            "Post A better hooks the reader with a relatable Tuesday morning scenario.",
+            "Post A more clearly explains the problem and solution in concrete terms.",
+            "Post A's structure is more scannable and engaging with shorter paragraphs and varied sentence lengths. "
+          ]
+        }
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s2-corey-social-vs-b0-p1",
+      "verdicts": {
+        "v1-original": "unparseable",
+        "v2-rubric-reversed": "A",
+        "v3-labels-swapped": "A",
+        "v4-order-swapped": "B"
+      },
+      "details": {
+        "v1-original": null,
+        "v2-rubric-reversed": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A better establishes the founder's expertise by framing the problem as something they've 'seen enough of'.",
+            "Post A uses stronger concrete examples (travel time, stacked deadlines) to illustrate the data problem.",
+            "Post A's ending question is more specific and actionable than Post B's. It prompts reflection on a common practice rather than just asking for opinions."
+          ]
+        },
+        "v3-labels-swapped": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post X better hooks the reader with its direct challenge to common assumptions.",
+            "Post X is more specific about the data gaps that lead to missed SLAs (travel time, skill sets, deadline stacking).",
+            "Post X's structure is clearer and more conversational, guiding the reader through the problem and solution in a logical way. "
+          ]
+        },
+        "v4-order-swapped": {
+          "winner": "B",
+          "margin": 2,
+          "reasons": [
+            "Post A better hooks the reader with its opening question and relatable scenario.",
+            "Post A is more specific about the data visibility problem, using concrete examples like travel time and deadline stacking.",
+            "Post A avoids mentioning Slatebridge directly, staying true to the brief's focus on authority and discussion rather than promotion. "
+          ]
+        }
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s2-corey-social-vs-b0-p2",
+      "verdicts": {
+        "v1-original": "A",
+        "v2-rubric-reversed": "A",
+        "v3-labels-swapped": "A",
+        "v4-order-swapped": "B"
+      },
+      "details": {
+        "v1-original": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A's hook is stronger and more directly relevant to the target audience's pain point.",
+            "Post A better connects the scheduling data problem to real-world dispatcher challenges and avoids overly abstract language.",
+            "Post A uses concrete examples to illustrate the issue, while Post B relies on more general statements."
+          ]
+        },
+        "v2-rubric-reversed": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A more clearly establishes the founder's expertise through direct experience talking to dispatch leads.",
+            "Post A uses stronger hooks in the first two lines, immediately grabbing attention with a common pain point.",
+            "Post B is repetitive and lacks the same level of concreteness in its examples. Post A provides more specific scenarios illustrating the problem."
+          ]
+        },
+        "v3-labels-swapped": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post X has a stronger hook, immediately posing a question that resonates with the target audience.",
+            "Post X better fits the working context of operations managers by focusing on the data-driven nature of scheduling problems.",
+            "Post X uses concrete examples to illustrate its point, while Post Y relies more on generalizations."
+          ]
+        },
+        "v4-order-swapped": {
+          "winner": "B",
+          "margin": 2,
+          "reasons": [
+            "Post A is more concise and focused on the core argument.",
+            "Post A avoids mentioning Slatebridge directly, staying true to the brief's focus on authority and discussion.",
+            "Post A uses stronger imagery and storytelling to illustrate the problem, making it more engaging for the reader."
+          ]
+        }
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s2-corey-social-vs-b0-p3",
+      "verdicts": {
+        "v1-original": "A",
+        "v2-rubric-reversed": "A",
+        "v3-labels-swapped": "A",
+        "v4-order-swapped": "B"
+      },
+      "details": {
+        "v1-original": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A better hooks the reader with its direct challenge to common assumptions.",
+            "Post A more effectively uses concrete examples to illustrate the problem.",
+            "Post A's structure is clearer and more scannable, leading to a stronger call to action."
+          ]
+        },
+        "v2-rubric-reversed": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A avoids invented facts (like the 90-minute travel time), sticking to the brief's 'no invented claims' rule.",
+            "Post A has a stronger hook in its first two lines, posing a more direct question that grabs attention.",
+            "Post A is more structurally sound, with a clear progression of thought and a natural lead into the concluding question. Post B feels slightly disjointed."
+          ]
+        },
+        "v3-labels-swapped": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post X better establishes the 'people problem' framing before pivoting to data.",
+            "Post X uses stronger concrete examples (90 minutes out, three jobs, four hours left) that are more evocative than Post Y's generalities.",
+            "Post X has a clearer call to action: prompting reflection on where breakdowns occur in their own process. Post Y ends more abruptly."
+          ]
+        },
+        "v4-order-swapped": {
+          "winner": "B",
+          "margin": 2,
+          "reasons": [
+            "Post A avoids invented numbers (90 minutes, 4 hours) and sticks to the 'partial data' theme.",
+            "Post A's structure is more conversational and engaging, leading with a relatable problem and building towards the solution.",
+            "Post B's language feels slightly too promotional ('You can coach your way through...'), while Post A maintains a neutral tone appropriate for the brief. "
+          ]
+        }
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s2-corey-social-vs-b1-p1",
+      "verdicts": {
+        "v1-original": "A",
+        "v2-rubric-reversed": "unparseable",
+        "v3-labels-swapped": "A",
+        "v4-order-swapped": "B"
+      },
+      "details": {
+        "v1-original": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A better hooks the reader with a relatable problem statement and avoids generic platitudes.",
+            "Post A is more specific in its examples of data gaps and how they lead to missed SLAs.",
+            "Post A's structure is more conversational and engaging, leading to a stronger call to action. "
+          ]
+        },
+        "v2-rubric-reversed": null,
+        "v3-labels-swapped": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post X better hooks the reader with a relatable problem and builds a narrative.",
+            "Post X is more specific about the data gaps that lead to missed SLAs.",
+            "Post X's structure is clearer, leading the reader through the argument more effectively. Post Y feels less focused."
+          ]
+        },
+        "v4-order-swapped": {
+          "winner": "B",
+          "margin": 2,
+          "reasons": [
+            "Post A is more specific and concrete in its examples. It uses a hypothetical scenario to illustrate the problem of incomplete data, making it more relatable to the target audience.",
+            "Post B relies on generalizations and lacks the same level of detail. While it touches on the core issue, it doesn't provide as compelling an example.",
+            "Post A has a stronger hook in its opening lines, immediately posing a question that resonates with the audience's experience. Post B's opening is less engaging."
+          ]
+        }
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s2-corey-social-vs-b1-p2",
+      "verdicts": {
+        "v1-original": "A",
+        "v2-rubric-reversed": "A",
+        "v3-labels-swapped": "A",
+        "v4-order-swapped": "B"
+      },
+      "details": {
+        "v1-original": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A has a stronger hook, immediately posing a question that resonates with the target audience.",
+            "Post A better fits the working context of operations managers by focusing on the systemic issue of data gaps rather than specific scenarios.",
+            "Post A is more concise and avoids unnecessary detail, making it scannable and impactful."
+          ]
+        },
+        "v2-rubric-reversed": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A better hooks the reader with a more direct and relatable question in the first line.",
+            "Post A is more concise and avoids unnecessary detail about specific scenarios.",
+            "Post A's structure is clearer, leading the reader through the argument more effectively. Post B gets bogged down in a detailed example that detracts from the overall point."
+          ]
+        },
+        "v3-labels-swapped": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post X has a stronger hook, immediately posing a question that resonates with the target audience.",
+            "Post X better fits the working context of operations managers by focusing on the systemic issue of incomplete data rather than specific examples.",
+            "Post X is more concise and avoids unnecessary detail, making it scannable and impactful."
+          ]
+        },
+        "v4-order-swapped": {
+          "winner": "B",
+          "margin": 2,
+          "reasons": [
+            "Post A provides a more concrete example of the scheduling-data problem, making its point more effectively.",
+            "Post B veers into promotion by mentioning Slatebridge. Post A avoids this trap and stays focused on the problem.",
+            "Post A's structure is stronger, with a clear narrative arc that builds to the question at the end. Post B feels more disjointed."
+          ]
+        }
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s2-corey-social-vs-b1-p3",
+      "verdicts": {
+        "v1-original": "A",
+        "v2-rubric-reversed": "unparseable",
+        "v3-labels-swapped": "A",
+        "v4-order-swapped": "B"
+      },
+      "details": {
+        "v1-original": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A provides a more compelling narrative arc, starting with a relatable scenario and building to a clear problem statement.",
+            "Post A uses stronger, more concrete language ('triple-stacked', 'invisibility') that resonates with the target audience's experience.",
+            "Post A avoids generic platitudes and focuses on specific pain points relevant to operations managers. "
+          ]
+        },
+        "v2-rubric-reversed": null,
+        "v3-labels-swapped": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post X provides a more compelling narrative arc, starting with a relatable scenario and building to the core argument.",
+            "Post X uses stronger, more concrete language ('triple-stacked', 'invisibility') that resonates with the target audience's experience.",
+            "Post Y relies on generalizations and lacks the specific examples that make Post X more engaging."
+          ]
+        },
+        "v4-order-swapped": {
+          "winner": "B",
+          "margin": 2,
+          "reasons": [
+            "Post A better hooks the reader with a more universal and relatable problem statement in the first two lines.",
+            "Post A is more focused on the operations manager's experience and pain points, using concrete examples like 'the drive took longer than we thought'.",
+            "Post B relies on invented specifics (90 minutes out, three jobs, four hours left) that aren't supported by the brief. Post A sticks to broader observations."
+          ]
+        }
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s3-corey-social-vs-b0-p1",
+      "verdicts": {
+        "v1-original": "A",
+        "v2-rubric-reversed": "A",
+        "v3-labels-swapped": "A",
+        "v4-order-swapped": "B"
+      },
+      "details": {
+        "v1-original": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A uses the provided facts more effectively, weaving them into a narrative about Meridian's experience.",
+            "Post A's structure is clearer and more scannable, with shorter paragraphs and bullet points.",
+            "Post A avoids unnecessary jargon and speaks directly to the audience's pain points. Post B's language is more abstract and less relatable."
+          ]
+        },
+        "v2-rubric-reversed": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A is more concise and gets to the point faster.",
+            "Post A's structure is clearer with numbered bullet points highlighting key improvements.",
+            "Post A avoids unnecessary jargon like 'institutional knowledge' which may not resonate with the target audience."
+          ]
+        },
+        "v3-labels-swapped": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post X uses the provided facts more effectively, weaving them into a narrative about Meridian's experience.",
+            "Post X's structure is clearer and more scannable, with distinct paragraphs that highlight key points.",
+            "Post X avoids unnecessary jargon and speaks directly to the audience's pain points. Post Y's language is slightly too abstract and doesn't resonate as strongly."
+          ]
+        },
+        "v4-order-swapped": {
+          "winner": "B",
+          "margin": 2,
+          "reasons": [
+            "Post A better hooks the reader with the vivid description of Meridian's pre-Slatebridge struggles.",
+            "Post A more effectively connects the benefits to the audience's pain points (untangling schedules, missed SLAs).",
+            "Post A has a stronger call to action that is more specific and actionable."
+          ]
+        }
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s3-corey-social-vs-b0-p2",
+      "verdicts": {
+        "v1-original": "A",
+        "v2-rubric-reversed": "A",
+        "v3-labels-swapped": "A",
+        "v4-order-swapped": "B"
+      },
+      "details": {
+        "v1-original": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A better hooks the reader with the 'untangling the schedule' quote upfront.",
+            "Post A more clearly connects the benefits (SLA compliance, overtime) to the pain points of the audience.",
+            "Post A has a stronger call to action that is more specific and actionable. "
+          ]
+        },
+        "v2-rubric-reversed": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A better uses the provided quote, integrating it into the narrative flow.",
+            "Post A's structure is more engaging, building towards the customer benefit with each paragraph.",
+            "Post B's 'the whiteboard wasn't the problem' feels like an unnecessary abstraction and doesn't resonate as strongly."
+          ]
+        },
+        "v3-labels-swapped": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post X better hooks the reader with the Meridian Facilities Group example and the quote from their ops director.",
+            "Post X is more specific about how Slatebridge solves problems (skill match, location, SLA countdown), while Post Y remains more general.",
+            "Post X has a clearer call to action and a stronger sense of conversational flow. "
+          ]
+        },
+        "v4-order-swapped": {
+          "winner": "B",
+          "margin": 2,
+          "reasons": [
+            "Post A better hooks the reader with its opening line focusing on the whiteboard, immediately relatable to the target audience.",
+            "Post A more clearly explains the problem Slatebridge solves (information living in too many places) and how it benefits the user (re-assigning without phone chains).",
+            "Post A's structure is more scannable with bullet points and clear paragraphs, making it easier to digest. Post B's dense paragraphing makes it harder to follow at a glance."
+          ]
+        }
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s3-corey-social-vs-b0-p3",
+      "verdicts": {
+        "v1-original": "A",
+        "v2-rubric-reversed": "A",
+        "v3-labels-swapped": "A",
+        "v4-order-swapped": "B"
+      },
+      "details": {
+        "v1-original": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A better hooks the reader with its vivid description of the dispatcher's pain points.",
+            "Post A uses concrete facts more effectively, explaining the significance of the improved SLA compliance and reduced overtime.",
+            "Post A has a clearer call to action and a stronger sense of narrative flow. "
+          ]
+        },
+        "v2-rubric-reversed": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A better uses the provided facts to illustrate the problem Slatebridge solves.",
+            "Post A's structure is more engaging, using a narrative approach to draw the reader in.",
+            "Post A provides more specific details about the benefits of Slatebridge, such as the impact on SLA compliance and overtime hours."
+          ]
+        },
+        "v3-labels-swapped": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post X better hooks the reader with its vivid description of the dispatcher's pre-Slatebridge experience.",
+            "Post X more effectively uses concrete facts to illustrate the benefits of Slatebridge, focusing on specific pain points and quantifiable improvements.",
+            "Post X has a stronger call to action that is more specific and actionable."
+          ]
+        },
+        "v4-order-swapped": {
+          "winner": "B",
+          "margin": 2,
+          "reasons": [
+            "Post A is more concise and gets to the point faster.",
+            "Post A better explains the value proposition of Slatebridge by focusing on the specific problems it solves.",
+            "Post B uses overly dramatic language and relies on generalizations that don't resonate as strongly."
+          ]
+        }
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s3-corey-social-vs-b1-p1",
+      "verdicts": {
+        "v1-original": "A",
+        "v2-rubric-reversed": "A",
+        "v3-labels-swapped": "A",
+        "v4-order-swapped": "B"
+      },
+      "details": {
+        "v1-original": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A better hooks the reader by immediately stating the customer's pre-Slatebridge struggles and then highlighting the positive changes.",
+            "Post A more effectively connects Slatebridge's features to the audience's pain points (e.g., 'who's closest, who has the skill, and how much time is left on this SLA').",
+            "Post A provides a clearer call to action with a direct prompt to comment or message for a demo."
+          ]
+        },
+        "v2-rubric-reversed": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A better uses the provided quote by weaving it into the narrative flow.",
+            "Post A's structure is more engaging, using bullet points for key stats and then building on them.",
+            "Post A avoids vague language like 'see problems before they become phone calls', sticking to concrete benefits like reduced overtime and improved SLA compliance. "
+          ]
+        },
+        "v3-labels-swapped": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post X better hooks the reader by directly addressing their pain point (phone calls and untangling schedules) in the first two lines.",
+            "Post X's structure is more conversational and engaging, using bullet points to highlight key benefits.",
+            "Post X provides a stronger call to action with a clear next step: commenting 'demo' or sending a message. Post Y's link in comments feels less direct."
+          ]
+        },
+        "v4-order-swapped": {
+          "winner": "B",
+          "margin": 2,
+          "reasons": [
+            "Post A avoids unnecessary jargon like 'the system can't answer', which is too abstract for the target audience.",
+            "Post A's structure is more concise and scannable, making it easier to digest.",
+            "Post A focuses on the tangible benefits (time saved, SLA improvement) without getting bogged down in theoretical problems. "
+          ]
+        }
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s3-corey-social-vs-b1-p2",
+      "verdicts": {
+        "v1-original": "A",
+        "v2-rubric-reversed": "A",
+        "v3-labels-swapped": "A",
+        "v4-order-swapped": "B"
+      },
+      "details": {
+        "v1-original": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A better hooks the reader by immediately stating Meridian Facilities Group's size and previous whiteboard reliance.",
+            "Post A more effectively uses the ops director quote to illustrate the problem Slatebridge solves.",
+            "Post A is more concise and scannable, focusing on the key benefits without unnecessary detail. Post B includes extraneous information about spreadsheets and a year-long timeframe that isn't relevant to the brief."
+          ]
+        },
+        "v2-rubric-reversed": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A better uses the provided quote, integrating it more naturally into the narrative.",
+            "Post A's structure is more engaging, building a story of improvement rather than simply listing facts.",
+            "Post A's call to action is stronger and more specific, inviting direct engagement. Post B's link feels tacked on."
+          ]
+        },
+        "v3-labels-swapped": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post X better hooks the reader by immediately describing Meridian's pre-Slatebridge struggles and contrasting it with their current state.",
+            "Post X uses more concrete language that speaks to the audience's pain points (untangling schedules, phone tag) and avoids vague terms like 'managing' or 'patching together'.",
+            "Post X has a clearer call to action and a more conversational tone."
+          ]
+        },
+        "v4-order-swapped": {
+          "winner": "B",
+          "margin": 2,
+          "reasons": [
+            "Post A is more concise and gets to the point faster.",
+            "Post A better explains the value proposition of Slatebridge by focusing on the dispatcher's experience and pain points.",
+            "Post A has a stronger call to action that encourages engagement."
+          ]
+        }
+      },
+      "stable": false
+    },
+    {
+      "pairing": "s3-corey-social-vs-b1-p3",
+      "verdicts": {
+        "v1-original": "A",
+        "v2-rubric-reversed": "A",
+        "v3-labels-swapped": "A",
+        "v4-order-swapped": "B"
+      },
+      "details": {
+        "v1-original": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A better hooks the reader with its vivid description of pre-Slatebridge struggles.",
+            "Post A more effectively uses concrete facts to illustrate the benefits of Slatebridge, focusing on tangible improvements like SLA compliance and overtime reduction.",
+            "Post A's structure is more engaging, using a narrative approach to draw the reader in and build towards the call to action."
+          ]
+        },
+        "v2-rubric-reversed": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post A better uses the provided facts: Meridian Facilities Group's SLA compliance went from 87% to 96%, and overtime hours decreased by 18%. Post B omits these specific numbers.",
+            "Post A provides a stronger narrative flow. It starts with the pain points of whiteboard scheduling, then highlights Slatebridge's solution and its positive impact on Meridian Facilities Group.",
+            "Post A explains the significance of the provided data points (SLA compliance and overtime reduction) in a way that resonates with the target audience. Post B simply states the numbers without context."
+          ]
+        },
+        "v3-labels-swapped": {
+          "winner": "A",
+          "margin": 2,
+          "reasons": [
+            "Post X better hooks the reader with its vivid description of pre-Slatebridge struggles.",
+            "Post X more effectively uses concrete facts to illustrate the benefits of Slatebridge, focusing on tangible improvements like SLA compliance and overtime reduction.",
+            "Post X's structure is more engaging, using a narrative approach to draw the reader in and build towards the call to action."
+          ]
+        },
+        "v4-order-swapped": {
+          "winner": "B",
+          "margin": 2,
+          "reasons": [
+            "Post A is more concise and gets to the point faster.",
+            "Post A better uses the customer quote as a hook and throughout the post.",
+            "Post B's explanation of SLA breaches and overtime feels overly verbose and less relevant to the target audience."
+          ]
+        }
+      },
+      "stable": false
+    }
+  ],
+  "audited_at": "2026-08-29T21:59:25.011Z"
+}

@@ -3,7 +3,33 @@
   "digests": {
     "qwen2.5:7b-instruct-q4_K_M": "7.6B Q4_K_M",
     "llama3.1:8b-instruct-q4_K_M": "8.0B Q4_K_M",
-    "gemma2:9b-instruct-q4_K_M": "9.2B Q4_K_M"
+    "gemma2:9b-instruct-q4_K_M": "9.2B Q4_K_M",
+    "phi4:14b-q4_K_M": "14.7B Q4_K_M",
+    "mistral-nemo:12b-instruct-2407-q4_K_M": "12.2B Q4_K_M",
+    "glm-4.7-flash:q4_K_M": "29.9B Q4_K_M",
+    "gemma4:31b": "31.3B Q4_K_M"
   },
-  "pinned_at": "2026-08-27T18:54:02.154Z"
+  "pinned_at": "2026-08-27T18:54:02.154Z",
+  "appended": [
+    {
+      "model": "phi4:14b-q4_K_M",
+      "digest": "14.7B Q4_K_M",
+      "at": "2026-08-29T15:54:05.465Z"
+    },
+    {
+      "model": "mistral-nemo:12b-instruct-2407-q4_K_M",
+      "digest": "12.2B Q4_K_M",
+      "at": "2026-08-29T16:47:17.799Z"
+    },
+    {
+      "model": "glm-4.7-flash:q4_K_M",
+      "digest": "29.9B Q4_K_M",
+      "at": "2026-08-30T07:23:25.899Z"
+    },
+    {
+      "model": "gemma4:31b",
+      "digest": "31.3B Q4_K_M",
+      "at": "2026-08-30T07:27:17.126Z"
+    }
+  ]
 }
