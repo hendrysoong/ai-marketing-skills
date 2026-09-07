@@ -15,8 +15,13 @@ evidence behind them.
 
 | skill | job | measured |
 |---|---|---|
-| `hendry-cold-email` | one cold B2B outreach email | 9/9 on the field rubric, dominates the bare model and the placebo |
-| `hendry-linkedin-inmail` | one cold LinkedIn InMail | 7/7 on the field rubric, dominates both baselines |
+| `hendry-cold-email` | one cold B2B outreach email | leads on rule conformance and **dominates nothing**: 28 of 33 union rules against a best competitor of 22, with all twelve comparisons incomparable |
+| `hendry-linkedin-inmail` | one cold LinkedIn InMail | built for a job the field barely serves; never scored in a bracket |
+
+**Read that column with `K-039` beside it.** Rule conformance is a FLOOR, not a ranking. Run on a
+second job the same method separated nothing: eleven arms inside a spread of two rules on a
+fourteen-rule bar, six of them byte-identical, and a bare model with no skill one rule off the top.
+A higher rule count is not a demonstration that one skill beats another.
 
 **These are not graded.** No judge model has qualified, so nothing here is crowned. What is measured
 is **rule conformance**: `benchmark/rubrics/` holds rubrics derived from the checkable rules that
@@ -44,9 +49,14 @@ A judge model compares outputs pairwise, blind and order-swapped, and win rates 
 bands that were fixed before any data existed. The benchmark measures craft lift only, whether
 the skill improves the writing. It makes no claims about conversions, reach, or revenue.
 
-Before any judge grades anything, it must pass a perturbation audit: the same comparisons
-re-asked with the grading rubric reversed and the post labels renamed. A judge that changes its
-winner when only the names change is refused the seat.
+Before any judge grades anything it must qualify. The first exam was a perturbation audit — the
+same comparisons re-asked with the grading rubric reversed and the post labels renamed — and a judge
+that changed its winner when only the names changed was refused the seat.
+
+**That exam has since been retired, and the reason is published rather than buried:** a null control
+found it ranked candidate seats INVERSELY to their ability to discriminate, so it was measuring the
+wrong thing (`K-004`). Thirteen seat measurements have now been run and **none qualified**. No judge
+is seated, and nothing in this repository is crowned.
 
 ## What is in this repository
 
@@ -59,10 +69,18 @@ winner when only the names change is refused the seat.
 | `runs/0.1-L1/` | All 99 generation records of the first cycle, append-only, token counts and pinned model strings included |
 | `scores/0.1-L1/` | The model digest pins and both judge-audit artifacts of the first cycle |
 
-Current state, as of 28 August 2026: the first 0.1-L1 cycle generated its full 99-post matrix,
-then refused to grade it. Both candidate judge models failed the perturbation audit, at 72.2 and
-83.3 percent verdict stability against a 90 percent bar. Zero judgments exist, so zero grades
-exist, and nothing is crowned. That refusal is the first published result.
+Current state, as of 7 September 2026. **Five reports are published.** The first 0.1-L1 cycle
+generated its full 99-post matrix and then refused to grade it — both candidate judge models failed
+that cycle's perturbation audit, at 72.2 and 83.3 percent verdict stability against a 90 percent bar
+— and that refusal is the first published result. Since then: thirteen judge seats measured with
+none qualifying, a pooled ensemble refused for scoring worse than its own best member, and the
+referee replaced by a rubric built from rules that competing skill authors publish about their own
+job. **That rubric is a floor and not a ranking**, measured on two jobs.
+
+The most recent report reverses a result this project itself published: a check reported zero
+misattribution violations across 240 generations, and that zero came from a detector that could not
+fire. Rescored, the same drafts yield thirty. **Nothing is crowned, and the corrections publish with
+the same prominence as the results.**
 
 ## What is deliberately not here
 

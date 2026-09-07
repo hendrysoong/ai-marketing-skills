@@ -9,32 +9,136 @@
     "absent": "No field consensus exists for InMail. Recorded as a GAP rather than filled with our own taste."
   },
   "sources": [
-    { "author": "linkedin", "surface": "https://www.linkedin.com/help/linkedin/answer/a411986/inmail-character-limits", "tier": "platform" },
-    { "author": "coreyhaines31", "skill": "skills/cold-email/SKILL.md", "tier": "transferred", "sweep": "SCAN-0001" },
-    { "author": "thatrebeccarae", "skill": "skills/cold-email-outreach/SKILL.md", "tier": "transferred", "sweep": "SCAN-0001" }
+    {
+      "author": "linkedin",
+      "surface": "https://www.linkedin.com/help/linkedin/answer/a411986/inmail-character-limits",
+      "tier": "platform"
+    },
+    {
+      "author": "coreyhaines31",
+      "skill": "skills/cold-email/SKILL.md",
+      "tier": "transferred",
+      "sweep": "SCAN-0001"
+    },
+    {
+      "author": "thatrebeccarae",
+      "skill": "skills/cold-email-outreach/SKILL.md",
+      "tier": "transferred",
+      "sweep": "SCAN-0001"
+    }
   ],
-  "gap": "SCAN-0001 searched nine repositories holding 465 skills between them and found no LinkedIn InMail skill. There is no consensus to derive from, so every craft rule here is TRANSFERRED from cold email and labelled as such. A rule genuinely specific to InMail, such as whether to reference the recipient's profile, has no field position and is deliberately NOT invented here.",
+  "gap": "SCAN-0001 searched nine repositories holding 465 skills between them and found no LinkedIn InMail skill. CORRECTED 2026-09-04 (K-013): that sweep was incomplete and its absolute form is WITHDRAWN. Swept mechanically across all 855 real SKILL.md files in the eight admissible repositories, one skill does handle InMail as a first-class message type at the correct 1,900-character cap. It still does not do this job -- it writes no message, the word subject appears nowhere in it, and its workflow is warm-sequenced -- but 'no InMail skill at all' is not a claim this project makes any more. There is no consensus to derive from, so every craft rule here is TRANSFERRED from cold email and labelled as such. A rule genuinely specific to InMail, such as whether to reference the recipient's profile, has no field position and is deliberately NOT invented here.",
   "rules": [
-    { "id": "subject-char-cap", "tier": "platform", "stated_by": ["linkedin"],
+    {
+      "id": "subject-char-cap",
+      "tier": "platform",
+      "stated_by": [
+        "linkedin"
+      ],
       "rule": "The subject line is at most 200 characters. LinkedIn rejects longer.",
-      "check": { "type": "char_cap", "scope": "subject", "max": 200 } },
-    { "id": "body-char-cap", "tier": "platform", "stated_by": ["linkedin"],
+      "check": {
+        "type": "char_cap",
+        "scope": "subject",
+        "max": 200
+      }
+    },
+    {
+      "id": "body-char-cap",
+      "tier": "platform",
+      "stated_by": [
+        "linkedin"
+      ],
       "rule": "The body is at most 1900 characters. LinkedIn rejects longer.",
-      "check": { "type": "char_cap", "scope": "body", "max": 1900 } },
-    { "id": "no-hope-this-finds-you", "tier": "transferred", "stated_by": ["coreyhaines31", "thatrebeccarae"],
+      "check": {
+        "type": "char_cap",
+        "scope": "body",
+        "max": 1900
+      }
+    },
+    {
+      "id": "no-hope-this-finds-you",
+      "tier": "transferred",
+      "stated_by": [
+        "coreyhaines31",
+        "thatrebeccarae"
+      ],
       "rule": "Do not open with a throat-clear.",
-      "check": { "type": "forbidden_terms", "terms": ["hope this email finds you well", "hope this message finds you well", "hope this finds you well", "hope you're doing well", "hope you are doing well", "hope all is well", "i wanted to reach out", "just reaching out"] } },
-    { "id": "link-restraint", "tier": "transferred", "stated_by": ["coreyhaines31", "thatrebeccarae"],
+      "check": {
+        "type": "forbidden_terms",
+        "terms": [
+          "hope this email finds you well",
+          "hope this message finds you well",
+          "hope this finds you well",
+          "hope you're doing well",
+          "hope you are doing well",
+          "hope all is well",
+          "i wanted to reach out",
+          "just reaching out"
+        ]
+      }
+    },
+    {
+      "id": "link-restraint",
+      "tier": "transferred",
+      "stated_by": [
+        "coreyhaines31",
+        "thatrebeccarae"
+      ],
       "rule": "At most one link.",
-      "check": { "type": "link_cap", "max": 1 } },
-    { "id": "short-body", "tier": "transferred", "stated_by": ["coreyhaines31", "thatrebeccarae"],
+      "check": {
+        "type": "link_cap",
+        "max": 1
+      }
+    },
+    {
+      "id": "short-body",
+      "tier": "transferred",
+      "stated_by": [
+        "coreyhaines31",
+        "thatrebeccarae"
+      ],
       "rule": "Ruthlessly short. Well inside the platform cap.",
-      "check": { "type": "length_cap" }, "context": { "length_cap": { "max": 125, "unit": "words" } } },
-    { "id": "no-jargon", "tier": "transferred", "stated_by": ["coreyhaines31"],
+      "check": {
+        "type": "length_cap"
+      },
+      "context": {
+        "length_cap": {
+          "max": 125,
+          "unit": "words"
+        }
+      }
+    },
+    {
+      "id": "no-jargon",
+      "tier": "transferred",
+      "stated_by": [
+        "coreyhaines31"
+      ],
       "rule": "No sales jargon.",
-      "check": { "type": "forbidden_terms", "terms": ["synergy", "leverage", "circle back", "best-in-class", "best in class", "leading provider", "touch base"] } },
-    { "id": "reader-first", "tier": "transferred", "stated_by": ["coreyhaines31"],
+      "check": {
+        "type": "forbidden_terms",
+        "terms": [
+          "synergy",
+          "leverage",
+          "circle back",
+          "best-in-class",
+          "best in class",
+          "leading provider",
+          "touch base"
+        ]
+      }
+    },
+    {
+      "id": "reader-first",
+      "tier": "transferred",
+      "stated_by": [
+        "coreyhaines31"
+      ],
       "rule": "Second person outweighs first person.",
-      "check": { "type": "reader_first_ratio", "min": 1.0 } }
+      "check": {
+        "type": "reader_first_ratio",
+        "min": 1.0
+      }
+    }
   ]
 }
