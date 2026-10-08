@@ -2,12 +2,17 @@
 
 [![verify](https://github.com/hendrysoong/ai-marketing-skills/actions/workflows/verify.yml/badge.svg)](https://github.com/hendrysoong/ai-marketing-skills/actions/workflows/verify.yml)
 
-**The hendry.ai AI Marketing Skills Benchmark. Protocols, run records, and audit
-artifacts, published so anyone can check the numbers.**
+**The hendry.ai AI Marketing Skills Benchmark. The protocol, and the first cycle's run records
+and audit artifacts, published so anyone can check that cycle's numbers.**
 
 Built and run by [Hendry Soong](https://hendry.ai). Reports are published on the
-[skills track at hendry.ai](https://hendry.ai/ai-marketing/skills); this repository carries the
-evidence behind them.
+[skills track at hendry.ai](https://hendry.ai/ai-marketing/skills). This repository carries the
+evidence behind the first cycle, Report 001; the records behind later reports sit in the project's
+private repository and are not published here.
+
+> **Corrected 2026-10-08.** This README said that this repository carries the evidence behind the
+> published reports, and that every figure in a published report cites a record in this tree. That
+> holds for the first cycle, Report 001, and not for the reports since.
 
 ## The skills
 
@@ -95,11 +100,11 @@ the same prominence as the results.**
 
 ## How to check the numbers
 
-Records are append-only and every figure in a published report cites a record in this tree by
-id. Run records carry the exact runtime-returned model string; the audit artifacts carry the
-per-pairing verdicts under each prompt variant; skill manifests carry a sha256 over the exact
-text the skill arm loaded. If a report says a number this tree cannot reproduce, the report is
-wrong; say so.
+Records are append-only, and every figure about the first 0.1-L1 cycle cites a record in this
+tree by id. Run records carry the exact runtime-returned model string; the audit artifacts carry
+the per-pairing verdicts under each prompt variant; skill manifests carry a sha256 over the exact
+text the skill arm loaded. If a report says a number about that cycle that this tree cannot
+reproduce, the report is wrong; say so.
 
 CI enforces this on every push and pull request (`tools/verify.mjs`, no dependencies, no
 network):
